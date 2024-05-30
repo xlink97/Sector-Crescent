@@ -295,3 +295,59 @@
     borderColor: "#6d5f8a"
   - type: Icon
     state: basic
+
+- type: entity
+  parent: BasePDA
+  id: KnightPDA
+  name: knight's PDA
+  description: Purple for Imperial.
+  components:
+  - type: Pda
+    id: DSMIDCardKnight
+    state: noble
+  - type: PdaBorderColor
+    borderColor: "#6d5f8a"
+  - type: Icon
+    state: noble
+
+- type: entity
+  parent: BasePDA
+  id: CourtierPDA
+  name: courtier's PDA
+  description: Purple for Imperial.
+  components:
+  - type: Pda
+    id: DSMIDCardCourtier
+    state: noble
+  - type: PdaBorderColor
+    borderColor: "#6d5f8a"
+  - type: Icon
+    state: noble
+
+- type: entity
+  parent: BasePDA
+  id: AdjutantPDA
+  name: adjutant's PDA
+  description: Purple for Imperial.
+  components:
+  - type: Pda
+    id: DSMIDCardAdjutant
+    state: noble
+  - type: PdaBorderColor
+    borderColor: "#6d5f8a"
+  - type: Icon
+    state: noble
+
+- type: entity
+  parent: BasePDA
+  id: GovernorPDA
+  name: governor's PDA
+  description: Purple for Imperial.
+  components:
+  - type: Pda
+    id: DSMIDCardGovernor
+    state: noble
+  - type: PdaBorderColor
+    borderColor: "#6d5f8a"
+  - type: Icon
+    state: noble

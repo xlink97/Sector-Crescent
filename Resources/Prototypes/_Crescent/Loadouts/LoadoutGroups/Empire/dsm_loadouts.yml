@@ -46,8 +46,44 @@
 
 - type: loadoutGroup
   id: DSMSoldierBags
-  name: loadout-group-contractor-belt
+  name: loadout-group-contractor-backpack
   minLimit: 0
   loadouts:
   - LevymanDSMClothingBackpackDSMSatchelFilledSoldier
   - LevymanDSMClothingBackpackDSMFilledSoldier
+
+#nobles
+
+- type: loadoutGroup
+  id: DSMNobleBags
+  name: loadout-group-contractor-backpack
+  loadouts:
+  - CourtierDSMClothingBackpackSatchelLeatherFilledDSM
+
+- type: loadoutGroup
+  id: DSMNobleHat
+  minLimit: 0
+  name: loadout-group-contractor-head
+  loadouts:
+  - CourtierDSMClothingHeadHatImperialHat
+
+- type: loadoutGroup
+  id: DSMNobleJumpsuits
+  name: loadout-group-contractor-jumpsuit
+  loadouts: #First Section: Role specific freebies/discounts/rewards
+  - CourtierDSMClothingUniformJumpsuitImperialNobleFemale
+  - CourtierDSMClothingUniformJumpsuitImperialNobleMale
+
+- type: loadoutGroup
+  id: DSMNobleGloves
+  minLimit: 0
+  name: loadout-group-contractor-gloves
+  loadouts:
+  - CourtierDSMClothingHandsGlovesImperialLonggloves
+
+- type: loadoutGroup
+  id: DSMNobleShoes
+  name: loadout-group-contractor-shoes
+  loadouts:
+  - CourtierDSMClothingShoesBootsImperialLaceup
+  - CourtierDSMClothingShoesBootsImperialLongboots

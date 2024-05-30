@@ -267,3 +267,13 @@
       - id: Flash
       - id: Tourniquet
       - id: Zipties
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackSatchelLeather
+  id: ClothingBackpackSatchelLeatherFilledDSM
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: Flash

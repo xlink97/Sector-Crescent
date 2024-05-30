@@ -1,0 +1,36 @@
+- type: job
+  id: KnightDSM
+  name: job-name-knight
+  description: job-description-knight
+  playTimeTracker: JobKnightDSM
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 12000
+  weight: 22
+  startingGear: KnightGear
+  alwaysUseSpawner: true
+  icon: "JobIconImperialKnight"
+  requireAdminNotify: false
+  supervisors: job-supervisors-imperial 
+  canBeAntag: false
+  access:
+  - Command
+  - Empire
+  - Maintenance
+  - Service
+  - EmpireNoble
+  - EmpireSoldier
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+
+- type: startingGear
+  id: KnightGear
+  equipment:
+    id: KnightPDA
+    ears: ClothingHeadsetEmpire
+    jumpsuit: ClothingUniformJumpsuitImperialCombat
+    shoes: ClothingShoesBootsImperialJackboots
+    head: ClothingHeadHelmetImperialKnightCommanderHelmet
+    outerClothing: ClothingOuterArmorImperialArmorPrestige
+    gloves: ClothingHandsGlovesImperialLonggloves

@@ -257,3 +257,99 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsNCSPRamzi ]
+
+#empire
+
+- type: entity
+  parent: AirlockCommand
+  id: AirlockCommandLockedDSM
+  suffix: DSM, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDSMEmpire ]
+
+- type: entity
+  parent: AirlockCommand
+  id: AirlockCommandLockedDSMSoldier
+  suffix: DSM Soldier, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDSMEmpireSoldier ]
+
+- type: entity
+  parent: AirlockCommand
+  id: AirlockCommandLockedDSMNoble
+  suffix: DSM Noble, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDSMEmpireNoble ]
+
+- type: entity
+  parent: AirlockCommand
+  id: AirlockCommandLockedDSMAdjutant
+  suffix: DSM Adjutant, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDSMEmpireAdjutant ]
+
+- type: entity
+  parent: AirlockCommand
+  id: AirlockCommandLockedDSMGovernor
+  suffix: DSM Governor, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDSMEmpireGovernor ]
+
+#empire horizontal
+
+- type: entity
+  parent: AirlockCommandHorizontal
+  id: AirlockCommandLockedDSMHorizontal
+  suffix: DSM, Horizontal
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDSMEmpire ]
+
+- type: entity
+  parent: AirlockCommandHorizontal
+  id: AirlockCommandLockedDSMHorizontalSoldier
+  suffix: DSM Soldier, Horizontal
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDSMEmpireSoldier ]
+
+- type: entity
+  parent: AirlockCommandHorizontal
+  id: AirlockCommandLockedDSMHorizontalNoble
+  suffix: DSM Noble, Horizontal
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDSMEmpireNoble ]
+
+- type: entity
+  parent: AirlockCommandHorizontal
+  id: AirlockCommandLockedDSMHorizontalAdjutant
+  suffix: DSM Adjutant, Horizontal
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDSMEmpireAdjutant ]
+
+- type: entity
+  parent: AirlockCommandHorizontal
+  id: AirlockCommandLockedDSMHorizontalGovernor
+  suffix: DSM Governor, Horizontal
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDSMEmpireGovernor ]
+
+#shi

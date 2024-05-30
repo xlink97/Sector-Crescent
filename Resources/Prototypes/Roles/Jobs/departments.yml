@@ -166,4 +166,8 @@
   roles:
   - FreeholderDSM
   - LevymanDSM
+  - KnightDSM
+  - CourtierDSM
+  - AdjutantDSM
+  - GovernorDSM
   enabled: true

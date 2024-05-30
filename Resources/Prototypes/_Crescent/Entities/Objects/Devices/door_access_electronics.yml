@@ -105,3 +105,47 @@
   components:
   - type: AccessReader
     access: [["SyndicateRamzi"]]
+
+#empire
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsDSMEmpire
+  suffix: Empire, Locked
+  components:
+  - type: AccessReader
+    access: [["Empire"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsDSMEmpireSoldier
+  suffix: Empire Soldier, Locked
+  components:
+  - type: AccessReader
+    access: [["EmpireSoldier"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsDSMEmpireNoble
+  suffix: Empire Noble, Locked
+  components:
+  - type: AccessReader
+    access: [["EmpireNoble"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsDSMEmpireAdjutant
+  suffix: Empire Adjutant, Locked
+  components:
+  - type: AccessReader
+    access: [["EmpireAdjutant"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsDSMEmpireGovernor
+  suffix: Empire Governor, Locked
+  components:
+  - type: AccessReader
+    access: [["EmpireGovernor"]]
+
+#shi
