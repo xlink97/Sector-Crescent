@@ -11,14 +11,14 @@
 
 - type: entity
   parent: ClothingShoesBaseButcherable
-  id: ClothingShoesBootsImperialJackoots
+  id: ClothingShoesBootsImperialJackboots
   name: heavy jackboots
   description: Tall boots of heavy leather, adorned with Imperial livery.
   components:
   - type: Sprite
-    sprite: _Crescent/Clothing/Empire/Feet/mandatefancyboots.rsi
+    sprite: _Crescent/Clothing/Empire/Feet/mandatejackboots.rsi
   - type: Clothing
-    sprite: _Crescent/Clothing/Empire/Feet/mandatefancyboots.rsi
+    sprite: _Crescent/Clothing/Empire/Feet/mandatejackboots.rsi
 
 - type: entity
   parent: ClothingShoesBaseButcherable
@@ -30,3 +30,25 @@
     sprite: _Crescent/Clothing/Empire/Feet/mandatefancyboots.rsi
   - type: Clothing
     sprite: _Crescent/Clothing/Empire/Feet/mandatefancyboots.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesBootsImperialClogs
+  name: doctor's clogs
+  description: A pair of medical clogs, made for Imperial doctors to wear.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/Empire/Feet/mandatedoctor.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/Empire/Feet/mandatedoctor.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesBootsImperialLaceup
+  name: leather laceups
+  description: A pair of simple laceup shoes, for both formal and casual wear.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/Empire/Feet/mandatelaceup.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/Empire/Feet/mandatelaceup.rsi

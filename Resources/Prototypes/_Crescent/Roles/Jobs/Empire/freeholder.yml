@@ -1,0 +1,26 @@
+- type: job
+  id: FreeholderDSM
+  name: job-name-freeholder
+  description: job-description-freeholder
+  playTimeTracker: JobFreeholderDSM
+  weight: 18
+  startingGear: FreeholderGear
+  alwaysUseSpawner: true
+  icon: "JobIconImperialFreeholder"
+  requireAdminNotify: false
+  supervisors: job-supervisors-imperial 
+  canBeAntag: false
+  access:
+  - Command
+  - Empire
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+
+- type: startingGear
+  id: FreeholderGear
+  equipment:
+    id: FreeholderPDA
+    ears: ClothingHeadsetEmpire

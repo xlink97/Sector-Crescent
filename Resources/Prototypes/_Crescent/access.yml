@@ -53,3 +53,25 @@
 - type: accessLevel
   id: SyndicateRingleader
   name: id-card-access-level-syndicateringleader
+
+# empire #
+
+- type: accessLevel
+  id: Empire
+  name: id-card-access-level-empire
+
+- type: accessLevel
+  id: EmpireSoldier
+  name: id-card-access-level-empiremilitary
+
+- type: accessLevel
+  id: EmpireNoble
+  name: id-card-access-level-empirenoble
+
+- type: accessLevel
+  id: EmpireAdjutant
+  name: id-card-access-level-empireadjutant
+
+- type: accessLevel
+  id: EmpireGovernor
+  name: id-card-access-level-empiregovernor

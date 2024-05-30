@@ -150,3 +150,17 @@
     sprite: _Crescent/Clothing/Empire/OuterClothing/mandateparade.rsi
   - type: Clothing
     sprite: _Crescent/Clothing/Empire/OuterClothing/mandateparade.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatImperialSoftsuit
+  name: imperial voidsuit
+  description: A simple extravehicular softsuit of Imperial design.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/Empire/OuterClothing/mandateeva.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/Empire/OuterClothing/mandateeva.rsi
+  - type: Tag
+    tags:
+    - SuitEVA

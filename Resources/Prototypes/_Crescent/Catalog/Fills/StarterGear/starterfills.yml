@@ -222,3 +222,48 @@
       - id: SheetSteel
       - id: SheetGlass
 
+#empire
+
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDSMSatchel
+  id: ClothingBackpackDSMSatchelFilledFreeholder
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDSM
+  id: ClothingBackpackDSMFilledFreeholder
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDSMSatchel
+  id: ClothingBackpackDSMSatchelFilledSoldier
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: Flash
+      - id: Tourniquet
+      - id: Zipties
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDSM
+  id: ClothingBackpackDSMFilledSoldier
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+      - id: Flash
+      - id: Tourniquet
+      - id: Zipties

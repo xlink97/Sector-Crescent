@@ -19,3 +19,8 @@ job-name-operative = Operative
 job-name-intelligenceofficer = Intelligence Officer
 job-name-shipbreaker = Shipbreaker
 job-name-foreman = Foreman
+
+#empire
+
+job-name-freeholder = Freeholder
+job-name-levyman = Man-at-Arms

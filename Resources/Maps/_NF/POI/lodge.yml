@@ -9808,6 +9808,13 @@ entities:
     - type: Transform
       pos: 9.5,12.5
       parent: 1
+- proto: SpawnPointFreeholder
+  entities:
+  - uid: 1551
+    components:
+    - type: Transform
+      pos: -4.5,10.5
+      parent: 1
 - proto: SpawnPointLatejoin
   entities:
   - uid: 1556

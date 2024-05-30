@@ -19,3 +19,8 @@ job-description-operative = Sabotage enemy vessels and gather intelligence for t
 job-description-intelligenceofficer = Represent the interests of the Clique. Sabotage the enemies of the Syndicate.
 job-description-shipbreaker = Repair Syndicate vessels, take the others apart for scrap.
 job-description-foreman = Coordinate the SAWs. Lead pirate boardings. Scrap vessels.
+
+#empire#
+
+job-description-freeholder = Obey the Imperial hierarchy. Earn Credits for the Governor.
+job-description-levyman = Obey your liege. Uphold the will of the Kaiser.

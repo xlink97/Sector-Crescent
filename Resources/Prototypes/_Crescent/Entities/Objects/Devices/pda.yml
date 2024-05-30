@@ -265,3 +265,33 @@
     borderColor: "#DC143C"
   - type: Icon
     state: pda-syndi
+
+#empire
+
+- type: entity
+  parent: BasePDA
+  id: FreeholderPDA
+  name: freeholder's PDA
+  description: Purple for Imperial.
+  components:
+  - type: Pda
+    id: DSMIDCardFreeholder
+    state: basic
+  - type: PdaBorderColor
+    borderColor: "#6d5f8a"
+  - type: Icon
+    state: basic
+
+- type: entity
+  parent: BasePDA
+  id: LevymanPDA
+  name: levyman's PDA
+  description: Purple for Imperial.
+  components:
+  - type: Pda
+    id: DSMIDCardLevyman
+    state: basic
+  - type: PdaBorderColor
+    borderColor: "#6d5f8a"
+  - type: Icon
+    state: basic

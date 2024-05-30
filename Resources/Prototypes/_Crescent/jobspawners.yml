@@ -198,10 +198,24 @@
 - type: entity
   id: SpawnPointForeman
   parent: SpawnPointJobBase
-  name: shipbreaker
+  name: foreman
   components:
   - type: SpawnPoint
     job_id: ForemanNCSP
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+#empire
+
+- type: entity
+  id: SpawnPointFreeholder
+  parent: SpawnPointJobBase
+  name: freeholder
+  components:
+  - type: SpawnPoint
+    job_id: FreeholderDSM
   - type: Sprite
     layers:
       - state: green

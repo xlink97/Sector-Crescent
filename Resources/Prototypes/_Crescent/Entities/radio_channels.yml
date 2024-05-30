@@ -4,3 +4,10 @@
   keycode: "o"
   frequency: 1985
   color: "#ffd580"
+
+- type: radioChannel
+  id: Imperial
+  name: chat-radio-empire
+  keycode: "i"
+  frequency: 6218
+  color: "#684871"

@@ -52,3 +52,23 @@
 
 - type: playTimeTracker
   id: JobShipbreakerNCSP
+
+# empire
+
+- type: playTimeTracker
+  id: JobFreeholderDSM
+
+- type: playTimeTracker
+  id: JobLevymanDSM
+
+- type: playTimeTracker
+  id: JobKnightDSM
+
+- type: playTimeTracker
+  id: JobCourtierDSM
+
+- type: playTimeTracker
+  id: JobAdjutantDSM
+
+- type: playTimeTracker
+  id: JobGovernorDSM

@@ -17,3 +17,11 @@ id-card-access-level-syndicatesaws = Shipfitters and Astronautics Workers Union
 id-card-access-level-syndicateramzi = Halflight Media
 id-card-access-level-syndicateringleader = Privateer Ringleader 
 id-card-access-level-syndicatearmory = Privateers' Armory
+
+#empire
+
+id-card-access-level-empire = General Imperial Access
+id-card-access-level-empiremilitary = Imperial Navy
+id-card-access-level-empirenoble = Imperial Charter of Nobility
+id-card-access-level-empireadjutant = Imperial Adjutant
+id-card-access-level-empiregovernor = Imperial Governor

@@ -14,5 +14,6 @@
           - Pilot
           - Mercenary
           availableJobs:
-            Pilot: [ -1, -1 ]
-            Mercenary: [ -1, -1 ]
+            LevymanDSM: [ -1, -1 ]
+            FreeholderDSM: [ -1, -1 ]
+            KnightDsm: [ -1, -1 ]

@@ -193,3 +193,29 @@
     - state: idzookeeper
   - type: PresetIdCard
     job: ShipbreakerNCSP
+
+#empire
+
+- type: entity
+  parent: IDCardStandard
+  id: DSMIDCardFreeholder
+  name: imperial ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idseniorresearcher
+  - type: PresetIdCard
+    job: FreeholderDSM
+
+- type: entity
+  parent: IDCardStandard
+  id: DSMIDCardLevyman
+  name: imperial ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idseniorresearcher
+  - type: PresetIdCard
+    job: LevymanDSM

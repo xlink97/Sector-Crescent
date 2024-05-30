@@ -140,9 +140,9 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHelmetImperialLevyHelmet
-  name: levyman's combat helmet
-  description: A flimsy steel helmet for a levied soldier.
+  id: ClothingHeadHelmetImperialWorkerHelmet
+  name: freeholder's worker helmet
+  description: A flimsy steel helmet for a Mandate worker.
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/Empire/Head/mandatelevyhelmet.rsi
@@ -158,3 +158,30 @@
   - type: Tag
     tags:
     - HidesHair
+
+- type: entity
+  parent: ClothingHeadEVAHelmetBase
+  id: ClothingHeadHelmetImperialEVA
+  name: imperial voidsuit helmet
+  description: An imperial voidsuit helmet. Designed for EVA.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: _Crescent/Clothing/Empire/Head/mandateeva.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/Empire/Head/mandateeva.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatImperialPeakedCap
+  name: imperial peaked cap
+  description: An Imperial peaked cap bearing the House Olywir coat of arms.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/Empire/Head/mandatecap.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/Empire/Head/mandatecap.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - WhitelistChameleon

@@ -46,7 +46,7 @@
   parent: ClothingBackpackSatchel
   id: ClothingBackpackNCSPSatchel
   name: hired gun's satchel
-  description: A robust courier bg for mercenaries.
+  description: A robust courier bag for mercenaries.
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/Back/syndiesatchel.rsi
@@ -61,5 +61,29 @@
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/Back/syndicate.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+
+#empire
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackDSMSatchel
+  name: imperial courier bag
+  description: A robust courier bag in Imperial livery.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/Back/empiresatchel.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackDSM
+  name: imperial backpack
+  description: A robust backpack in Imperial livery.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/Back/empirebackpack.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.1
