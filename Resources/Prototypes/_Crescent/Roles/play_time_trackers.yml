@@ -73,4 +73,7 @@
 - type: playTimeTracker
   id: JobGovernorDSM
 
-#shi
+#srm
+
+- type: playTimeTracker
+  id: JobTenderDSM

@@ -220,3 +220,65 @@
     layers:
       - state: green
       - state: passenger
+
+- type: entity
+  id: SpawnPointLevyman
+  parent: SpawnPointJobBase
+  name: man at arms
+  components:
+  - type: SpawnPoint
+    job_id: LevymanDSM
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointKnight
+  parent: SpawnPointJobBase
+  name: knight
+  components:
+  - type: SpawnPoint
+    job_id: KnightDSM
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointCourtier
+  parent: SpawnPointJobBase
+  name: courtier
+  components:
+  - type: SpawnPoint
+    job_id: CourtierDSM
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointAdjutant
+  parent: SpawnPointJobBase
+  name: adjutant
+  components:
+  - type: SpawnPoint
+    job_id: AdjutantDSM
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointGovernor
+  parent: SpawnPointJobBase
+  name: governor
+  components:
+  - type: SpawnPoint
+    job_id: GovernorDSM
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+#srm
