@@ -19,3 +19,12 @@ job-description-operative = Sabotage enemy vessels and gather intelligence for t
 job-description-intelligenceofficer = Represent the interests of the Clique. Sabotage the enemies of the Syndicate.
 job-description-shipbreaker = Repair Syndicate vessels, take the others apart for scrap.
 job-description-foreman = Coordinate the SAWs. Lead pirate boardings. Scrap vessels.
+
+#empire#
+
+job-description-freeholder = Obey the Imperial hierarchy. Earn Credits for the Governor.
+job-description-levyman = Obey your liege. Uphold the will of the Kaiser.
+job-description-knight = Organize the Imperial Navy. Obey your liege.
+job-description-courtier = Indulge yourself. Attempt to find a way off this rotting system. Try to reclaim your fief.
+job-description-adjutant = Obey your liege lord, the Kaiser, and your liege lord, the Governor. Attempt to coordinate the remnants of the Empire.
+job-description-governor = Fight off the communard Insurgency and reclaim your fief.

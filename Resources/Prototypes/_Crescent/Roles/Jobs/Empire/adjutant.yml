@@ -1,0 +1,37 @@
+- type: job
+  id: AdjutantDSM
+  name: job-name-adjutant
+  description: job-description-adjutant
+  playTimeTracker: JobAdjutantDSM
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 36000
+  weight: 55
+  startingGear: AdjutantGear
+  alwaysUseSpawner: true
+  icon: "JobIconImperialAdjutant"
+  requireAdminNotify: true
+  supervisors: job-supervisors-imperial
+  canBeAntag: false
+  access:
+  - Command
+  - Maintenance
+  - EmpireNoble
+  - EmpireAdjutant
+  - Service
+  - Empire
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+
+- type: startingGear
+  id: AdjutantGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitImperialAdjutantFormal
+    back: ClothingBackpackSatchelLeatherFilledDSM
+    shoes: ClothingShoesBootsImperialLongboots
+    head: ClothingHeadHatImperialBeret
+    outerClothing: ClothingOuterCoatImperialAdjutant
+    id: AdjutantPDA
+    ears: ClothingHeadsetEmpire
+    gloves: ClothingHandsGlovesImperialAdjutantGloves

@@ -193,3 +193,91 @@
     - state: idzookeeper
   - type: PresetIdCard
     job: ShipbreakerNCSP
+
+#empire
+
+- type: entity
+  parent: IDCardStandard
+  id: DSMIDCardFreeholder
+  name: imperial ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idseniorresearcher
+  - type: PresetIdCard
+    job: FreeholderDSM
+
+- type: entity
+  parent: IDCardStandard
+  id: DSMIDCardLevyman
+  name: imperial ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idseniorresearcher
+  - type: PresetIdCard
+    job: LevymanDSM
+
+- type: entity
+  parent: IDCardStandard
+  id: DSMIDCardKnight
+  name: imperial ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idseniorresearcher
+  - type: PresetIdCard
+    job: KnightDSM
+
+- type: entity
+  parent: IDCardStandard
+  id: DSMIDCardCourtier
+  name: imperial ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idseniorresearcher
+  - type: PresetIdCard
+    job: CourtierDSM
+
+- type: entity
+  parent: IDCardStandard
+  id: DSMIDCardAdjutant
+  name: imperial ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idseniorresearcher
+  - type: PresetIdCard
+    job: AdjutantDSM
+
+- type: entity
+  parent: IDCardStandard
+  id: DSMIDCardGovernor
+  name: imperial ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idseniorresearcher
+  - type: PresetIdCard
+    job: GovernorDSM
+
+#srm
+
+- type: entity
+  parent: IDCardStandard
+  id: SRMIDCardTender
+  name: hunter ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idbotanist
+  - type: PresetIdCard
+    job: TenderSRM

@@ -1,0 +1,32 @@
+- type: job
+  id: LevymanDSM
+  name: job-name-levyman
+  description: job-description-levyman
+  playTimeTracker: JobLevymanDSM
+  weight: 20
+  startingGear: LevymanGear
+  alwaysUseSpawner: true
+  icon: "JobIconImperialLevyman"
+  requireAdminNotify: false
+  supervisors: job-supervisors-imperial 
+  canBeAntag: false
+  access:
+  - Command
+  - Empire
+  - Maintenance
+  - Service
+  - EmpireSoldier
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+
+- type: startingGear
+  id: LevymanGear
+  equipment:
+    id: LevymanPDA
+    ears: ClothingHeadsetEmpire
+    jumpsuit: ClothingUniformJumpsuitImperialCombat
+    shoes: ClothingShoesBootsImperialJackboots
+    head: ClothingHeadHelmetImperialTrooperHelmet
+    outerClothing: ClothingOuterArmorImperialTrooperArmor
+    gloves: ClothingHandsGlovesImperialLonggloves

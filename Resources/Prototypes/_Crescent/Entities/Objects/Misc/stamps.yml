@@ -10,3 +10,16 @@
     stampState: "paper_stamp-ncwl"
   - type: Sprite
     state: stampncwl
+
+- type: entity
+  name: imperial rubber stamp
+  parent: RubberStampBase
+  id: RubberStampEmpire
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-empire
+    stampedColor: "#432d51"
+    stampState: "paper_stamp-empire"
+  - type: Sprite
+    state: empire

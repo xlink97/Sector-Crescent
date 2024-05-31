@@ -19,11 +19,20 @@
             "directions": 4
         },
         {
+            "name": "noble"
+        },
+        {
             "name": "inhand-right",
             "directions": 4
         },
         {
             "name": "insert_overlay"
+        },
+        {
+            "name": "basic"
+        },
+        {
+            "name": "hunter"
         },
         {
             "name": "light_overlay"

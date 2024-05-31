@@ -157,3 +157,17 @@
   - ForemanNCSP
   - ShipbreakerNCSP
   enabled: true
+
+- type: department
+  id: DSM
+  description: department-DSM-description
+  color: "#684871"
+  weight: 85
+  roles:
+  - FreeholderDSM
+  - LevymanDSM
+  - KnightDSM
+  - CourtierDSM
+  - AdjutantDSM
+  - GovernorDSM
+  enabled: true

@@ -265,3 +265,105 @@
     borderColor: "#DC143C"
   - type: Icon
     state: pda-syndi
+
+#empire
+
+- type: entity
+  parent: BasePDA
+  id: FreeholderPDA
+  name: freeholder's PDA
+  description: Purple for Imperial.
+  components:
+  - type: Pda
+    id: DSMIDCardFreeholder
+    state: basic
+  - type: PdaBorderColor
+    borderColor: "#6d5f8a"
+  - type: Icon
+    state: basic
+
+- type: entity
+  parent: BasePDA
+  id: LevymanPDA
+  name: levyman's PDA
+  description: Purple for Imperial.
+  components:
+  - type: Pda
+    id: DSMIDCardLevyman
+    state: basic
+  - type: PdaBorderColor
+    borderColor: "#6d5f8a"
+  - type: Icon
+    state: basic
+
+- type: entity
+  parent: BasePDA
+  id: KnightPDA
+  name: knight's PDA
+  description: Purple for Imperial.
+  components:
+  - type: Pda
+    id: DSMIDCardKnight
+    state: noble
+  - type: PdaBorderColor
+    borderColor: "#6d5f8a"
+  - type: Icon
+    state: noble
+
+- type: entity
+  parent: BasePDA
+  id: CourtierPDA
+  name: courtier's PDA
+  description: Purple for Imperial.
+  components:
+  - type: Pda
+    id: DSMIDCardCourtier
+    state: noble
+  - type: PdaBorderColor
+    borderColor: "#6d5f8a"
+  - type: Icon
+    state: noble
+
+- type: entity
+  parent: BasePDA
+  id: AdjutantPDA
+  name: adjutant's PDA
+  description: Purple for Imperial.
+  components:
+  - type: Pda
+    id: DSMIDCardAdjutant
+    state: noble
+  - type: PdaBorderColor
+    borderColor: "#6d5f8a"
+  - type: Icon
+    state: noble
+
+- type: entity
+  parent: BasePDA
+  id: GovernorPDA
+  name: governor's PDA
+  description: Purple for Imperial.
+  components:
+  - type: Pda
+    id: DSMIDCardGovernor
+    state: noble
+  - type: PdaBorderColor
+    borderColor: "#6d5f8a"
+  - type: Icon
+    state: noble
+
+#srm
+
+- type: entity
+  parent: BasePDA
+  id: TenderPDA
+  name: tender's PDA
+  description: Decorated for the Hunt.
+  components:
+  - type: Pda
+    id: SRMIDCardTender
+    state: hunter
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+  - type: Icon
+    state: hunter

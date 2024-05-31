@@ -198,10 +198,98 @@
 - type: entity
   id: SpawnPointForeman
   parent: SpawnPointJobBase
-  name: shipbreaker
+  name: foreman
   components:
   - type: SpawnPoint
     job_id: ForemanNCSP
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+#empire
+
+- type: entity
+  id: SpawnPointFreeholder
+  parent: SpawnPointJobBase
+  name: freeholder
+  components:
+  - type: SpawnPoint
+    job_id: FreeholderDSM
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointLevyman
+  parent: SpawnPointJobBase
+  name: man at arms
+  components:
+  - type: SpawnPoint
+    job_id: LevymanDSM
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointKnight
+  parent: SpawnPointJobBase
+  name: knight
+  components:
+  - type: SpawnPoint
+    job_id: KnightDSM
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointCourtier
+  parent: SpawnPointJobBase
+  name: courtier
+  components:
+  - type: SpawnPoint
+    job_id: CourtierDSM
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointAdjutant
+  parent: SpawnPointJobBase
+  name: adjutant
+  components:
+  - type: SpawnPoint
+    job_id: AdjutantDSM
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointGovernor
+  parent: SpawnPointJobBase
+  name: governor
+  components:
+  - type: SpawnPoint
+    job_id: GovernorDSM
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+#srm
+
+- type: entity
+  id: SpawnPointTender
+  parent: SpawnPointJobBase
+  name: tender
+  components:
+  - type: SpawnPoint
+    job_id: TenderSRM
   - type: Sprite
     layers:
       - state: green

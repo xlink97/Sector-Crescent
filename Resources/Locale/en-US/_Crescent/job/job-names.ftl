@@ -19,3 +19,12 @@ job-name-operative = Operative
 job-name-intelligenceofficer = Intelligence Officer
 job-name-shipbreaker = Shipbreaker
 job-name-foreman = Foreman
+
+#empire
+
+job-name-freeholder = Freeholder
+job-name-levyman = Man-at-Arms
+job-name-knight = Knight Banneret
+job-name-courtier = Imperial Courtier
+job-name-adjutant = Baronet Adjutant
+job-name-governor = Imperial Governor

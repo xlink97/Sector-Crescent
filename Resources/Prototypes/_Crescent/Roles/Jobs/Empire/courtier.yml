@@ -1,0 +1,27 @@
+- type: job
+  id: CourtierDSM
+  name: job-name-courtier
+  description: job-description-courtier
+  playTimeTracker: JobCourtierDSM
+  weight: 25
+  startingGear: CourtierGear
+  alwaysUseSpawner: true
+  icon: "JobIconImperialCourtier"
+  requireAdminNotify: false
+  supervisors: job-supervisors-imperial 
+  canBeAntag: false
+  access:
+  - Command
+  - Empire
+  - Maintenance
+  - Service
+  - EmpireSoldier
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+
+- type: startingGear
+  id: CourtierGear
+  equipment:
+    id: CourtierPDA
+    ears: ClothingHeadsetEmpire

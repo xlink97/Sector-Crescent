@@ -116,3 +116,80 @@
   icon:
     sprite: Interface/Misc/job_icons.rsi
     state: Foreman
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconImperialAdjutant
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Adjutant
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconImperialGovernor
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Governor
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconImperialCourtier
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Courtier
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconImperialKnight
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Knight
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconImperialFreeholder
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Freeholder
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconImperialLevyman
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Levyman
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconTender
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Tender
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconHunter
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Hunter
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconMontagne
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Montagne
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconAcolyte
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Acolyte
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconOverseer
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Overseer

@@ -127,3 +127,51 @@
   groups:
   - ContractorTrinkets
   - SAWSBackpacks
+
+#empire
+
+- type: roleLoadout
+  id: JobFreeholderDSM
+  groups:
+  - ContractorTrinkets
+  - DSMCommonerBags
+  - DSMCommonerJumpsuits
+  - DSMCommonerFeetwear
+  - DSMCommonerHead
+  - DSMCommonerGloves
+  - DSMWorkerBelt
+
+
+- type: roleLoadout
+  id: JobLevymanDSM
+  groups:
+  - ContractorTrinkets
+  - DSMSoldierBags
+
+- type: roleLoadout
+  id: JobKnightDSM
+  groups:
+  - ContractorTrinkets
+  - DSMSoldierBags
+
+- type: roleLoadout
+  id: JobCourtierDSM
+  groups:
+  - ContractorTrinkets
+  - DSMNobleBags
+  - DSMNobleJumpsuits
+  - DSMNobleHat
+  - DSMNobleGloves
+  - DSMNobleShoes
+
+- type: roleLoadout
+  id: JobAdjutantDSM
+  groups:
+  - ContractorTrinkets
+
+- type: roleLoadout
+  id: JobGovernorDSM
+  groups:
+  - ContractorTrinkets
+
+#SHI
