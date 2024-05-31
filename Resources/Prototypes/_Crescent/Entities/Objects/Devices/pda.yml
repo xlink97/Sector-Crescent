@@ -351,3 +351,19 @@
     borderColor: "#6d5f8a"
   - type: Icon
     state: noble
+
+#srm
+
+- type: entity
+  parent: BasePDA
+  id: TenderPDA
+  name: tender's PDA
+  description: Decorated for the Hunt.
+  components:
+  - type: Pda
+    id: SRMIDCardTender
+    state: hunter
+  - type: PdaBorderColor
+    borderColor: "#ffffff"
+  - type: Icon
+    state: hunter

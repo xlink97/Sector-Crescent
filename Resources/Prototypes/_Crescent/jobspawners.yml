@@ -282,3 +282,15 @@
       - state: passenger
 
 #srm
+
+- type: entity
+  id: SpawnPointTender
+  parent: SpawnPointJobBase
+  name: tender
+  components:
+  - type: SpawnPoint
+    job_id: TenderSRM
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger

@@ -267,3 +267,17 @@
     - state: idseniorresearcher
   - type: PresetIdCard
     job: GovernorDSM
+
+#srm
+
+- type: entity
+  parent: IDCardStandard
+  id: SRMIDCardTender
+  name: hunter ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idbotanist
+  - type: PresetIdCard
+    job: TenderSRM
