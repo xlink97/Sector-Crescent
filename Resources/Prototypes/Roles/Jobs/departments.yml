@@ -171,3 +171,12 @@
   - AdjutantDSM
   - GovernorDSM
   enabled: true
+
+- type: department
+  id: SRM
+  description: department-SRM-description
+  color: "#4a6741"
+  weight: 80
+  roles:
+  - TenderSRM
+  enabled: true

@@ -25,3 +25,9 @@ id-card-access-level-empiremilitary = Imperial Navy
 id-card-access-level-empirenoble = Imperial Charter of Nobility
 id-card-access-level-empireadjutant = Imperial Adjutant
 id-card-access-level-empiregovernor = Imperial Governor
+
+#srm
+
+id-card-access-level-srm = Sixth Subjugation Fireteam
+id-card-access-level-srmsenior = Sixth Subjugation Fireteam Officer
+id-card-access-level-srmoverseer = Sixth Subjugation Overteam Commodore

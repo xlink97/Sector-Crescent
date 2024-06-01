@@ -10,8 +10,8 @@
     defaultChannel: Common
   - type: Sprite
     layers:
-    - state: crypt_gray
-    - state: common_label
+    - state: crypt_silver
+    - state: com_label
 
 - type: entity
   parent: EncryptionKey
@@ -40,5 +40,20 @@
     defaultChannel: Common
   - type: Sprite
     layers:
-    - state: crypt_gray
+    - state: crypt_gold
+    - state: common_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyHunter
+  name: SRM encryption key
+  description: An encryption key used by the Hunter's Militia.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Hunter
+    defaultChannel: Common
+  - type: Sprite
+    layers:
+    - state: crypt_rusted
     - state: common_label
