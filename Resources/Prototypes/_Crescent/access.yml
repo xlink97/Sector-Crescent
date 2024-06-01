@@ -76,4 +76,16 @@
   id: EmpireGovernor
   name: id-card-access-level-empiregovernor
 
-#shi
+#srm
+
+- type: accessLevel
+  id: Hunter
+  name: id-card-access-level-srm
+
+- type: accessLevel
+  id: HunterSenior
+  name: id-card-access-level-srmsenior
+
+- type: accessLevel
+  id: HunterOverseer
+  name: id-card-access-level-srmoverseer

@@ -11,3 +11,10 @@
   keycode: "i"
   frequency: 6218
   color: "#684871"
+
+- type: radioChannel
+  id: Hunter
+  name: chat-radio-hunter
+  keycode: "a"
+  frequency: 6219
+  color: "#4a6741"

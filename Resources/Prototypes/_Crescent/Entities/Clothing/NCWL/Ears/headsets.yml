@@ -40,8 +40,26 @@
       containers:
         key_slots:
           - EncryptionKeyEmpire
+          - EncryptionKeyHunter
           - EncryptionKeyCommon
     - type: Sprite
       sprite: Clothing/Ears/Headsets/brigmedic.rsi
     - type: Clothing
       sprite: Clothing/Ears/Headsets/brigmedic.rsi
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetHunter
+  name: hunter's headset
+  description: To communicate with other Hunters.
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+          - EncryptionKeyEmpire
+          - EncryptionKeyHunter
+          - EncryptionKeyCommon
+    - type: Sprite
+      sprite: _Crescent/Clothing/Headsets/hunter.rsi
+    - type: Clothing
+      sprite: _Crescent/Clothing/Headsets/hunter.rsi

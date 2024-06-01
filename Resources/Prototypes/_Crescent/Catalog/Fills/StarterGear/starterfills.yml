@@ -277,3 +277,24 @@
     contents:
       - id: BoxSurvival
       - id: Flash
+
+#srm
+
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackSRMSatchel
+  id: ClothingBackpackSatchelFilledSRM
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackSRM
+  id: ClothingBackpackFilledSRM
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival

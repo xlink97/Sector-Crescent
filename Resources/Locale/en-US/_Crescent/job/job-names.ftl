@@ -9,6 +9,7 @@ job-name-kapitan = Unionkapitan
 job-name-kadet = Cadet
 
 #syndicate#
+
 job-name-ringleader = Ringleader
 job-name-lieutenant = Lieutenant
 job-name-infanteer = Infanteer
@@ -28,3 +29,11 @@ job-name-knight = Knight Banneret
 job-name-courtier = Imperial Courtier
 job-name-adjutant = Baronet Adjutant
 job-name-governor = Imperial Governor
+
+#srm
+
+job-name-tender = Tender
+job-name-acolyte = Apprentice Hunter
+job-name-hunter = Hunter
+job-name-montagne = Hunter Montagne
+job-name-overseer = Overseer of the Hunt

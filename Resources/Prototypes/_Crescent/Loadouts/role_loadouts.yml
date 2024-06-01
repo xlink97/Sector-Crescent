@@ -174,4 +174,10 @@
   groups:
   - ContractorTrinkets
 
-#SHI
+#SRM
+
+- type: roleLoadout
+  id: JobTenderSRM
+  groups:
+  - ContractorTrinkets
+  - SRMBackpacks

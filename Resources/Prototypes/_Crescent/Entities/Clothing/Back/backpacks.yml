@@ -87,3 +87,27 @@
     sprite: _Crescent/Clothing/Back/empirebackpack.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.1
+
+#srm
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackSRMSatchel
+  name: hunter's courier bag
+  description: A robust courier bag in SRM livery.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/Back/srmsatchel.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackSRM
+  name: hunter's rucksack
+  description: A robust backpack in SRM livery.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/Back/srmback.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
