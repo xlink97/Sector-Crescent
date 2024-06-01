@@ -1070,11 +1070,7 @@ namespace Content.Shared.CCVar
         ///     1.0 for instant spacing, 0.2 means 20% of remaining air lost each time
         /// </summary>
         public static readonly CVarDef<float> AtmosSpacingEscapeRatio =
-<<<<<<< HEAD
-            CVarDef.Create("atmos.mmos_spacing_speed", 0.5f, CVar.SERVERONLY);
-=======
             CVarDef.Create("atmos.mmos_spacing_speed", 0.9f, CVar.SERVERONLY);
->>>>>>> atmosfix
 
         /// <summary>
         ///     Minimum amount of air allowed on a spaced tile before it is reset to 0 immediately in kPa
