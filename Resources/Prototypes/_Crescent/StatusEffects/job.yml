@@ -193,3 +193,31 @@
   icon:
     sprite: Interface/Misc/job_icons.rsi
     state: Overseer
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconExecutive
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Executive
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconEmployee
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Employee
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconLogistics
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Logistics
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconMedtech
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: MedTech

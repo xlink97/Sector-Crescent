@@ -329,3 +329,30 @@
     - state: idbotanist
   - type: PresetIdCard
     job: MontagneSRM
+
+#shi
+
+
+- type: entity
+  parent: IDCardStandard
+  id: SHIIDCardExecutive
+  name: corporate ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idquartermaster
+  - type: PresetIdCard
+    job: ExecutiveSHI
+
+- type: entity
+  parent: IDCardStandard
+  id: SHIIDCardBoard
+  name: corporate ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idquartermaster
+  - type: PresetIdCard
+    job: BoardSHI

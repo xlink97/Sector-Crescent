@@ -91,3 +91,29 @@
   id: JobOverseerSRM
 
 #shi
+
+- type: playTimeTracker
+  id: JobExecutiveSHI
+
+- type: playTimeTracker
+  id: JobBoardSHI
+
+- type: playTimeTracker
+  id: JobHighsecSHI
+
+- type: playTimeTracker
+  id: JobTraumasecSHI
+
+- type: playTimeTracker
+  id: JobSecuritySHI
+
+- type: playTimeTracker
+  id: JobEmployeeSHI
+
+- type: playTimeTracker
+  id: JobLogisticsSHI
+
+- type: playTimeTracker
+  id: JobMedtechSHI
+
+#cmm

@@ -207,3 +207,9 @@
   - SRMBackpacks
 
 #SHI
+
+- type: roleLoadout
+  id: JobExecutiveSHI
+  groups:
+  - ContractorTrinkets
+  - SHIBackpacks

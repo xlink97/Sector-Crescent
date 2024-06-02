@@ -37,3 +37,7 @@ job-description-apprenticehunter = Learn the Hunt from your assigned Master Hunt
 job-description-hunter = Partake in the Hunt. Capture non-conformists for sale.
 job-description-montagne = Assist your Overseer in organizing the Hunters in the Sector.
 job-description-overseer = Oversee the Great Hunt.
+
+#shi
+
+job-description=executive = Manage Shinohara assets within Taypan.

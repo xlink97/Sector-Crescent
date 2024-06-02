@@ -39,3 +39,6 @@ job-name-montagne = Hunter Montagne
 job-name-overseer = Overseer of the Hunt
 
 #shi
+
+job-name-executive = Sector Manager
+job-name-board = Board Executive

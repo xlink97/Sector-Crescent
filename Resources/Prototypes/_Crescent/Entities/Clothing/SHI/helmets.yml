@@ -1,0 +1,87 @@
+## hardsuit helmets
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitHEV
+  noSpawn: true
+  name: shinohara hazardous environment suit helmet
+  description: Spaceworthy protection for your fragile skull.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: _Crescent/Clothing/SHI/Head/hshinoharahev.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/SHI/Head/hshinoharahev.rsi
+  - type: PointLight
+    color: "#ffffff"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitCorpsec
+  noSpawn: true
+  name: shinohara highsec hardsuit helmet
+  description: Spaceworthy protection for your fragile skull.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: _Crescent/Clothing/SHI/Head/corpsec.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/SHI/Head/corpsec.rsi
+  - type: PointLight
+    color: "#ffffff"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: ClothingHeadHelmetHardsuitTraumasec
+  noSpawn: true
+  name: shinohara traumasec hardsuit helmet
+  description: Spaceworthy protection for your fragile skull.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: _Crescent/Clothing/SHI/Head/traumasec.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/SHI/Head/traumasec.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+#hats
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatShinoharaBeret
+  name: security officer's beret
+  description: A formal beret with the Shinohara Heavy Industries corporate logo emblazoned on the front.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/SHI/Head/beret.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/SHI/Head/beret.rsi

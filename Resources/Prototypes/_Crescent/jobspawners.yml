@@ -342,3 +342,17 @@
     layers:
       - state: green
       - state: passenger
+
+#shi
+
+- type: entity
+  id: SpawnPointExecutive
+  parent: SpawnPointJobBase
+  name: executive
+  components:
+  - type: SpawnPoint
+    job_id: ExecutiveSHI
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger

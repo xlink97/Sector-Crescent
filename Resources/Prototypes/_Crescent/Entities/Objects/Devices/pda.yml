@@ -423,3 +423,33 @@
     borderColor: "#ffffff"
   - type: Icon
     state: hunter
+
+#shi
+
+- type: entity
+  parent: BasePDA
+  id: ExecutivePDA
+  name: executive's PDA
+  description: Gunmetal gray.
+  components:
+  - type: Pda
+    id: SHIIDCardExecutive
+    state: pda-bartender
+  - type: PdaBorderColor
+    borderColor: "#535961"
+  - type: Icon
+    state: pda-bartender
+
+- type: entity
+  parent: BasePDA
+  id: ExecutivePDA
+  name: board member's PDA
+  description: Gunmetal gray.
+  components:
+  - type: Pda
+    id: SHIIDCardBoard
+    state: pda-bartender
+  - type: PdaBorderColor
+    borderColor: "#535961"
+  - type: Icon
+    state: pda-bartender

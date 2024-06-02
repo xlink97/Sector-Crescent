@@ -18,3 +18,10 @@
   keycode: "a"
   frequency: 6219
   color: "#4a6741"
+
+- type: radioChannel
+  id: SHI
+  name: chat-radio-shi
+  keycode: "w"
+  frequency: 6222
+  color: "#535961"
