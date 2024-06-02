@@ -19,15 +19,15 @@
       entries:
         Plating:
           - prob: 3.5 # Intentional blank.
-          - id: SalvageMaterialCrateSpawner
-            prob: 0.7
           - id: RandomArtifactSpawner20
             prob: 0.3
+          - id: ScrapSalvageRandomSpawner
+            prob: 0.6
           - id: SalvageCanisterSpawner
             prob: 0.3
           - id: SalvageTankSpawner
             prob: 0.15
-          - id: SalvageLockerSpawner
+          - id: ScrapSalvageRandomSpawner
             prob: 0.15
           - id: SalvageSuitStorageSpawner
             prob: 0.05
@@ -67,8 +67,6 @@
             prob: 0.02
           - id: RandomBox
             prob: 0.2
-          - id: SalvageHandheldFlagSpawner
-            prob: 0.02
           - id: Girder
             prob: 1.7
           - id: WallSolid
@@ -85,8 +83,12 @@
             prob: 0.005
           - id: ReinforcedWindow
             prob: 0.1
+          - id: ScrapSalvageRandomSpawner
+            prob: 0.1
           - id: Window
             prob: 0.05
+          - id: ScrapSalvageRandomSpawner
+            prob: 0.2
         Lattice:
           - prob: 2
           - id: Grille
@@ -99,8 +101,8 @@
           - prob: 3 # Intentional blank.
           - id: CrateFilledSpawner
             prob: 0.2
-          - id: HatSpawner
-            prob: 0.1
+          - id: ScrapSalvageRandomSpawner
+            prob: 0.4
           - id: SalvagePartsSpawnerLow
             prob: 0.4
           - id: RandomAmmoBox
@@ -113,18 +115,14 @@
             prob: 0.05
           - id: ChairOfficeDark
             prob: 0.05
+          - id: ScrapSalvageRandomSpawner
+            prob: 0.2
           - id: ChairOfficeLight
             prob: 0.05
           - id: ChairPilotSeat
             prob: 0.05
           - id: Stool
             prob: 0.05
-          - id: RandomBook
-            prob: 0.2
-          - id: RandomBox
-            prob: 0.2
-          - id: RandomItem
-            prob: 0.6
           - id: SchoolgirlUniformSpawner
             prob: 0.1
           - id: SalvageSeedSpawnerLow
@@ -137,16 +135,14 @@
             prob: 0.02
           - id: SpawnMobSpiderSalvage
             prob: 0.02
-          - id: SpawnMobKangarooSalvage
-            prob: 0.02
-          - id: SpawnMobSmallPurpleSnake
-            prob: 0.03
-          - id: SpawnMobPurpleSnake
-            prob: 0.02
+          - id: ScrapSalvageRandomSpawner
+            prob: 0.4
+          - id: ScrapSalvageRandomSpawner
+            prob: 0.2
           - id: Gyroscope
             prob: 0.0025
           - id: Thruster
-            prob: 0.005
+            prob: 0.025
     - type: GCAbleObject
       queue: SpaceDebris
     - type: IFF

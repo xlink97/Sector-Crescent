@@ -52,6 +52,182 @@
   - type: BlockWeather
 
 - type: entity
+  parent: WallShuttleDiagonal
+  id: WallMiningDiagonalHollowNortheast
+  name: wall
+  suffix: NortheastHollow
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: Structures/Walls/mining_diagonalhollownortheast.rsi
+    state: state0
+  - type: IconSmooth
+    mode: Diagonal
+    key: walls
+    base: state
+  - type: Icon
+    sprite:  Structures/Walls/mining_diagonalhollownortheast.rsi
+    state: state0
+
+- type: entity
+  parent: WallShuttleDiagonal
+  id: WallMiningDiagonalHollowNorthwest
+  name: wall
+  suffix: NorthwestHollow
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: Structures/Walls/mining_diagonalhollownorthwest.rsi
+    state: state0
+  - type: IconSmooth
+    mode: Diagonal
+    key: walls
+    base: state
+  - type: Icon
+    sprite: Structures/Walls/mining_diagonalhollownorthwest.rsi
+    state: state0
+
+- type: entity
+  parent: WallShuttleDiagonal
+  id: WallMiningDiagonalHollowSoutheast
+  name: wall
+  suffix: SoutheastHollow
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: Structures/Walls/mining_diagonalhollowsoutheast.rsi
+    state: state0
+  - type: IconSmooth
+    mode: Diagonal
+    key: walls
+    base: state
+  - type: Icon
+    sprite: Structures/Walls/mining_diagonalhollowsoutheast.rsi
+    state: state0
+
+- type: entity
+  parent: WallShuttleDiagonal
+  id: WallMiningDiagonalHollowSouthwest
+  name: wall
+  suffix: SouthwestHollow
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: Structures/Walls/mining_diagonalhollowsouthwest.rsi
+    state: state0
+  - type: IconSmooth
+    mode: Diagonal
+    key: walls
+    base: state
+  - type: Icon
+    sprite: Structures/Walls/mining_diagonalhollowsouthwest.rsi
+    state: state0
+
+- type: entity
+  parent: WallShuttleDiagonal
+  id: WallMiningDiagonalCurvedNortheast
+  name: wall
+  suffix: NortheastCurved
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: Structures/Walls/mining_diagonalcurvednortheast.rsi
+    state: state0
+  - type: IconSmooth
+    mode: Diagonal
+    key: walls
+    base: state
+  - type: Icon
+    sprite: Structures/Walls/mining_diagonalcurvednortheast.rsi
+    state: state0
+
+- type: entity
+  parent: WallShuttleDiagonal
+  id: WallMiningDiagonalCurvedNorthwest
+  name: wall
+  suffix: NorthwestCurved
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: Structures/Walls/mining_diagonalcurvednorthwest.rsi
+    state: state0
+  - type: IconSmooth
+    mode: Diagonal
+    key: walls
+    base: state
+  - type: Icon
+    sprite: Structures/Walls/mining_diagonalcurvednorthwest.rsi
+    state: state0
+
+- type: entity
+  parent: WallShuttleDiagonal
+  id: WallMiningDiagonalCurvedSouthwest
+  name: wall
+  suffix: SouthwestCurved
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: Structures/Walls/mining_diagonalcurvedsouthwest.rsi
+    state: state0
+  - type: IconSmooth
+    mode: Diagonal
+    key: walls
+    base: state
+  - type: Icon
+    sprite: Structures/Walls/mining_diagonalcurvedsouthwest.rsi
+    state: state0
+
+- type: entity
+  parent: WallShuttleDiagonal
+  id: WallMiningDiagonalCurvedSoutheast
+  name: wall
+  suffix: SoutheastCurved
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: Structures/Walls/mining_diagonalcurvedsoutheast.rsi
+    state: state0
+  - type: IconSmooth
+    mode: Diagonal
+    key: walls
+    base: state
+  - type: Icon
+    sprite: Structures/Walls/mining_diagonalcurvedsoutheast.rsi
+    state: state0
+
+- type: entity
   parent: BaseWall
   id: WallBrick
   name: brick wall

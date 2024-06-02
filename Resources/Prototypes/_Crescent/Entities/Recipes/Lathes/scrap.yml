@@ -1,0 +1,28 @@
+- type: latheRecipe
+  id: SteelScrap30
+  result: RefinedSteelScrapOre
+  applyMaterialDiscount: false
+  completetime: 3
+  materials:
+    ScrapSteel: 15000
+
+- type: latheRecipe
+  id: SteelScrap
+  result: RefinedSteelScrap1
+  completetime: 3
+  materials:
+    ScrapSteel: 500
+
+- type: latheRecipe
+  id: TitaniumScrap
+  result: RefinedTitaniumScrap1
+  completetime: 3
+  materials:
+    ScrapTitanium: 500
+
+- type: latheRecipe
+  id: TitaniumScrap30
+  result: RefinedTitaniumScrapOre
+  completetime: 3
+  materials:
+    ScrapTitanium: 15000
