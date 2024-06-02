@@ -1,0 +1,31 @@
+- type: material
+  id: ScrapSteel
+  stackEntity: SteelScrap1
+  name: materials-scrap-steel
+  unit: materials-unit-chunk
+  icon: { sprite: Objects/Materials/ore.rsi, state: iron }
+  price: 0.04
+
+- type: material
+  id: ScrapTitanium
+  stackEntity: TitaniumScrap1
+  name: materials-scrap-titanium
+  unit: materials-unit-chunk
+  icon: { sprite: Objects/Materials/ore.rsi, state: iron }
+  price: 0.07
+
+- type: material
+  id: RefinedScrapSteel
+  stackEntity: RefinedSteelScrap1
+  name: materials-scrap-steelrefined
+  unit: materials-unit-chunk
+  icon: { sprite: Objects/Materials/ore.rsi, state: iron }
+  price: 0.06
+
+- type: material
+  id: RefinedScrapTitanium
+  stackEntity: RefinedTitaniumScrap1
+  name: materials-scrap-titaniumrefined
+  unit: materials-unit-chunk
+  icon: { sprite: Objects/Materials/ore.rsi, state: iron }
+  price: 0.09

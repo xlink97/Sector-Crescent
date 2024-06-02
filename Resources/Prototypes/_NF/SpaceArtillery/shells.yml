@@ -639,7 +639,7 @@
   parent: BaseItem
   id: CoolantCartridge
   name: coolant cartridge
-  description: A rather dense package. Utilises reaction of Frezon and Nitrogen to rappidly cool whatever machine it's in. Most often used in Space Armaments or Mining Lasers.
+  description: A rather dense package. Utilises reaction of Frezon and Nitrogen to rappidly cool whatever machine it's in. Most often used in shuttle armaments.
   components:
   - type: Material
   - type: PhysicalComposition
@@ -652,17 +652,17 @@
     count: 1
     baseLayer: base
     layerStates:
-    - cash
-    - cash_10
-    - cash_100
-    - cash_500
-    - cash_1000
-    - cash_1000000
+    - icon
+    - icon
+    - icon
+    - icon
+    - icon
+    - icon
   - type: Sprite
-    sprite: Objects/Economy/cash.rsi
-    state: cash
+    sprite: _Crescent/Objects/Misc/coolant.rsi
+    state: icon
     layers:
-    - state: cash
+    - state: icon
       map: ["base"]
   - type: Physics
     bodyType: Dynamic
@@ -682,13 +682,13 @@
   name: coolant
   unit: materials-unit-bill
   stackEntity: CoolantCartridge
-  icon: { sprite: /Textures/Objects/Economy/cash.rsi, state: cash }
+  icon: { sprite: _Crescent/Objects/Misc/coolant.rsi, state: icon }
   price: 500
 
 - type: stack
   id: Coolant
   name: coolant
-  icon: { sprite: /Textures/Objects/Economy/cash.rsi, state: cash }
+  icon: { sprite: _Crescent/Objects/Misc/coolant.rsi, state: icon }
   spawn: CoolantCartridge
   maxCount: 30
   itemSize: 4
@@ -700,8 +700,8 @@
   suffix: 10
   components:
   - type: Icon
-    sprite: Objects/Economy/cash.rsi
-    state: cash_10
+    sprite: _Crescent/Objects/Misc/coolant.rsi
+    state: icon
   - type: Stack
     count: 10
 
@@ -711,8 +711,8 @@
   suffix: 30
   components:
   - type: Icon
-    sprite: Objects/Economy/cash.rsi
-    state: cash_100
+    sprite: _Crescent/Objects/Misc/coolant.rsi
+    state: icon
   - type: Stack
     count: 30
 
