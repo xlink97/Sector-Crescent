@@ -117,13 +117,38 @@
     damageCoefficient: 0.90
   - type: GroupExamine
 
+- type: entity
+  parent: ClothingOuterBaseLarge
+  id: ClothingOuterArmorShinoharaArmorHighsec
+  name: highsec armored suit
+  description: A kevlar-intervowen durathread armorsuit padded with ballistic gel. Painted in Shinohara colors.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/SHI/OuterClothing/highsec.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/SHI/OuterClothing/highsec.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.70
+        Piercing: 0.60
+        Heat: 0.80
+        Caustic: 0.8
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: ExplosionResistance
+    damageCoefficient: 0.80
+  - type: GroupExamine
+
 #clothes
 
 - type: entity
   parent: ClothingOuterBaseLarge
   id: ClothingOuterShinoharaVest
   name: corporate hi-vis vest
-  description: A hi-vis worker's vest made for Shinohara workers.
+  description: A hi-vis vest made for Shinohara workers.
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/SHI/OuterClothing/logisticsvest.rsi

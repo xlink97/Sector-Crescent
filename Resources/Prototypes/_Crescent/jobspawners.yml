@@ -356,3 +356,63 @@
     layers:
       - state: green
       - state: passenger
+
+- type: entity
+  id: SpawnPointBoard
+  parent: SpawnPointJobBase
+  name: board member
+  components:
+  - type: SpawnPoint
+    job_id: BoardSHI
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointCorpSec
+  parent: SpawnPointJobBase
+  name: corpsec agent
+  components:
+  - type: SpawnPoint
+    job_id: CorpSecSHI
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointHighSec
+  parent: SpawnPointJobBase
+  name: highsec agent
+  components:
+  - type: SpawnPoint
+    job_id: HighSecSHI
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointEmployee
+  parent: SpawnPointJobBase
+  name: shinohara employee
+  components:
+  - type: SpawnPoint
+    job_id: EmployeeSHI
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointMedtech
+  parent: SpawnPointJobBase
+  name: medtech
+  components:
+  - type: SpawnPoint
+    job_id: MedtechSHI
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger

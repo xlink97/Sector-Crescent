@@ -52,3 +52,14 @@
     sprite: _Crescent/Clothing/SHI/Uniform/security.rsi
   - type: Clothing
     sprite: _Crescent/Clothing/SHI/Uniform/security.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitShinoharaTraumasec
+  name: traumasec officer's jumpsuit
+  description: A traumasec officer's corporate uniform in Shinohara MedTech colors.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/SHI/Uniform/traumasec.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/SHI/Uniform/traumasec.rsi

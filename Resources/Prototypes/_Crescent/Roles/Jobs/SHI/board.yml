@@ -1,14 +1,12 @@
 - type: job
-  id: ExecutiveSHI
-  name: job-name-executive
-  description: job-description-executive
-  playTimeTracker: JobExecutiveSHI
-  requirements:
-    - !type:WhitelistRequirement
-  weight: 55
-  startingGear: ExecutiveGear
+  id: BoardSHI
+  name: job-name-board
+  description: job-description-board
+  playTimeTracker: JobBoardSHI
+  weight: 50
+  startingGear: BoardGear
   alwaysUseSpawner: true
-  icon: "JobIconExecutive"
+  icon: "JobIconBoard"
   requireAdminNotify: true
   supervisors: job-supervisors-shi
   canBeAntag: false
@@ -17,18 +15,17 @@
   - Maintenance
   - Shinohara
   - ShinoharaOfficer
-  - ShinoharaExecutive
   - Service
   - External
   - Mercenary # Frontier
   - Captain # Frontier
 
 - type: startingGear
-  id: ExecutiveGear
+  id: BoardGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitExecutiveShinoharaSuit
+    jumpsuit: ClothingUniformJumpsuitShinoharaSuit
     shoes: ClothingShoesBootsLaceup
     neck: ClothingNeckTieRed
-    outerClothing: ClothingOuterShinoharaExecSuitjacket
-    id: ExecutivePDA
+    outerClothing: ClothingOuterShinoharaSuitjacket
+    id: BoardPDA
     ears: ClothingHeadsetShinohara

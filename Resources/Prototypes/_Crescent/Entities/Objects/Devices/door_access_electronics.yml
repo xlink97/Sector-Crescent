@@ -174,3 +174,37 @@
   components:
   - type: AccessReader
     access: [["HunterOverseer"]]
+
+#shi
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsSHI
+  suffix: SHI, Locked
+  components:
+  - type: AccessReader
+    access: [["Shinohara"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsSHIOfficer
+  suffix: SHI Officer, Locked
+  components:
+  - type: AccessReader
+    access: [["ShinoharaOfficer"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsSHISecurity
+  suffix: SHI Security, Locked
+  components:
+  - type: AccessReader
+    access: [["ShinoharaSecurity"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsSHIExecutive
+  suffix: SHI Executive, Locked
+  components:
+  - type: AccessReader
+    access: [["ShinoharaExecutive"]]

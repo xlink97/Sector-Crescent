@@ -85,3 +85,21 @@
     sprite: _Crescent/Clothing/SHI/Head/beret.rsi
   - type: Clothing
     sprite: _Crescent/Clothing/SHI/Head/beret.rsi
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHatShinoharaHelmet
+  name: highsec officer's helmet
+  description: A sturdy helmet with the Shinohara Heavy Industries corporate logo emblazoned on the front.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/SHI/Head/highsec.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/SHI/Head/highsec.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9

@@ -42,3 +42,8 @@ job-name-overseer = Overseer of the Hunt
 
 job-name-executive = Sector Manager
 job-name-board = Board Executive
+job-name-corpsec = CorpSec Agent
+job-name-highsec = Corporate Liquidation Agent
+job-name-traumasec = TraumaSec Combat Medic
+job-name-employee = Shinohara Employee
+job-name-medtech = MedTech Specialist

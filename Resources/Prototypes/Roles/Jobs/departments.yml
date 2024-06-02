@@ -193,4 +193,8 @@
   roles:
   - ExecutiveSHI
   - BoardSHI
+  - HighsecSHI
+  - CorpsecSHI
+  - EmployeeSHI
+  - MedtechSHI
   enabled: true

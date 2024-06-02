@@ -213,3 +213,35 @@
   groups:
   - ContractorTrinkets
   - SHIBackpacks
+
+- type: roleLoadout
+  id: JobBoardSHI
+  groups:
+  - ContractorTrinkets
+  - SHIBackpacks
+
+- type: roleLoadout
+  id: JobCorpsecSHI
+  groups:
+  - ContractorTrinkets
+  - SHIBackpacks
+
+- type: roleLoadout
+  id: JobHighsecSHI
+  groups:
+  - ContractorTrinkets
+  - SHIBackpacks
+
+- type: roleLoadout
+  id: JobEmployeeSHI
+  groups:
+  - ContractorTrinkets
+  - SHIBackpacks
+
+- type: roleLoadout
+  id: JobMedtechSHI
+  groups:
+  - ContractorTrinkets
+  - SHIBackpacks
+
+#CMM

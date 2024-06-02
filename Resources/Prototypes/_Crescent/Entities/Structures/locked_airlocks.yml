@@ -409,3 +409,79 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSRMHunterOverseer ]
+
+#shi
+
+- type: entity
+  parent: AirlockCommand
+  id: AirlockCommandShinohara
+  suffix: SHI, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSHI ]
+
+- type: entity
+  parent: AirlockCommand
+  id: AirlockCommandShinoharaOfficer
+  suffix: SHI Officer, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSHIOfficer ]
+
+- type: entity
+  parent: AirlockCommand
+  id: AirlockCommandShinoharaSecurity
+  suffix: SHI Security, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSHISecurity ]
+
+- type: entity
+  parent: AirlockCommand
+  id: AirlockCommandShinoharaExecutive
+  suffix: SHI Executive, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSHIExecutive ]
+
+#shi horizontal
+
+- type: entity
+  parent: AirlockCommandHorizontal
+  id: AirlockCommandLockedShinoharaHorizontal
+  suffix: SHI, Horizontal
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSHI ]
+
+- type: entity
+  parent: AirlockCommandHorizontal
+  id: AirlockCommandLockedShinoharaHorizontalOfficer
+  suffix: SHI Officer, Horizontal
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSHIOfficer ]
+
+- type: entity
+  parent: AirlockCommandHorizontal
+  id: AirlockCommandLockedShinoharaHorizontalSecurity
+  suffix: SHI Security, Horizontal
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSHISecurity ]
+
+- type: entity
+  parent: AirlockCommandHorizontal
+  id: AirlockCommandLockedShinoharaHorizontalExecutive
+  suffix: SHI Executive, Horizontal
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSHIExecutive ]

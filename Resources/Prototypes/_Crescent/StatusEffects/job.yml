@@ -221,3 +221,17 @@
   icon:
     sprite: Interface/Misc/job_icons.rsi
     state: MedTech
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconBoard
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Board
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconHighsec
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Highsec
