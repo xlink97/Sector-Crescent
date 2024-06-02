@@ -1,0 +1,34 @@
+- type: entity
+  name: Scrap Spawner
+  id: ScrapSalvageRandomSpawner
+  parent: MarkerBase
+  suffix: 50
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Objects/Consumable/Food/snacks.rsi
+          state: pistachio-trash
+    - type: RandomSpawner
+      rarePrototypes:
+        - TitaniumScrap25
+        - SteelScrap25
+        - ScrapBluespace
+
+      rareChance: 0.03
+      prototypes:
+        - SteelScrap1
+        - SteelScrap3
+        - SteelScrap8
+        - TitaniumScrap1
+        - TitaniumScrap6
+        - TitaniumScrap17
+        - ScrapCircuit
+        - ScrapPlasma
+        - ScrapComponent
+        - ScrapUranium
+
+      chance: 0.5
+      offset: 0.2
+  placement:
+    mode: AlignTileAny
