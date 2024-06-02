@@ -184,3 +184,17 @@
   - MontagneSRM
   - OverseerSRM
   enabled: true
+
+- type: department
+  id: SHI
+  description: department-SHI-description
+  color: "#4a6741"
+  weight: 75
+  roles:
+  - ExecutiveSHI
+  - BoardSHI
+  - HighsecSHI
+  - CorpsecSHI
+  - EmployeeSHI
+  - MedtechSHI
+  enabled: true

@@ -423,3 +423,89 @@
     borderColor: "#ffffff"
   - type: Icon
     state: hunter
+
+#shi
+
+- type: entity
+  parent: BasePDA
+  id: ExecutivePDA
+  name: executive's PDA
+  description: Gunmetal gray.
+  components:
+  - type: Pda
+    id: SHIIDCardExecutive
+    state: pda-bartender
+  - type: PdaBorderColor
+    borderColor: "#535961"
+  - type: Icon
+    state: pda-bartender
+
+- type: entity
+  parent: BasePDA
+  id: BoardPDA
+  name: board member's PDA
+  description: Gunmetal gray.
+  components:
+  - type: Pda
+    id: SHIIDCardBoard
+    state: pda-bartender
+  - type: PdaBorderColor
+    borderColor: "#535961"
+  - type: Icon
+    state: pda-bartender
+
+- type: entity
+  parent: BasePDA
+  id: CorpsecPDA
+  name: security agent's PDA
+  description: Gunmetal gray.
+  components:
+  - type: Pda
+    id: SHIIDCardCorpSec
+    state: pda-bartender
+  - type: PdaBorderColor
+    borderColor: "#535961"
+  - type: Icon
+    state: pda-bartender
+
+- type: entity
+  parent: BasePDA
+  id: HighsecPDA
+  name: liquidation officer's PDA
+  description: Gunmetal gray.
+  components:
+  - type: Pda
+    id: SHIIDCardHighSec
+    state: pda-bartender
+  - type: PdaBorderColor
+    borderColor: "#535961"
+  - type: Icon
+    state: pda-bartender
+
+- type: entity
+  parent: BasePDA
+  id: EmployeePDA
+  name: corporate employee's PDA
+  description: Gunmetal gray.
+  components:
+  - type: Pda
+    id: SHIIDCardEmployee
+    state: pda-bartender
+  - type: PdaBorderColor
+    borderColor: "#535961"
+  - type: Icon
+    state: pda-bartender
+
+- type: entity
+  parent: BasePDA
+  id: MedtechPDA
+  name: medtech's PDA
+  description: Gunmetal gray.
+  components:
+  - type: Pda
+    id: SHIIDCardMedtech
+    state: pda-bartender
+  - type: PdaBorderColor
+    borderColor: "#535961"
+  - type: Icon
+    state: pda-bartender

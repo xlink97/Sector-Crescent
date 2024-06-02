@@ -329,3 +329,78 @@
     - state: idbotanist
   - type: PresetIdCard
     job: MontagneSRM
+
+#shi
+
+
+- type: entity
+  parent: IDCardStandard
+  id: SHIIDCardExecutive
+  name: corporate ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idquartermaster
+  - type: PresetIdCard
+    job: ExecutiveSHI
+
+- type: entity
+  parent: IDCardStandard
+  id: SHIIDCardBoard
+  name: corporate ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idquartermaster
+  - type: PresetIdCard
+    job: BoardSHI
+
+- type: entity
+  parent: IDCardStandard
+  id: SHIIDCardCorpSec
+  name: corporate ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idquartermaster
+  - type: PresetIdCard
+    job: CorpsecSHI
+
+- type: entity
+  parent: IDCardStandard
+  id: SHIIDCardHighSec
+  name: corporate ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idquartermaster
+  - type: PresetIdCard
+    job: HighsecSHI
+
+- type: entity
+  parent: IDCardStandard
+  id: SHIIDCardEmployee
+  name: corporate ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idquartermaster
+  - type: PresetIdCard
+    job: EmployeeSHI
+
+- type: entity
+  parent: IDCardStandard
+  id: SHIIDCardMedtech
+  name: corporate ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idquartermaster
+  - type: PresetIdCard
+    job: MedtechSHI

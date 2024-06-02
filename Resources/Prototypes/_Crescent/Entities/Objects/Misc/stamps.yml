@@ -36,3 +36,16 @@
     stampState: "paper_stamp-hunter"
   - type: Sprite
     state: empire
+
+- type: entity
+  name: executive's rubber stamp
+  parent: RubberStampBase
+  id: RubberStampShinohara
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-shinohara
+    stampedColor: "#bb9042"
+    stampState: "paper_stamp-shi"
+  - type: Sprite
+    state: stamp-shi

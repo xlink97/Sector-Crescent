@@ -298,3 +298,32 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
+
+#shi
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackSHISatchel
+  id: ClothingBackpackSHIFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackSHI
+  id: ClothingBackpackSatchelSHIFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackSHIDuffelbag
+  id: ClothingBackpackSHIDuffelbagFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxSurvival

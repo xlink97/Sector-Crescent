@@ -37,3 +37,13 @@ job-description-apprenticehunter = Learn the Hunt from your assigned Master Hunt
 job-description-hunter = Partake in the Hunt. Capture non-conformists for sale.
 job-description-montagne = Assist your Overseer in organizing the Hunters in the Sector.
 job-description-overseer = Oversee the Great Hunt.
+
+#shi
+
+job-description-executive = Manage Shinohara assets within Taypan.
+job-description-board = Assist your Manager in coordinating Shinohara assets within the System.
+job-description-traumasec = Secure policyholders. Tend to their medical needs. Eliminate threats to the policyholder.
+job-description-corpsec = Secure assets of the Corporation. Detain unruly customers or employees.
+job-description-highsec = Secure the military interests of the Corporation. Respond to high-risk missions.
+job-description-employee = Serve in various departments of the Corporation.
+job-description-medtech = Research and develop new technologies, tend to the ailments of employees.

@@ -1,0 +1,36 @@
+- type: job
+  id: HighsecSHI
+  name: job-name-highsec
+  description: job-description-highsec
+  playTimeTracker: JobHighsecSHI
+  weight: 39
+  startingGear: HighsecGear
+  alwaysUseSpawner: true
+  icon: "JobIconHighsec"
+  requireAdminNotify: false
+  supervisors: job-supervisors-shi
+  canBeAntag: false
+  access:
+  - Command
+  - Maintenance
+  - Shinohara
+  - ShinoharaSecurity
+  - ShinoharaOfficer
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+
+- type: startingGear
+  id: HighsecGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitShinoharaSecurity
+    shoes: ClothingShoesBootsCombat
+    belt: WeaponLaserSvalinn
+    head: ClothingHeadHatShinoharaHelmet
+    outerClothing: ClothingOuterArmorShinoharaArmorHighsec
+    gloves: ClothingHandsGlovesCombat
+    id: HighsecPDA
+    ears: ClothingHeadsetShinohara
+    pocket1: Handcuffs
+    pocket2: Flash

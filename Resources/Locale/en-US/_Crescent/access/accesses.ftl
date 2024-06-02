@@ -30,4 +30,11 @@ id-card-access-level-empiregovernor = Imperial Governor
 
 id-card-access-level-srm = Sixth Subjugation Fireteam
 id-card-access-level-srmsenior = Sixth Subjugation Fireteam Officer
-id-card-access-level-srmoverseer = Sixth Subjugation Overteam Commodore
+id-card-access-level-srmoverseer = Sixth Subjugation Fireteam Commodore
+
+#shi
+
+id-card-access-level-shi = Shinohara Heavy Industries
+id-card-access-level-shiofficer = Shinohara Corporate Officer
+id-card-access-level-shisecurity = Shinohara Security Department
+id-card-access-level-shiexecutive = Shinohara Command Department

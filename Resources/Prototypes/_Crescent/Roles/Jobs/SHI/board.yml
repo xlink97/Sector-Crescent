@@ -1,0 +1,31 @@
+- type: job
+  id: BoardSHI
+  name: job-name-board
+  description: job-description-board
+  playTimeTracker: JobBoardSHI
+  weight: 50
+  startingGear: BoardGear
+  alwaysUseSpawner: true
+  icon: "JobIconBoard"
+  requireAdminNotify: true
+  supervisors: job-supervisors-shi
+  canBeAntag: false
+  access:
+  - Command
+  - Maintenance
+  - Shinohara
+  - ShinoharaOfficer
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+
+- type: startingGear
+  id: BoardGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitShinoharaSuit
+    shoes: ClothingShoesBootsLaceup
+    neck: ClothingNeckTieRed
+    outerClothing: ClothingOuterShinoharaSuitjacket
+    id: BoardPDA
+    ears: ClothingHeadsetShinohara

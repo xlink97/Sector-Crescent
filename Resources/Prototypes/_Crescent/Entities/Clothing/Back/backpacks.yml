@@ -111,3 +111,38 @@
     sprite: _Crescent/Clothing/Back/srmback.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.1
+
+#shi
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackSHISatchel
+  name: shinohara courier bag
+  description: A robust courier bag of corporate make.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/Back/shisatchel.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackSHI
+  name: shinohara rucksack
+  description: A robust backpack in SHI livery.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/Back/shibackpack.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackSHIDuffelbag
+  name: corporate duffelbag
+  description: A robust duffelbag for corporate assets.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/Back/shidufflebag.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
