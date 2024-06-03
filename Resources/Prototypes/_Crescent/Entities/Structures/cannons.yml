@@ -263,10 +263,13 @@
   - type: DeviceNetwork
     deviceNetId: Wireless
     receiveFrequencyId: BasicDevice
+  - type: AutoShootGun
+  - type: GunSignalControl
   - type: WirelessNetworkConnection
     range: 200
   - type: DeviceLinkSink
     ports:
+      - Toggle
       - SpaceArtilleryFire
       - SpaceArtilleryToggleSafety
       - SpaceArtilleryOnSafety
@@ -288,7 +291,7 @@
       ballistic-ammo: !type:Container
         ents: []
   - type: Gun
-    fireRate: 5
+    fireRate: 3
     projectileSpeed: 70
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/50cal.ogg
