@@ -1,13 +1,13 @@
 ## UI
 ghost-respawn-rules-window-title = Ghost Respawn Rules
 ghost-respawn-rules-window-confirm-button = I understand, respawn me
-ghost-gui-respawn-button-denied = Respawn ({$time}s)
-ghost-gui-respawn-button-allowed = Respawn
-ghost-respawn-rules-window-rules = Respawning follows a strict New Life Rule:
+ghost-gui-respawn-button-denied = Respooling ({$time}s)
+ghost-gui-respawn-button-allowed = Reclone
+ghost-respawn-rules-window-rules = You are about to be recloned:
     No matter which character you decide to return as,
     you DO NOT remember anything after falling unconcious,
-    and there is a strict 15 minute non-aggression period.
-    Review the rules for more info.	
+    as your character was respooled from an emergency DNA
+    sample, not live tissue.
 ## COMMMANDS
 ghost-respawn-command-desc = Respawns you if you're an eligible ghost.
 ghost-respawn-not-a-ghost = You're not currently ghosted.
