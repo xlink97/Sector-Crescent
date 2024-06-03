@@ -1,5 +1,5 @@
-guide-entry-nf14 = New Frontier
-guide-entry-bank = NT Galactic Bank
+guide-entry-nf14 = New Crescent
+guide-entry-bank = NCWL State Bank
 guide-entry-shipyard = Shipyard
 guide-entry-shipyard-ambition = Ambition
 guide-entry-shipyard-brigand = Brigand

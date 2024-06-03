@@ -21,5 +21,5 @@ station-bank-supplies = Station Supplies
 station-bank-bounty = Bounty
 station-bank-other = Other
 station-bank-required = {"("}Required{")"}
-station-bank-requires-reason = NCWL Requires transaction details
+station-bank-requires-reason = Treasury requires transaction details
 station-bank-unauthorized = Unauthorized!
