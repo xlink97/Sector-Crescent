@@ -1,0 +1,35 @@
+- type: jukebox
+  id: BeHereAWhile
+  name: I'll Be Here A While
+  path:
+    path: /Audio/_Crescent/Jukebox/behereawhile.ogg
+
+- type: jukebox
+  id: BlueMonday
+  name: Blue Monday
+  path:
+    path: /Audio/_Crescent/Jukebox/bluemonday.ogg
+
+- type: jukebox
+  id: IFoughtTheLaw
+  name: I Fought the Law
+  path:
+    path: /Audio/_Crescent/Jukebox/ifoughtthelaw.ogg
+
+- type: jukebox
+  id: MoneyPinkFloyd
+  name: Money
+  path:
+    path: /Audio/_Crescent/Jukebox/moneypinkfloydcover.ogg
+
+- type: jukebox
+  id: Luftballoons
+  name: Luftballoons
+  path:
+    path: /Audio/_Crescent/Jukebox/luftballoons.ogg
+
+- type: jukebox
+  id: AllAlone
+  name: All Alone
+  path:
+    path: /Audio/_Crescent/Jukebox/allalone.ogg
