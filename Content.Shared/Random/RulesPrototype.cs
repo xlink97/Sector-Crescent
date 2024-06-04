@@ -1,5 +1,6 @@
 using Content.Shared.Access;
 using Content.Shared.Maps;
+using Content.Shared.Roles;
 using Content.Shared.Whitelist;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.List;
@@ -138,4 +139,8 @@ public sealed partial class NearbyComponentsRule : RulesRule
 
     [DataField("range")]
     public float Range = 10f;
+}
+
+public sealed partial class InCombatModeRule : RulesRule
+{
 }
