@@ -1,6 +1,7 @@
 using System.Numerics;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
+using Content.Shared.CombatMode;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics.Components;
@@ -235,6 +236,15 @@ public sealed class RulesSystem : EntitySystem
                     }
 
                     break;
+                }
+                case InCombatModeRule inCombatMode:
+                {
+                    if (TryComp<CombatModeComponent>(uid, out var combatModeComponent) && combatModeComponent.IsInCombatMode)
+                    {
+                        return true;
+                    }
+
+                    return false;
                 }
                 default:
                     throw new NotImplementedException();

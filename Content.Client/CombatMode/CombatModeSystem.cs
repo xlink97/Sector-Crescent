@@ -1,5 +1,6 @@
 using Content.Client.Hands.Systems;
 using Content.Client.NPC.HTN;
+using Content.Client.Audio;
 using Content.Shared.CCVar;
 using Content.Shared.CombatMode;
 using Robust.Client.Graphics;
@@ -16,6 +17,7 @@ public sealed class CombatModeSystem : SharedCombatModeSystem
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly IInputManager _inputManager = default!;
     [Dependency] private readonly IEyeManager _eye = default!;
+    [Dependency] private readonly ContentAudioSystem _contentAudio = default!;
 
     /// <summary>
     /// Raised whenever combat mode changes.
@@ -70,6 +72,8 @@ public sealed class CombatModeSystem : SharedCombatModeSystem
         {
             return;
         }
+
+        _contentAudio.ForceUpdateAmbientMusic();
 
         var inCombatMode = IsInCombatMode();
         LocalPlayerCombatModeUpdated?.Invoke(inCombatMode);
