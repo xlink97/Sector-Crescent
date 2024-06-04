@@ -1,0 +1,16 @@
+- type: ambientMusic
+  id: CombatMode
+  sound:
+    collection: AmbienceCombatMode
+  rules: InCombatMode
+  priority: 1000
+
+- type: rules
+  id: InCombatMode
+  rules:
+    - !type:InCombatModeRule
+
+- type: soundCollection
+  id: AmbienceCombatMode
+  files:
+    - /Audio/_Crescent/Ambience/CombatMode/awakening.ogg

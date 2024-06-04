@@ -254,6 +254,12 @@ public sealed partial class ContentAudioSystem
         return null;
     }
 
+    public void ForceUpdateAmbientMusic()
+    {
+        _nextAudio = _timing.CurTime;
+        DisableAmbientMusic();
+    }
+
     /// <summary>
     /// Fades out the current ambient music temporarily.
     /// </summary>
