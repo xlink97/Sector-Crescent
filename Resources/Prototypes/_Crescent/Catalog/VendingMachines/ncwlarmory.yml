@@ -1,0 +1,16 @@
+- type: vendingMachineInventory
+  id: NCWLArmoryInventory
+  startingInventory:
+    WeaponRifleNCWLBatanya: 6
+    WeaponSubMachineGunBloodhound: 6
+    WeaponSubMachineGunNCWLWatchdog: 6
+    WeaponShotgunKammerer: 6
+    WeaponPistolHKUSP: 6
+    WeaponPistolMk58: 6
+    WeaponPistolT91: 3
+    ClothingBeltNCWLWebbingMedFilled: 6
+    ClothingBeltNCWLWebbingFilledGrenadier: 6
+    BoxLethalShot: 10
+    BoxShotgunSlug: 10
+    MagazinePistol: 25
+    MagazineRifle: 25

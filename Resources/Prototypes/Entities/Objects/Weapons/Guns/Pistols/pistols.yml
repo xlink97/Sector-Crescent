@@ -67,10 +67,10 @@
     price: 500
 
 - type: entity
-  name: viper
+  name: SHI Viper .35
   parent: BaseWeaponPistol
   id: WeaponPistolViper
-  description: A small, easily concealable, but somewhat underpowered gun. Retrofitted with a fully automatic receiver. Uses .35 auto ammo. An illegal firearm often used by Syndicate agents.
+  description: A small, easily concealable, but somewhat underpowered gun. Retrofitted with a fully automatic receiver. Uses .35 auto ammo.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/viper.rsi
@@ -102,7 +102,6 @@
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice # Frontier 500<1000
     price: 1000
-  - type: Contraband #frontier
 
 - type: entity
   name: cobra
@@ -174,6 +173,8 @@
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
+  - type: StaticPrice # Frontier 500<1000
+    price: 250
 
 - type: entity
   name: N1984

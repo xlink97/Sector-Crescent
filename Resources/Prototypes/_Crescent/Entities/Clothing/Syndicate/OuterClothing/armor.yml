@@ -160,6 +160,8 @@
   - type: ExplosionResistance
     damageCoefficient: 0.90
   - type: GroupExamine
+  - type: StaticPrice
+    price: 125
 
 - type: entity
   parent: ClothingOuterBaseLarge
