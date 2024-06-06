@@ -1,22 +1,22 @@
 ﻿<Document>
   # Criminal Records
-  The criminal records console is accessible in every station's security department, it serves the purpose of tracking and managing the criminal history and status of anybody part of the crew manifest.
+  The criminal records console is accessible in every large vessel or station's security department, it serves the purpose of tracking and managing the criminal history and status of anybody part of the Union manifest.
 
   <Box>
   <GuideEntityEmbed Entity="ComputerCriminalRecords"/>
   </Box>
 
-  Anyone can open the console's UI, but only those with Security access can modify anything.
+  Anyone can open the console's UI, but only those with Homeguard or Minuteman access can modify anything.
 
   The UI is composed by the following elements:
-  - A search bar that has a filter next to it that lets you filter the crewmembers by their names, fingerprints or DNA.
+  - A search bar that has a filter next to it that lets you filter the civilians by their names, fingerprints or DNA.
 
-  - A list of all the crewmembers in the manifest, selecting one of the entries will make the criminal records of a crewmember appear. The list is filtered by the search bar so make sure it's empty if you want an overall overview!
+  - A list of all the civilians in the manifest, selecting one of the entries will make the criminal records of a crewmember appear. The list is filtered by the search bar so make sure it's empty if you want an overall overview!
 
   - The criminal records themselves
 
   In the record section you can:
-    - See security-related information about a crewmember like their name, fingerprints and DNA.
+    - See security-related information about a civilian like their name, fingerprints and DNA.
 
     - Change the security status between [color=gray]None[/color], [color=yellow]Wanted[/color] and [color=red]Detained[/color]. When setting it to Wanted you will be asked to write a reason.
 
