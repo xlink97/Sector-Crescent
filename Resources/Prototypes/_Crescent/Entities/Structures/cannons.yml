@@ -107,15 +107,15 @@
 ##mining turret
 
 - type: entity
-  id: ShuttleGunKineticPLACEHOLDER
+  id: ShuttleGunExhumer
   parent: [ ShuttleGunBase, ConstructibleMachine]
-  name: PTK-800 "Matter Dematerializer"
-  description: Salvage stationary mining turret. Gradually accumulates charges on its own, extremely effective for asteroid excavation.
+  name: SHI 250c "Exhumer" kinetic pulser
+  description: A fixedpoint mining tool that accelerates sound waves to kinetically slice through rock - mostly seen on civilian miner models.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Shuttles/kinetic.rsi
+    sprite: _Crescent/Objects/ShuttleWeapons/mininglaser.rsi
     layers:
-    - state: ptk-800
+    - state: states
     - state: mag-7
   - type: ContainerContainer
     containers:
@@ -266,7 +266,7 @@
   - type: AutoShootGun
   - type: GunSignalControl
   - type: WirelessNetworkConnection
-    range: 200
+    range: 700
   - type: DeviceLinkSink
     ports:
       - Toggle
@@ -319,3 +319,106 @@
   - type: ApcPowerReceiver
     powerLoad: 3000
   - type: ExtensionCableReceiver
+
+# laser
+
+- type: entity
+  id: HardlineBeamPulser
+  name: NT-9 3100c 'Hardliner' beam pulser turret 
+  parent: ConstructibleMachine
+  description: A ship-mounted, fixed-point artillery turret using military laser technology as a base - an outdated model from the now-defunct NanoTrasen, although tried and tested in many battles. Requires upkeep in the form of liquid coolant to stay operational.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 600
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    sprite: _Crescent/Objects/ShuttleWeapons/bigfuckinglaser.rsi
+    layers:
+    - state: space_artillery
+  - type: Anchorable
+    delay: 9999
+  - type: Pullable
+  - type: Rotatable
+    rotateWhilePulling: false
+    rotateWhileAnchored: true
+    increment: 45
+  - type: Appearance
+  - type: AmmoCounter
+  - type: Battery
+    maxCharge: 150000
+    startingCharge: 150000
+  - type: ExaminableBattery
+  - type: HitscanBatteryAmmoProvider
+    proto: Military_Laser
+    fireCost: 15000
+  - type: ItemSlots
+  - type: ContainerContainer
+    containers:
+      SpaceArtillery-CoolantSlot: !type:ContainerSlot {}
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 700
+  - type: DeviceLinkSink
+  - type: AutoShootGun
+  - type: GunSignalControl
+    ports:
+      - SpaceArtilleryFire
+      - SpaceArtilleryToggleSafety
+      - Toggle
+      - SpaceArtilleryOnSafety
+      - SpaceArtilleryOffSafety
+  - type: DeviceLinkSource
+    ports:
+      - SpaceArtilleryDetectedFiring
+      - SpaceArtilleryDetectedMalfunction
+      - SpaceArtilleryDetectedSafetyChange
+  - type: Gun
+    fireRate: 2
+    projectileSpeed: 70
+    selectedMode: FullAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laserturret.ogg
+    soundEmpty:
+      path: /Audio/Items/hiss.ogg
+  - type: SpaceArtillery
+    isArmed: true
+    isCoolantRequiredToFire: true
+    coolantConsumed: 3
+    isPowerRequiredToFire: true
+    SpaceArtillery-CoolantSlot:
+            name:  SpaceArtillery-CoolantSlot
+            insertSound: /Audio/Machines/scanning.ogg
+            ejectSound: /Audio/Machines/tray_eject.ogg
+            ejectOnBreak: true
+            swap: false
+            whitelist:
+                components:
+                - Stack
+  - type: Actions
+  - type: CombatMode
+    IsInCombatMode: true
+  - type: ApcPowerReceiver
+    powerLoad: 1000
+  - type: ExtensionCableReceiver
+  - type: BatterySelfRecharger
