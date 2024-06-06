@@ -44,11 +44,11 @@
     price: 500
 
 - type: entity
-  name: Bulldog
+  name: NCWL Bulldog
   # Don't parent to BaseWeaponShotgun because it differs significantly
   parent: [BaseItem, BaseGunWieldable]
   id: WeaponShotgunBulldog
-  description: It's a magazine-fed shotgun designed for close quarters combat. Uses .50 shotgun shells. An illegal firearm often used by Syndicate agents.
+  description: It's a magazine-fed shotgun designed for close quarters combat. Uses .50 shotgun shells. An bulky firearm preferred by Union heavy-hitters.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/bulldog.rsi
@@ -137,7 +137,7 @@
     proto: ShellShotgunBeanbag
 
 - type: entity
-  name: Enforcer
+  name: SHI Enforcer 12g
   parent: [BaseWeaponShotgun, BaseGunWieldable]
   id: WeaponShotgunEnforcer
   description: A premium combat shotgun based on the Kammerer design, featuring an upgraded clip capacity. .50 shotgun shells. On the receiver is a label that says 'for authorized use only.'
@@ -160,7 +160,7 @@
     proto: ShellShotgunBeanbag
 
 - type: entity
-  name: Kammerer
+  name: NT Kammerer
   parent: [BaseWeaponShotgun, BaseGunWieldable]
   id: WeaponShotgunKammerer
   description: When an old Remington design meets modern materials, this is the result. A civilian grade shotgun, favored by militia forces throughout many worlds. Uses .50 shotgun shells.

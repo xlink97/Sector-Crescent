@@ -9,6 +9,8 @@
     sprite: _Crescent/Clothing/Syndicate/Head/syndiehelmet.rsi
   - type: Clothing
     sprite: _Crescent/Clothing/Syndicate/Head/syndiehelmet.rsi
+  - type: StaticPrice
+    price: 75
 
 ## hardsuit helmets
 

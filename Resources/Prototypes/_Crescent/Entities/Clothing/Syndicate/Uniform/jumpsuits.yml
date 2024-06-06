@@ -8,6 +8,8 @@
     sprite: _Crescent/Clothing/Syndicate/Uniform/syndiecombat.rsi
   - type: Clothing
     sprite: _Crescent/Clothing/Syndicate/Uniform/syndiecombat.rsi
+  - type: StaticPrice
+    price: 100
 
 - type: entity
   parent: ClothingUniformBase

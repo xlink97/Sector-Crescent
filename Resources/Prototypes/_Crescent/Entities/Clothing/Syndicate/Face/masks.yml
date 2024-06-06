@@ -10,3 +10,5 @@
     sprite: _Crescent/Clothing/Syndicate/Face/facemask.rsi
   - type: EyeProtection
   - type: BreathMask
+  - type: StaticPrice
+    price: 90
