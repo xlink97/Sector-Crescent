@@ -31,3 +31,20 @@
     sprite: _NF/Objects/SpaceArtillery/lasers.rsi
     state: impact_focused_pulse
   maxLength: 40
+
+- type: hitscan
+  id: Military_Laser
+  damage:
+    types:
+      Heat: 60
+      Structural: 1200
+  muzzleFlash:
+    sprite: _NF/Objects/SpaceArtillery/lasers.rsi
+    state: muzzle_focused_pulse
+  travelFlash:
+    sprite: _NF/Objects/SpaceArtillery/lasers.rsi
+    state: beam_focused_pulse
+  impactFlash:
+    sprite: _NF/Objects/SpaceArtillery/lasers.rsi
+    state: impact_focused_pulse
+  maxLength: 60
