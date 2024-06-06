@@ -20,6 +20,7 @@ shipyard-rules-default2 =
 shuttle-ftl-proximity = Too close to large mass for FTL!
 
 changelog-tab-title-Upstream = Upstream Changelog
+multiauth-already-connected = Already connected to Frontier Official servers.
 
 public-transit-departure = Now departing for {$destination}. Estimated travel time: {$flytime} seconds.
 public-transit-arrival = Thank you for choosing NCWL Public Transit. Next transfer to {$destination} departs in {$waittime} seconds.
