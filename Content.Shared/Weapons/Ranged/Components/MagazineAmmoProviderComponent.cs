@@ -17,4 +17,13 @@ public partial class MagazineAmmoProviderComponent : AmmoProviderComponent
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("autoEject")]
     public bool AutoEject = false;
+
+    /// <summary>
+    /// Should this not be possible to reload?
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite), DataField("oneUseOnly")]
+    public bool oneUseOnly = false;
+
+    //wether this was already used or not.
+    public bool used = false;
 }

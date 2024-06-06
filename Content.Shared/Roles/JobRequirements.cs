@@ -1,6 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Roles.Jobs;
+using Content.Shared.Humanoid.Prototypes;
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
@@ -69,15 +70,24 @@ namespace Content.Shared.Roles
         [DataField("inverted")] public bool Inverted;
     }
 
+    [UsedImplicitly]
+    [Serializable, NetSerializable]
+    public sealed partial class SpeciesRequirement : JobRequirement
+    {
+        [DataField("allowedOnly")] public HashSet<ProtoId<SpeciesPrototype>> AllowedOnly;
+        [DataField("notAllowed")] public HashSet<ProtoId<SpeciesPrototype>> NotAllowed;
+    }
+
     public static class JobRequirements
     {
         public static bool TryRequirementsMet(
             JobPrototype job,
-            Dictionary<string, TimeSpan> playTimes,
+            Dictionary<string, TimeSpan>? playTimes,
             [NotNullWhen(false)] out FormattedMessage? reason,
             IEntityManager entManager,
             IPrototypeManager prototypes,
-            bool isWhitelisted)
+            bool isWhitelisted,
+            string? species)
         {
             reason = null;
             if (job.Requirements == null)
@@ -85,7 +95,7 @@ namespace Content.Shared.Roles
 
             foreach (var requirement in job.Requirements)
             {
-                if (!TryRequirementMet(requirement, playTimes, out reason, entManager, prototypes, isWhitelisted))
+                if (!TryRequirementMet(requirement, playTimes, out reason, entManager, prototypes, isWhitelisted, species))
                     return false;
             }
 
@@ -97,17 +107,23 @@ namespace Content.Shared.Roles
         /// </summary>
         public static bool TryRequirementMet(
             JobRequirement requirement,
-            IReadOnlyDictionary<string, TimeSpan> playTimes,
+            IReadOnlyDictionary<string, TimeSpan>? playTimes,
             [NotNullWhen(false)] out FormattedMessage? reason,
             IEntityManager entManager,
             IPrototypeManager prototypes,
-            bool isWhitelisted)
+            bool isWhitelisted,
+            string? species)
         {
             reason = null;
 
             switch (requirement)
             {
                 case DepartmentTimeRequirement deptRequirement:
+                    if (playTimes == null)
+                    {
+                        return true;
+                    }
+
                     var playtime = TimeSpan.Zero;
 
                     // Check all jobs' departments
@@ -155,6 +171,11 @@ namespace Content.Shared.Roles
                     }
 
                 case OverallPlaytimeRequirement overallRequirement:
+                    if (playTimes == null)
+                    {
+                        return true;
+                    }
+
                     var overallTime = playTimes.GetValueOrDefault(PlayTimeTrackingShared.TrackerOverall);
                     var overallDiff = overallRequirement.Time.TotalMinutes - overallTime.TotalMinutes;
 
@@ -180,6 +201,11 @@ namespace Content.Shared.Roles
                     }
 
                 case RoleTimeRequirement roleRequirement:
+                    if (playTimes == null)
+                    {
+                        return true;
+                    }
+
                     proto = roleRequirement.Role;
 
                     playTimes.TryGetValue(proto, out var roleTime);
@@ -221,13 +247,37 @@ namespace Content.Shared.Roles
                         return true;
                     }
                 case WhitelistRequirement _: // DeltaV - Whitelist requirement
-                    if (isWhitelisted == null)
-                        throw new ArgumentNullException(nameof(isWhitelisted), "isWhitelisted cannot be null.");
-
                     if (isWhitelisted)
                         return true;
 
                     reason = FormattedMessage.FromMarkup(Loc.GetString("playtime-deny-reason-not-whitelisted"));
+                    return false;
+                case SpeciesRequirement speciesRequirement:
+                    if (species == null)
+                    {
+                        return true;
+                    }
+
+                    if (speciesRequirement.AllowedOnly.Count > 0)
+                    {
+                        if (species.Length > 0 && speciesRequirement.AllowedOnly.Contains(species))
+                        {
+                            return true;
+                        }
+                    }
+                    else if (speciesRequirement.NotAllowed.Count > 0)
+                    {
+                        if (species.Length == 0 || !speciesRequirement.NotAllowed.Contains(species))
+                        {
+                            return true;
+                        }
+                    }
+                    else
+                    {
+                        return true;
+                    }
+
+                    reason = FormattedMessage.FromMarkup(Loc.GetString("job-requirement-species-not-allowed", ("species", species)));
                     return false;
                 default:
                     throw new NotImplementedException();
