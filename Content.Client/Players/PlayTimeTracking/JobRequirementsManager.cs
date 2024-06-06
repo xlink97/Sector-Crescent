@@ -1,8 +1,10 @@
 using System.Diagnostics.CodeAnalysis;
+using Content.Client.Preferences;
 using Content.Shared.CCVar;
 using Content.Shared.Players;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Roles;
+using Content.Shared.Preferences;
 using Robust.Client;
 using Robust.Client.Player;
 using Robust.Shared.Configuration;
@@ -21,6 +23,7 @@ public sealed partial class JobRequirementsManager : ISharedPlaytimeManager
     [Dependency] private readonly IEntityManager _entManager = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypes = default!;
+    [Dependency] private readonly IClientPreferencesManager _preferencesManager = default!;
 
     private readonly Dictionary<string, TimeSpan> _roles = new();
     private readonly List<string> _roleBans = new();
@@ -101,13 +104,23 @@ public sealed partial class JobRequirementsManager : ISharedPlaytimeManager
     {
         reason = null;
 
-        if (requirements == null || !_cfg.GetCVar(CCVars.GameRoleTimers))
+        if (requirements == null)
             return true;
+
+        string species;
+        if (_preferencesManager.Preferences?.SelectedCharacter is HumanoidCharacterProfile selectedCharacter)
+        {
+            species = selectedCharacter.Species;
+        }
+        else
+        {
+            species = string.Empty;
+        }
 
         var reasons = new List<string>();
         foreach (var requirement in requirements)
         {
-            if (JobRequirements.TryRequirementMet(requirement, _roles, out var jobReason, _entManager, _prototypes, _whitelisted))
+            if (JobRequirements.TryRequirementMet(requirement, _cfg.GetCVar(CCVars.GameRoleTimers) ? _roles : null, out var jobReason, _entManager, _prototypes, _whitelisted, species))
                 continue;
 
             reasons.Add(jobReason.ToMarkup());
