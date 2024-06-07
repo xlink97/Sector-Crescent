@@ -4,6 +4,7 @@ using Content.Shared.Roles;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Shared.Players;
 
 namespace Content.Shared.Preferences.Loadouts.Effects;
 
@@ -17,11 +18,12 @@ public sealed partial class JobRequirementLoadoutEffect : LoadoutEffect
 
     public override bool Validate(RoleLoadout loadout, ICommonSession session, IDependencyCollection collection, [NotNullWhen(false)] out FormattedMessage? reason)
     {
-        var manager = collection.Resolve<ISharedPlaytimeManager>();
-        var playtimes = manager.GetPlayTimes(session);
+        var playtimes = collection.Resolve<ISharedPlaytimeManager>().GetPlayTimes(session);
+
         return JobRequirements.TryRequirementMet(Requirement, playtimes, out reason,
             collection.Resolve<IEntityManager>(),
             collection.Resolve<IPrototypeManager>(),
-            true); // Frontier: for now we just let assume whitelist? TODO: implement white list
+            true, // Frontier: for now we just let assume whitelist? TODO: implement white list
+            null);
     }
 }

@@ -5,6 +5,7 @@ using Content.Server.Afk;
 using Content.Server.Afk.Events;
 using Content.Server.GameTicking;
 using Content.Server.Mind;
+using Content.Server.Preferences.Managers;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.Mobs;
@@ -12,6 +13,7 @@ using Content.Shared.Mobs.Components;
 using Content.Shared.Players;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Roles;
+using Content.Shared.Preferences;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
@@ -34,6 +36,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
     [Dependency] private readonly MindSystem _minds = default!;
     [Dependency] private readonly PlayTimeTrackingManager _tracking = default!;
     [Dependency] private readonly IAdminManager _adminManager = default!;
+    [Dependency] private readonly IServerPreferencesManager _preferencesManager = default!;
 
     public override void Initialize()
     {
@@ -178,34 +181,59 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
     public bool IsAllowed(ICommonSession player, string role)
     {
         if (!_prototypes.TryIndex<JobPrototype>(role, out var job) ||
-            job.Requirements == null ||
-            !_cfg.GetCVar(CCVars.GameRoleTimers))
+            job.Requirements == null)
             return true;
 
-        if (!_tracking.TryGetTrackerTimes(player, out var playTimes))
+        Dictionary<string, TimeSpan>? playTimes = null;
+        if (_cfg.GetCVar(CCVars.GameRoleTimers))
         {
-            Log.Error($"Unable to check playtimes {Environment.StackTrace}");
-            playTimes = new Dictionary<string, TimeSpan>();
+            if (!_tracking.TryGetTrackerTimes(player, out playTimes))
+            {
+                Log.Error($"Unable to check playtimes {Environment.StackTrace}");
+                playTimes = new Dictionary<string, TimeSpan>();
+            }
         }
 
         var isWhitelisted = player.ContentData()?.Whitelisted ?? false; // DeltaV - Whitelist requirement
 
-        return JobRequirements.TryRequirementsMet(job, playTimes, out _, EntityManager, _prototypes, isWhitelisted);
+        string species;
+        if (_preferencesManager.GetPreferences(player.UserId).SelectedCharacter is HumanoidCharacterProfile selectedCharacter)
+        {
+            species = selectedCharacter.Species;
+        }
+        else
+        {
+            species = string.Empty;
+        }
+
+        return JobRequirements.TryRequirementsMet(job, playTimes, out _, EntityManager, _prototypes, isWhitelisted, species);
     }
 
     public HashSet<string> GetDisallowedJobs(ICommonSession player)
     {
         var roles = new HashSet<string>();
-        if (!_cfg.GetCVar(CCVars.GameRoleTimers))
-            return roles;
 
-        if (!_tracking.TryGetTrackerTimes(player, out var playTimes))
+        Dictionary<string, TimeSpan>? playTimes = null;
+        if (_cfg.GetCVar(CCVars.GameRoleTimers))
         {
-            Log.Error($"Unable to check playtimes {Environment.StackTrace}");
-            playTimes = new Dictionary<string, TimeSpan>();
+            if (!_tracking.TryGetTrackerTimes(player, out playTimes))
+            {
+                Log.Error($"Unable to check playtimes {Environment.StackTrace}");
+                playTimes = new Dictionary<string, TimeSpan>();
+            }
         }
 
         var isWhitelisted = player.ContentData()?.Whitelisted ?? false; // DeltaV - Whitelist requirement
+
+        string species;
+        if (_preferencesManager.GetPreferences(player.UserId).SelectedCharacter is HumanoidCharacterProfile selectedCharacter)
+        {
+            species = selectedCharacter.Species;
+        }
+        else
+        {
+            species = string.Empty;
+        }
 
         foreach (var job in _prototypes.EnumeratePrototypes<JobPrototype>())
         {
@@ -213,7 +241,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
             {
                 foreach (var requirement in job.Requirements)
                 {
-                    if (JobRequirements.TryRequirementMet(requirement, playTimes, out _, EntityManager, _prototypes, isWhitelisted))
+                    if (JobRequirements.TryRequirementMet(requirement, playTimes, out _, EntityManager, _prototypes, isWhitelisted, species))
                         continue;
 
                     goto NoRole;
@@ -229,18 +257,29 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
 
     public void RemoveDisallowedJobs(NetUserId userId, ref List<string> jobs)
     {
-        if (!_cfg.GetCVar(CCVars.GameRoleTimers))
-            return;
-
         var player = _playerManager.GetSessionById(userId);
-        if (!_tracking.TryGetTrackerTimes(player, out var playTimes))
+
+        Dictionary<string, TimeSpan>? playTimes = null;
+        if (_cfg.GetCVar(CCVars.GameRoleTimers))
         {
-            // Sorry mate but your playtimes haven't loaded.
-            Log.Error($"Playtimes weren't ready yet for {player} on roundstart!");
-            playTimes ??= new Dictionary<string, TimeSpan>();
+            if (!_tracking.TryGetTrackerTimes(player, out playTimes))
+            {
+                Log.Error($"Unable to check playtimes {Environment.StackTrace}");
+                playTimes = new Dictionary<string, TimeSpan>();
+            }
         }
 
         var isWhitelisted = player.ContentData()?.Whitelisted ?? false; // DeltaV - Whitelist requirement
+
+        string species;
+        if (_preferencesManager.GetPreferences(player.UserId).SelectedCharacter is HumanoidCharacterProfile selectedCharacter)
+        {
+            species = selectedCharacter.Species;
+        }
+        else
+        {
+            species = string.Empty;
+        }
 
         for (var i = 0; i < jobs.Count; i++)
         {
@@ -253,7 +292,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
 
             foreach (var requirement in jobber.Requirements)
             {
-                if (JobRequirements.TryRequirementMet(requirement, playTimes, out _, EntityManager, _prototypes, isWhitelisted))
+                if (JobRequirements.TryRequirementMet(requirement, playTimes, out _, EntityManager, _prototypes, isWhitelisted, species))
                     continue;
 
                 jobs.RemoveSwap(i);
