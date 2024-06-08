@@ -1,0 +1,33 @@
+- type: job
+  id: WatchmasterCMM
+  name: job-name-watchmaster
+  description: job-description-watchmaster
+  playTimeTracker: JobWatchmasterCMM
+  weight: 28
+  startingGear: WatchmasterGear
+  alwaysUseSpawner: true
+  icon: "JobIconWatchmaster"
+  requireAdminNotify: false
+  supervisors: job-supervisors-highcomm 
+  canBeAntag: false
+  access:
+  - Command
+  - Maintenance
+  - Minuteman
+  - MinutemanPrison
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+
+- type: startingGear
+  id: WatchmasterGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCMMOfficer
+    shoes: ClothingShoesBootsCombat
+    head: ClothingHeadHatWatchmaster
+    gloves: ClothingHandsGlovesCombat
+    belt: WeaponPistolHKUSP
+    id: WatchmasterPDA
+    ears: ClothingHeadsetCMM
+    neck: ClothingNeckScarfCMMCloak
+    outerClothing: ClothingOuterArmorCMM

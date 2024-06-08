@@ -198,3 +198,18 @@
   - EmployeeSHI
   - MedtechSHI
   enabled: true
+
+- type: department
+  id: CMM
+  description: department-CMM-description
+  color: "#5191e0"
+  weight: 70
+  roles:
+  - OrdnancemanCMM
+  - MachinistCMM
+  - PhysicianCMM
+  - MinutemanCMM
+  - WatchmasterCMM
+  - DeputyMarshalCMM
+  - MarshalCMM
+  enabled: true

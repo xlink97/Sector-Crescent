@@ -38,3 +38,5 @@ id-card-access-level-shi = Shinohara Heavy Industries
 id-card-access-level-shiofficer = Shinohara Corporate Officer
 id-card-access-level-shisecurity = Shinohara Security Department
 id-card-access-level-shiexecutive = Shinohara Command Department
+
+#cmm

@@ -114,3 +114,24 @@
   id: JobMedtechSHI
 
 #cmm
+
+- type: playTimeTracker
+  id: JobOrdnancemanCMM
+
+- type: playTimeTracker
+  id: JobMachinistCMM
+
+- type: playTimeTracker
+  id: JobPhysicianCMM
+
+- type: playTimeTracker
+  id: JobMinutemanCMM
+
+- type: playTimeTracker
+  id: JobWatchmasterCMM
+
+- type: playTimeTracker
+  id: JobDeputyMarshalCMM
+
+- type: playTimeTracker
+  id: JobMarshalCMM

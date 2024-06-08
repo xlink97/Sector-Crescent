@@ -277,3 +277,10 @@
   icon:
     sprite: Interface/Misc/job_icons.rsi
     state: Watchmaster
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconMachinist
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Engineman

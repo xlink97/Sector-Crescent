@@ -1,54 +1,43 @@
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatNCWLBeret
-  name: homeguard officer's beret
-  description: An officer's beret in NCWL colors. Has the golden communard insignia on the front.
+  id: ClothingHeadHatCMMDeputyMarshal
+  name: deputy marshal's campaign hat
+  description: An officer's hat in CMM colors.
   components:
   - type: Sprite
-    sprite: _Crescent/Clothing/NCWL/Head/ncwlberet.rsi
+    sprite: _Crescent/Clothing/CMM/Head/deputymarshal.rsi
   - type: Clothing
-    sprite: _Crescent/Clothing/NCWL/Head/ncwlberet.rsi
+    sprite: _Crescent/Clothing/CMM/Head/deputymarshal.rsi
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatNCWLBeretAdmiral
-  name: administrator's peaked cap
-  description: An officer's cap in high-ranking NCWL colors. Has the golden communard insignia on the front.
+  id: ClothingHeadHatCMMMarshal
+  name: marshal's campaign hat
+  description: An officer's hat in CMM colors.
   components:
   - type: Sprite
-    sprite: _Crescent/Clothing/NCWL/Head/ncwlofficerberet.rsi
+    sprite: _Crescent/Clothing/CMM/Head/marshal.rsi
   - type: Clothing
-    sprite: _Crescent/Clothing/NCWL/Head/ncwlofficerberet.rsi
+    sprite: _Crescent/Clothing/CMM/Head/marshal.rsi
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatNCWLCapsoft
-  name: homeguard cap
-  description: A patrol cap in communard colors.
+  id: ClothingHeadHatMinuteman
+  name: minuteman's cap
+  description: A Minuteman cap, dyed in faded blue.
   components:
   - type: Sprite
-    sprite: _Crescent/Clothing/NCWL/Head/ncwlcap.rsi
+    sprite: _Crescent/Clothing/CMM/Head/minuteman.rsi
   - type: Clothing
-    sprite: _Crescent/Clothing/NCWL/Head/ncwlcap.rsi
+    sprite: _Crescent/Clothing/CMM/Head/minuteman.rsi
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatNCWLCapsoftMedical
-  name: homeguard combat medic's cap
-  description: A combat medic's patrol cap in sterile colors.
+  id: ClothingHeadHatWatchmaster
+  name: watchmaster's cap
+  description: A Watchmaster's cap, dyed in faded blue and trimmed in red.
   components:
   - type: Sprite
-    sprite: _Crescent/Clothing/NCWL/Head/ncwlmedcap.rsi
+    sprite: _Crescent/Clothing/CMM/Head/minutemansarge.rsi
   - type: Clothing
-    sprite: _Crescent/Clothing/NCWL/Head/ncwlmedcap.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadHatNCWLKommissarHat
-  name: kommissar's peaked cap
-  description: The kommissar's beloved hat. He doesn't go anywhere without it.
-  components:
-  - type: Sprite
-    sprite: _Crescent/Clothing/NCWL/Head/ncwlpeakedcap.rsi
-  - type: Clothing
-    sprite: _Crescent/Clothing/NCWL/Head/ncwlpeakedcap.rsi
+    sprite: _Crescent/Clothing/CMM/Head/minutemansarge.rsi
