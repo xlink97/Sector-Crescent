@@ -12,6 +12,27 @@
             "name": "Detective"
         },
         {
+            "name": "Engineman"
+        },
+        {
+            "name": "Physician"
+        },
+        {
+            "name": "Ordnanceman"
+        },
+        {
+            "name": "Minuteman"
+        },
+        {
+            "name": "Watchmaster"
+        },
+        {
+            "name": "DeputyMarshal"
+        },
+        {
+            "name": "Marshal"
+        },
+        {
             "name": "Courtier"
         },
         {

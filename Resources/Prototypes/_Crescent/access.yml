@@ -109,3 +109,19 @@
   name: id-card-access-level-shiexec
 
 #cmm
+
+- type: accessLevel
+  id: Minuteman
+  name: id-card-access-level-cmm
+
+- type: accessLevel
+  id: MinutemanRankingOfficer
+  name: id-card-access-level-cmmranking
+
+- type: accessLevel
+  id: MinutemanPrison
+  name: id-card-access-level-cmmprison
+
+- type: accessLevel
+  id: MinutemanMarshal
+  name: id-card-access-level-cmmmarshal
