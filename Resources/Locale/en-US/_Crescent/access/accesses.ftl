@@ -40,3 +40,8 @@ id-card-access-level-shisecurity = Shinohara Security Department
 id-card-access-level-shiexecutive = Shinohara Command Department
 
 #cmm
+
+id-card-access-level-cmm = Minutemen
+id-card-access-level-cmmranking = Minutemen Officer
+id-card-access-level-cmmprison = CMM Penitentiary
+id-card-access-level-cmmmarshal = Colonial Marshal

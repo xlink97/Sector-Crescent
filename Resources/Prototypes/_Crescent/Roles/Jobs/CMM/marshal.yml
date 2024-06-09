@@ -3,7 +3,7 @@
   name: job-name-marshal
   description: job-description-marshal
   playTimeTracker: JobMarshalCMM
-  weight: 37
+  weight: 39
   startingGear: MarshalGear
   alwaysUseSpawner: true
   icon: "JobIconMarshal"

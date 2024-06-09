@@ -208,3 +208,37 @@
   components:
   - type: AccessReader
     access: [["ShinoharaExecutive"]]
+
+#cmm
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsCMM
+  suffix: Minutemen, Locked
+  components:
+  - type: AccessReader
+    access: [["Minuteman"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsCMMRanking
+  suffix: Minutemen Officer, Locked
+  components:
+  - type: AccessReader
+    access: [["MinutemanRankingOfficer"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsCMMPrison
+  suffix: Minutemen Prison, Locked
+  components:
+  - type: AccessReader
+    access: [["MinutemanPrison"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsCMMMarshal
+  suffix: Minutemen Marshal, Locked
+  components:
+  - type: AccessReader
+    access: [["MinutemanMarshal"]]
