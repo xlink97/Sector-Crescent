@@ -1,1 +1,1 @@
-job-requirement-species-not-allowed = Your species [color=yellow]{$species}[/color] is not allowed for this role.
+job-requirement-species-not-allowed = The [color=yellow]{$species}[/color] species are not allowed for this role.

@@ -22,6 +22,9 @@
             "name": "noble"
         },
         {
+            "name": "cmm"
+        },
+        {
             "name": "inhand-right",
             "directions": 4
         },

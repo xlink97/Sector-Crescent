@@ -15,6 +15,23 @@
 
 - type: entity
   parent: EncryptionKey
+  id: EncryptionKeyBalreska
+  name: ncwl encryption key
+  description: An encryption key used by the Union.
+  components:
+  - type: EncryptionKey
+    channels:
+    - NCWL
+    - Nfsd
+    - Common
+    defaultChannel: Common
+  - type: Sprite
+    layers:
+    - state: crypt_silver
+    - state: com_label
+
+- type: entity
+  parent: EncryptionKey
   id: EncryptionKeySyndies
   name: ncsp encryption key
   description: An encryption key used by the Syndicate.
@@ -71,4 +88,19 @@
   - type: Sprite
     layers:
     - state: crypt_gray
+    - state: common_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyMinutemen
+  name: minutemen encryption key
+  description: An encryption key used by the Colonial Minutemen.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Nfsd
+    defaultChannel: Common
+  - type: Sprite
+    layers:
+    - state: crypt_blue
     - state: common_label

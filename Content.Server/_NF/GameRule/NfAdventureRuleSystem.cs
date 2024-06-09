@@ -70,7 +70,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
                 continue;
 
             var profit = bank.Balance - player.Item2;
-            ev.AddLine($"- {meta.EntityName} {profitText} {profit} Spesos");
+            ev.AddLine($"- {meta.EntityName} {profitText} {profit} Credits");
             allScore.Add(new Tuple<string, int>(meta.EntityName, profit));
         }
 

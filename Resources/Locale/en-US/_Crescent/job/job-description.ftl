@@ -47,3 +47,13 @@ job-description-corpsec = Secure assets of the Corporation. Detain unruly custom
 job-description-highsec = Secure the military interests of the Corporation. Respond to high-risk missions.
 job-description-employee = Serve in various departments of the Corporation.
 job-description-medtech = Research and develop new technologies, tend to the ailments of employees.
+
+#cmm
+
+job-description-ordnanceman = Man the artillery of Minuteman vessels.
+job-description-machinist = Repair and maintain Minuteman vessels.
+job-description-physician = Tend to the prisoners and warriors of the CMM.
+job-description-minuteman = Arrest criminals. Police the lawful areas of the System.
+job-description-watchmaster = Coordinate your underlings for the Deputy Marshal.
+job-description-deputymarshal = Coordinate the Minutemen in the absence of the Marshal. Whip the militia into shape.
+job-description-marshal = Coordinate the Minutemen. Oversee martial and civil court. Protect the System.

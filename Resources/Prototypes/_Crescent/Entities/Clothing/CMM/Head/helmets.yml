@@ -1,0 +1,23 @@
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetCMMOrdnanceman
+  name: ordnanceman's hardhat
+  description: A plastic hardhat for an ammo-bearer.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/CMM/Head/ammobearerhelmet.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/CMM/Head/ammobearerhelmet.rsi
+
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetCMMMachinist
+  name: machinist's harhat
+  description: A plastic hardhat for working machinists.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/CMM/Head/enginemanhelmet.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/CMM/Head/enginemanhelmet.rsi
