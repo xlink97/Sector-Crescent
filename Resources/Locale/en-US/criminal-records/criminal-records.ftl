@@ -1,5 +1,5 @@
 criminal-records-console-window-title = Criminal Records Computer
-criminal-records-console-records-list-title = Crewmembers
+criminal-records-console-records-list-title = Persons
 criminal-records-console-select-record-info = Select a record.
 criminal-records-console-no-records = No records found!
 criminal-records-console-no-record-found = No record was found for the selected person.
@@ -23,7 +23,7 @@ criminal-records-console-reason-placeholder = For example: {$placeholder}
 
 criminal-records-console-crime-history = Crime History
 criminal-records-history-placeholder = Write the crime here
-criminal-records-no-history = This crewmember's record is spotless.
+criminal-records-no-history = This person's record is spotless.
 criminal-records-add-history = Add
 criminal-records-delete-history = Delete
 
