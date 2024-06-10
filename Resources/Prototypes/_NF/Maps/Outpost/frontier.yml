@@ -1,6 +1,6 @@
 - type: gameMap
   id: Frontier
-  mapName: 'Frontier Outpost'
+  mapName: 'Nova Belraska'
   mapPath: /Maps/_NF/Outpost/frontier.yml
   minPlayers: 0
   maxPlayers: 100
@@ -10,9 +10,9 @@
       components:
         - type: StationNameSetup
           mapNameTemplate: 'Nova Belraska'
-#          nameGenerator:
-#            !type:NanotrasenNameGenerator
-#            prefixCreator: '14'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
         - type: StationJobs
           overflowJobs:
             - Contractor

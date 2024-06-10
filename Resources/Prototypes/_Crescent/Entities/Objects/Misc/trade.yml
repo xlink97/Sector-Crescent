@@ -133,7 +133,7 @@
   parent: BaseItem
   id: TradeDeedStub
   name: explanation stub
-  description: A printed stub. Blocky letting informs the user that they must insert their deed of deliveries, one by one, into the machine.
+  description: A printed stub. Blocky letting informs the user that they must insert their deed of deliveries, one by one, into the machine, or their trade goods into the repository of the chute, if delivering said goods.
   components:
   - type: Sprite
     sprite: _Crescent/Objects/TradeGoods/stub.rsi

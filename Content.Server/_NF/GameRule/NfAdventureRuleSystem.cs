@@ -167,7 +167,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
             }
 
             var meta = EnsureComp<MetaDataComponent>(nfsdUids[0]);
-            _meta.SetEntityName(nfsdUids[0], "NFSD Outpost", meta);
+            _meta.SetEntityName(nfsdUids[0], "Precinct 9", meta);
             _shuttle.SetIFFColor(nfsdUids[0], new Color(1f, 0.2f, 0.2f));
         }
 
