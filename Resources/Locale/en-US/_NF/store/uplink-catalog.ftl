@@ -142,3 +142,5 @@ uplink-security-breachingcharge-box-name = Breaching Charge Box
 uplink-security-breachingcharge-box-desc = A box containing 4 breaching charges.
 uplink-security-hoverbike-name = NFSD Hoverbike Flatpack
 uplink-security-hoverbike-desc = Flatpack containing NFSD issued turbine with bike handles. Keys already slotted in the ignition. Very safe.
+uplink-security-hound-name = SHI Hound
+uplink-security-hound-desc = A robust marksman's rifle from SHI.

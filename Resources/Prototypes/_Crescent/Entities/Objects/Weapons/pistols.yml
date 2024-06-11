@@ -107,3 +107,206 @@
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
+
+- type: entity
+  name: SHI Shinobi 9x19mm
+  parent: BaseWeaponPistol
+  id: WeaponPistolSmartpistol
+  description: A robust, high-end pistol from the SHI self-defense line. Capable of full-auto. Comes with an extended magazine.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Objects/Weapons/smartgun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Crescent/Objects/Weapons/smartgun.rsi
+  - type: Gun
+    minAngle: 1
+    maxAngle: 19
+    angleIncrease: 6
+    angleDecay: 7
+    fireRate: 4
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolSmartgun
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolSmartgun
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePistol
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePistol
+
+#single use pistols
+
+- type: entity
+  name: SHI Blastpop 'Cherry Red'
+  parent: BaseWeaponPistol
+  id: WeaponPistolBlastpopRed
+  description: A mass-produced, 3D printed sidearm. Unable to be reloaded after use. Just twist the plastic key on top to rack the first round, and blast away.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Objects/Weapons/disposableguns/red.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Crescent/Objects/Weapons/disposableguns/red.rsi
+  - type: Gun
+    fireRate: 4
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
+  - type: StaticPrice
+    price: 100
+  - type: ChamberMagazineAmmoProvider
+    oneUseOnly: true
+
+- type: entity
+  name: SHI Blastpop 'Lavender Purple'
+  parent: BaseWeaponPistol
+  id: WeaponPistolBlastpopPurple
+  description: A mass-produced, 3D printed sidearm. Unable to be reloaded after use. Just twist the plastic key on top to rack the first round, and blast away.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Objects/Weapons/disposableguns/purple.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Crescent/Objects/Weapons/disposableguns/purple.rsi
+  - type: Gun
+    fireRate: 4
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
+  - type: StaticPrice
+    price: 100
+  - type: ChamberMagazineAmmoProvider
+    oneUseOnly: true
+
+- type: entity
+  name: SHI Blastpop 'Lethal Gray'
+  parent: BaseWeaponPistol
+  id: WeaponPistolBlastpopGray
+  description: A mass-produced, 3D printed sidearm. Unable to be reloaded after use. Just twist the plastic key on top to rack the first round, and blast away.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Objects/Weapons/disposableguns/gray.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Crescent/Objects/Weapons/disposableguns/gray.rsi
+  - type: Gun
+    fireRate: 4
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
+  - type: StaticPrice
+    price: 100
+  - type: ChamberMagazineAmmoProvider
+    oneUseOnly: true
+
+- type: entity
+  name: SHI Blastpop 'Poison Green'
+  parent: BaseWeaponPistol
+  id: WeaponPistolBlastpopGreen
+  description: A mass-produced, 3D printed sidearm. Unable to be reloaded after use. Just twist the plastic key on top to rack the first round, and blast away.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Objects/Weapons/disposableguns/green.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Crescent/Objects/Weapons/disposableguns/green.rsi
+  - type: Gun
+    fireRate: 4
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
+  - type: StaticPrice
+    price: 100
+  - type: ChamberMagazineAmmoProvider
+    oneUseOnly: true
+
+- type: entity
+  name: SHI Blastpop 'Royal Gold'
+  parent: BaseWeaponPistol
+  id: WeaponPistolBlastpopGold
+  description: A mass-produced, 3D printed sidearm. Unable to be reloaded after use. Just twist the plastic key on top to rack the first round, and blast away.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Objects/Weapons/disposableguns/gold.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Crescent/Objects/Weapons/disposableguns/gold.rsi
+  - type: Gun
+    fireRate: 4
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
+  - type: StaticPrice
+    price: 100
+  - type: ChamberMagazineAmmoProvider
+    oneUseOnly: true
+
+- type: entity
+  name: SHI Blastpop 'Fresh Blue'
+  parent: BaseWeaponPistol
+  id: WeaponPistolBlastpopBlue
+  description: A mass-produced, 3D printed sidearm. Unable to be reloaded after use. Just twist the plastic key on top to rack the first round, and blast away.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Objects/Weapons/disposableguns/blue.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Crescent/Objects/Weapons/disposableguns/blue.rsi
+  - type: Gun
+    fireRate: 4
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
+  - type: StaticPrice
+    price: 100
+  - type: ChamberMagazineAmmoProvider
+    oneUseOnly: true

@@ -245,3 +245,45 @@
   - SHIBackpacks
 
 #CMM
+
+- type: roleLoadout
+  id: JobOrdnancemanCMM
+  groups:
+  - ContractorTrinkets
+  - CMMBackpacks
+
+- type: roleLoadout
+  id: JobMachinistCMM
+  groups:
+  - ContractorTrinkets
+  - CMMBackpacks
+
+- type: roleLoadout
+  id: JobPhysicianCMM
+  groups:
+  - ContractorTrinkets
+  - CMMBackpacks
+
+- type: roleLoadout
+  id: JobMinutemanCMM
+  groups:
+  - ContractorTrinkets
+  - CMMBackpacks
+
+- type: roleLoadout
+  id: JobWatchmasterCMM
+  groups:
+  - ContractorTrinkets
+  - CMMBackpacks
+
+- type: roleLoadout
+  id: JobDeputyMarshalCMM
+  groups:
+  - ContractorTrinkets
+  - CMMBackpacks
+
+- type: roleLoadout
+  id: JobMarshalCMM
+  groups:
+  - ContractorTrinkets
+  - CMMBackpacks

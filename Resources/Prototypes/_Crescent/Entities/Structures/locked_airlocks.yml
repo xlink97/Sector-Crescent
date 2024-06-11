@@ -108,7 +108,7 @@
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsNCWLAdministator ]
+      board: [ DoorElectronicsNCWLAdministrator ]
 
 - type: entity
   parent: AirlockCommandHorizontal
@@ -485,3 +485,80 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsSHIExecutive ]
+
+#cmm
+
+- type: entity
+  parent:  AirlockSecurity
+  id:  AirlockCMMLocked
+  suffix: Minutemen
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCMM ]
+
+- type: entity
+  parent:  AirlockSecurity
+  id:  AirlockCMMLockedRanking
+  suffix: Minutemen Ranking
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCMMRanking ]
+
+- type: entity
+  parent:  AirlockSecurity
+  id:  AirlockCMMLockedPrison
+  suffix: Minutemen Prison
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCMMPrison ]
+
+- type: entity
+  parent:  AirlockSecurity
+  id:  AirlockCMMLockedMarshal
+  suffix: Minutemen Marshal
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCMMMarshal ]
+
+#cmm horizontal
+
+
+- type: entity
+  parent:  AirlockSecurityHorizontal
+  id:  AirlockCMMLockedHorizontal
+  suffix: Minutemen, Horizontal
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCMM ]
+
+- type: entity
+  parent:  AirlockSecurityHorizontal
+  id:  AirlockCMMLockedRankingHorizontal
+  suffix: Minutemen Ranking, Horizontal
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCMMRanking ]
+
+- type: entity
+  parent:  AirlockSecurityHorizontal
+  id:  AirlockCMMLockedPrisonHorizontal
+  suffix: Minutemen Prison, Horizontal
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCMMPrison ]
+
+- type: entity
+  parent:  AirlockSecurityHorizontal
+  id:  AirlockCMMLockedMarshalHorizontal
+  suffix: Minutemen Marshal, Horizontal
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCMMMarshal ]

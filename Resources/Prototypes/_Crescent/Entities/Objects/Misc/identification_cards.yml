@@ -404,3 +404,89 @@
     - state: idquartermaster
   - type: PresetIdCard
     job: MedtechSHI
+
+#cmm
+
+- type: entity
+  parent: IDCardStandard
+  id: CMMIDCardOrdnanceman
+  name: minuteman ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idseniorofficer
+  - type: PresetIdCard
+    job: OrdnancemanCMM
+
+- type: entity
+  parent: IDCardStandard
+  id: CMMIDCardMachinist
+  name: minuteman ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idseniorofficer
+  - type: PresetIdCard
+    job: MachinistCMM
+
+- type: entity
+  parent: IDCardStandard
+  id: CMMIDCardPhysician
+  name: minuteman ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idseniorofficer
+  - type: PresetIdCard
+    job: PhysicianCMM
+
+- type: entity
+  parent: IDCardStandard
+  id: CMMIDCardMinuteman
+  name: minuteman ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idseniorofficer
+  - type: PresetIdCard
+    job: MinutemanCMM
+
+- type: entity
+  parent: IDCardStandard
+  id: CMMIDCardWatchmaster
+  name: minuteman ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idseniorofficer
+  - type: PresetIdCard
+    job: WatchmasterCMM
+
+- type: entity
+  parent: IDCardStandard
+  id: CMMIDCardDeputyMarshal
+  name: minuteman ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idseniorofficer
+  - type: PresetIdCard
+    job: DeputyMarshalCMM
+
+- type: entity
+  parent: IDCardStandard
+  id: CMMIDCardMarshal
+  name: minuteman ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idseniorofficer
+  - type: PresetIdCard
+    job: MarshalCMM

@@ -47,3 +47,13 @@ job-name-highsec = Corporate Liquidation Agent
 job-name-traumasec = TraumaSec Combat Medic
 job-name-employee = Shinohara Employee
 job-name-medtech = MedTech Specialist
+
+#cmm
+
+job-name-ordnanceman = Ordnanceman
+job-name-machinist = Engine Machinist
+job-name-physician = Combat Physician
+job-name-minuteman = Colonial Minuteman
+job-name-watchmaster = Colonial Watchmaster
+job-name-deputymarshal = Deputy Marshal
+job-name-marshal = Colonial Marshal

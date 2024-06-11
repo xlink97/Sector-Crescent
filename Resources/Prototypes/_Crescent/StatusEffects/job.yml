@@ -235,3 +235,52 @@
   icon:
     sprite: Interface/Misc/job_icons.rsi
     state: Highsec
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconDeputyMarshal
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: DeputyMarshal
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconMarshal
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Marshal
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconMinuteman
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Minuteman
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconOrdnanceman
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Ordnanceman
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconCMMPhysician
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Physician
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconWatchmaster
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Watchmaster
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconMachinist
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: Engineman

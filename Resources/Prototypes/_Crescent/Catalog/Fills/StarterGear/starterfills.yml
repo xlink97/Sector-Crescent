@@ -327,3 +327,38 @@
   - type: StorageFill
     contents:
       - id: BoxSurvival
+
+#cmm
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackMinuteman
+  id: ClothingBackpackMinutemanFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: Flash
+      - id: MagazinePistol
+      - id: FrontierUplinkCoin
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackMinutemanSatchel
+  id: ClothingBackpackMinutemanSatchelFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: Flash
+      - id: MagazinePistol
+      - id: FrontierUplinkCoin
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackMinutemanDuffelbag
+  id: ClothingBackpackMinutemanDuffelbagFilled
+  components:
+  - type: StorageFill
+    contents:
+      - id: Flash
+      - id: MagazinePistol
+      - id: FrontierUplinkCoin

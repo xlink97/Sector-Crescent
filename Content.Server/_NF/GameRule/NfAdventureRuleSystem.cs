@@ -70,7 +70,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
                 continue;
 
             var profit = bank.Balance - player.Item2;
-            ev.AddLine($"- {meta.EntityName} {profitText} {profit} Spesos");
+            ev.AddLine($"- {meta.EntityName} {profitText} {profit} Credits");
             allScore.Add(new Tuple<string, int>(meta.EntityName, profit));
         }
 
@@ -167,7 +167,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
             }
 
             var meta = EnsureComp<MetaDataComponent>(nfsdUids[0]);
-            _meta.SetEntityName(nfsdUids[0], "NFSD Outpost", meta);
+            _meta.SetEntityName(nfsdUids[0], "Precinct 9", meta);
             _shuttle.SetIFFColor(nfsdUids[0], new Color(1f, 0.2f, 0.2f));
         }
 

@@ -146,3 +146,38 @@
     sprite: _Crescent/Clothing/Back/shidufflebag.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.1
+
+#cmm
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackMinuteman
+  name: minuteman rucksack
+  description: A robust backpack in CMM livery.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/Back/minuteman.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackMinutemanSatchel
+  name: minuteman's courier bag
+  description: A robust courier bag in CMM livery.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/Back/minutemansatch.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackMinutemanDuffelbag
+  name: minuteman duffelbag
+  description: A robust duffelbag for the Minutemen.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/Back/minutemanduff.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
