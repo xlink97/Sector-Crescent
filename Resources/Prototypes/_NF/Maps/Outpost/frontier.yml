@@ -26,7 +26,6 @@
             DoktorNCWL: [ 3, 5 ]
             SanitarNCWL: [ 3, 5 ]
             KadetNCWL: [ 5, 10 ]
-            ExecutiveSHI: [ 1, 1 ]
             BoardSHI: [ 1, 1 ]
             EmployeeSHI: [ 5, 10 ]
             Contractor: [ -1, -1 ]

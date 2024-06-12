@@ -1,0 +1,13 @@
+- type: vendingMachineInventory
+  id: NovaBelraskaDispensary
+  startingInventory:
+    TradeGoodSugar: 999
+    TradeGoodFlour: 999
+    TradeGoodAlcohol: 999
+
+- type: vendingMachineInventory
+  id: GrinningJackalDispensary
+  startingInventory:
+    TradeGoodScrap: 999
+    TradeGoodGunparts: 999
+    TradeGoodCybernetics: 999

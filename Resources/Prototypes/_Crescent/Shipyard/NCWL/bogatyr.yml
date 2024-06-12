@@ -4,7 +4,7 @@
 - type: vessel
   id: Bogatyr
   name: NCWL Bogatyr
-  description: A communard stealth bomber, seen primarily in discreet naval operations.
+  description: A communard stealth bomber, sees use primarily in discreet naval operations.
   price: 57500
   category: Small
   group: Civilian
