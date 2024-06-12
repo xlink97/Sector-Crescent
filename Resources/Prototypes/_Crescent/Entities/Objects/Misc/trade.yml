@@ -6,13 +6,14 @@
   name: alcohol crate
   description: A sealed crate of distilled potato vodka - Chengridz brand. A sticker on the side identifies the export console this was bought from.
   components:
+  - type: Item
+    size: Ginormous
   - type: Sprite
     sprite: _Crescent/Objects/TradeGoods/alcohol.rsi
     layers:
     - state: icon
   - type: StaticPrice
-    price: 100
-    size: Ginormous
+    price: 500
 
 - type: entity
   parent: BaseItem
@@ -20,13 +21,14 @@
   name: sealed ammunition crate
   description: A hermetically sealed crate of pre-war munitions. A sticker on the side identifies the export console this was bought from.
   components:
+  - type: Item
+    size: Ginormous
   - type: Sprite
     sprite: _Crescent/Objects/TradeGoods/ammo.rsi
     layers:
     - state: icon
   - type: StaticPrice
     price: 500
-    size: Ginormous
 
 - type: entity
   parent: BaseItem
@@ -34,13 +36,14 @@
   name: sealed antibiotics case
   description: A hermetically sealed case of high-grade antibiotics. A sticker on the side identifies the export console this was bought from.
   components:
+  - type: Item
+    size: Ginormous
   - type: Sprite
     sprite: _Crescent/Objects/TradeGoods/antibiotics.rsi
     layers:
     - state: icon
   - type: StaticPrice
     price: 500
-    size: Ginormous
 
 
 - type: entity
@@ -49,13 +52,14 @@
   name: sealed crate of cybernetic parts
   description: A hermetically sealed case of high-grade prosthetics and spare parts. A sticker on the side identifies the export console this was bought from.
   components:
+  - type: Item
+    size: Ginormous
   - type: Sprite
     sprite: _Crescent/Objects/TradeGoods/cybernetics.rsi
     layers:
     - state: icon
   - type: StaticPrice
     price: 500
-    size: Ginormous
 
 - type: entity
   parent: BaseItem
@@ -63,13 +67,14 @@
   name: sealed scrap crate
   description: A hermetically sealed case of assorted scrap parts. A sticker on the side identifies the export console this was bought from.
   components:
+  - type: Item
+    size: Ginormous
   - type: Sprite
     sprite: _Crescent/Objects/TradeGoods/scrap.rsi
     layers:
     - state: icon
   - type: StaticPrice
     price: 500
-    size: Ginormous
 
 - type: entity
   parent: BaseItem
@@ -77,13 +82,14 @@
   name: sealed crate of gun parts
   description: A hermetically sealed case of assorted armament parts. A sticker on the side identifies the export console this was bought from.
   components:
+  - type: Item
+    size: Ginormous
   - type: Sprite
     sprite: _Crescent/Objects/TradeGoods/gunparts.rsi
     layers:
     - state: icon
   - type: StaticPrice
     price: 500
-    size: Ginormous
 
 - type: entity
   parent: BaseItem
@@ -91,13 +97,14 @@
   name: bag of export flour
   description: A bag of export-grade flour.
   components:
+  - type: Item
+    size: Huge
   - type: Sprite
     sprite: _Crescent/Objects/TradeGoods/flour.rsi
     layers:
     - state: icon
   - type: StaticPrice
-    price: 250
-    size: Large
+    price: 300
 
 - type: entity
   parent: BaseItem
@@ -105,13 +112,14 @@
   name: bag of export rice
   description: A bag of export-grade rice.
   components:
+  - type: Item
+    size: Huge
   - type: Sprite
     sprite: _Crescent/Objects/TradeGoods/rice.rsi
     layers:
     - state: icon
   - type: StaticPrice
-    price: 250
-    size: Large
+    price: 300
 
 - type: entity
   parent: BaseItem
@@ -119,13 +127,14 @@
   name: bag of export sugar
   description: A bag of export-grade sugar.
   components:
+  - type: Item
+    size: Huge
   - type: Sprite
     sprite: _Crescent/Objects/TradeGoods/sugar.rsi
     layers:
     - state: icon
   - type: StaticPrice
-    price: 250
-    size: Large
+    price: 300
 
 #deeds
 

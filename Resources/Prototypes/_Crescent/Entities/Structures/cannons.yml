@@ -53,57 +53,6 @@
             - PowerCellSmall
   - type: MagazineAmmoProvider
 
-- type: entity
-  id: ShuttleGunPlasmaCannonPLACEHOLDER
-  parent: [ ShuttleGunBase, ConstructibleMachine]
-  name: LSE-1200c "Perforator"
-  description: Advanced stationary laser unit. Annihilates electronics and is extremely dangerous to health! Uses the power cage to fire.
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Shuttles/laser.rsi
-    layers:
-    - state: lse-1200c
-    - state: mag-unshaded-9
-      map: ["enum.GunVisualLayers.MagUnshaded"]
-      shader: unshaded
-  - type: ContainerContainer
-    containers:
-      machine_board: !type:Container
-      machine_parts: !type:Container
-      gun_magazine: !type:ContainerSlot
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 300
-      behaviors:
-        - !type:ChangeConstructionNodeBehavior
-          node: machineFrame
-        - !type:DoActsBehavior
-          acts: ["Destruction"]
-  - type: Gun
-    fireRate: 1
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/ship_perforator.ogg
-      params:
-        variation: 0.05
-  - type: MagazineVisuals
-    magState: mag
-    steps: 10
-    zeroVisible: true
-  - type: Machine
-    board: ShuttleGunPerforatorCircuitboard
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
-        whitelist:
-          tags:
-            - PowerCage
-  - type: MagazineAmmoProvider
-
 ##mining turret
 
 - type: entity
@@ -420,5 +369,96 @@
     IsInCombatMode: true
   - type: ApcPowerReceiver
     powerLoad: 1000
+  - type: ExtensionCableReceiver
+  - type: BatterySelfRecharger
+
+#120mm
+
+- type: entity
+  id: Type99Artillery
+  name: SHI Type 99 120mm artillery
+  parent: ConstructibleMachine
+  description: A heavier, bulkier version of the slugthrower. An antiquated SHI design. Requires manual reloading after expending magazine.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 600
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    sprite: _Crescent/Objects/ShuttleWeapons/artillery.rsi
+    layers:
+    - state: artillery
+  - type: Anchorable
+  - type: Pullable
+  - type: Rotatable
+    rotateWhilePulling: false
+    rotateWhileAnchored: true
+    increment: 45
+  - type: Appearance
+  - type: AmmoCounter
+  - type: Battery
+    maxCharge: 1000000
+    startingCharge: 1000000
+  - type: ExaminableBattery
+  - type: BallisticAmmoProvider
+    autoCycle: true
+    capacity: 3
+    proto: CartridgeShellArmorPiercing
+    whitelist:
+      tags:
+      - CartridgeShell
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSink
+    ports:
+      - SpaceArtilleryFire
+      - SpaceArtilleryToggleSafety
+      - SpaceArtilleryOnSafety
+      - SpaceArtilleryOffSafety
+  - type: DeviceLinkSource
+    ports:
+      - SpaceArtilleryDetectedFiring
+      - SpaceArtilleryDetectedMalfunction
+      - SpaceArtilleryDetectedSafetyChange
+  - type: Gun
+    fireRate: 1
+    projectileSpeed: 80
+    soundGunshot:
+      path: /Audio/Effects/thunk.ogg
+    soundEmpty:
+      path: /Audio/Items/hiss.ogg
+  - type: SpaceArtillery
+    isArmed: true
+    powerChargeRate: 2000
+    powerUsePassive: 3000
+    isPowerRequiredForSignal: true
+    isPowerRequiredToFire: false
+  - type: Actions
+  - type: CombatMode
+    IsInCombatMode: true
+  - type: ApcPowerReceiver
+    powerLoad: 3000
   - type: ExtensionCableReceiver
   - type: BatterySelfRecharger
