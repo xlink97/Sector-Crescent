@@ -698,26 +698,24 @@
 
 - type: entity
   id: BulletGrenadeBaton
-  name: baton grenade
-  parent: BaseBullet
+  name: low-yield missile
+  parent: BaseBulletTrigger
   noSpawn: true
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
       - state: grenade
-  - type: Projectile
-    deleteOnCollide: true
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 120
-    intensitySlope: 5
-    maxIntensity: 8
+    totalIntensity: 140
+    intensitySlope: 4
+    maxIntensity: 7
 
 - type: entity
   id: BulletGrenadeBlast
-  name: blast grenade
+  name: high-yield missile
   parent: BaseBulletTrigger
   noSpawn: true
   components:
@@ -734,7 +732,7 @@
 
 - type: entity
   id: BulletGrenadeFlash
-  name: flash grenade
+  name: flash missile
   parent: BaseBulletTrigger
   noSpawn: true
   components:
@@ -753,7 +751,7 @@
 # This is supposed to spawn shrapnel and stuff so uhh... TODO?
 - type: entity
   id: BulletGrenadeFrag
-  name: frag grenade
+  name: fragmentation missile
   parent: BaseBulletTrigger
   noSpawn: true
   components:
@@ -779,7 +777,7 @@
     layers:
       - state: frag
   - type: EmpOnTrigger
-    range: 5
+    range: 8
     energyConsumption: 50000
     disableDuration: 10
   - type: Ammo
