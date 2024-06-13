@@ -707,14 +707,13 @@
     layers:
       - state: grenade
   - type: Projectile
-    deleteOnCollide: false
-    damage:
-      types:
-        Blunt: 1
-    soundHit:
-      path: /Audio/Effects/gen_hit.ogg
-  - type: StaminaDamageOnCollide
-    damage: 80
+    deleteOnCollide: true
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 120
+    intensitySlope: 5
+    maxIntensity: 8
 
 - type: entity
   id: BulletGrenadeBlast
@@ -729,9 +728,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 140 # a ~2 tile radius
-    intensitySlope: 5
-    maxIntensity: 8
+    totalIntensity: 250
+    intensitySlope: 6
+    maxIntensity: 9
 
 - type: entity
   id: BulletGrenadeFlash
