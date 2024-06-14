@@ -228,13 +228,25 @@
       - SpaceArtilleryDetectedFiring
       - SpaceArtilleryDetectedMalfunction
       - SpaceArtilleryDetectedSafetyChange
-  - type: BallisticAmmoProvider
-    autoCycle: true
-    capacity: 120
-    proto: CartridgeMachineGunArmorPiercing
-    whitelist:
-      tags:
-      - CartridgeMachineGun
+  - type: ChamberMagazineAmmoProvider
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineLightRifleBoxSlug
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - SlugthrowerCartridgeBox
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeLightRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeShellArmorPiercing
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -245,7 +257,7 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/50cal.ogg
     soundEmpty:
-      path: /Audio/Items/hiss.ogg
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: SpaceArtillery
     isArmed: true
     powerChargeRate: 1500
@@ -417,7 +429,7 @@
   - type: ExaminableBattery
   - type: BallisticAmmoProvider
     autoCycle: true
-    capacity: 3
+    capacity: 2
     proto: CartridgeShellArmorPiercing
     whitelist:
       tags:
@@ -430,7 +442,7 @@
     deviceNetId: Wireless
     receiveFrequencyId: BasicDevice
   - type: WirelessNetworkConnection
-    range: 200
+    range: 500
   - type: DeviceLinkSink
     ports:
       - SpaceArtilleryFire
@@ -446,9 +458,9 @@
     fireRate: 1
     projectileSpeed: 80
     soundGunshot:
-      path: /Audio/Effects/thunk.ogg
+      path: /Audio/Weapons/Guns/Gunshots/artillery.ogg
     soundEmpty:
-      path: /Audio/Items/hiss.ogg
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: SpaceArtillery
     isArmed: true
     powerChargeRate: 2000
