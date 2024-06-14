@@ -151,27 +151,27 @@
   recipeUnlocks:
   - WeaponXrayCannon
 
-- type: technology
-  id: BasicShuttleArmament
-  name: research-technology-basic-shuttle-armament
-  icon:
-    sprite: Structures/Power/cage_recharger.rsi
-    state: full
-  discipline: Arsenal
-  tier: 2
-  cost: 10500
-  recipeUnlocks:
-  - PowerCageRechargerCircuitboard
-  - PowerCageSmall
-  - PowerCageMedium
-  - MagazineGrenadeEmpty
-  - GrenadeFlash
-  - GrenadeBlast
-  - ShuttleGunSvalinnMachineGunCircuitboard
-  - ShuttleGunPerforatorCircuitboard
-  - ShuttleGunFriendshipCircuitboard
-  technologyPrerequisites:
-  - SalvageWeapons
+#- type: technology
+#  id: BasicShuttleArmament
+#  name: research-technology-basic-shuttle-armament
+#  icon:
+#    sprite: Structures/Power/cage_recharger.rsi
+#    state: full
+#  discipline: Arsenal
+#  tier: 2
+#  cost: 10500
+#  recipeUnlocks:
+#  - PowerCageRechargerCircuitboard
+#  - PowerCageSmall
+#  - PowerCageMedium
+#  - MagazineGrenadeEmpty
+#  - GrenadeFlash
+#  - GrenadeBlast
+#  - ShuttleGunSvalinnMachineGunCircuitboard
+#  - ShuttleGunPerforatorCircuitboard
+#  - ShuttleGunFriendshipCircuitboard
+#  technologyPrerequisites:
+#  - SalvageWeapons
 
 # Tier 3
 
@@ -200,18 +200,18 @@
   recipeUnlocks:
   - WeaponLaserSvalinn
 
-- type: technology
-  id: AdvancedShuttleWeapon
-  name: research-technology-advanced-shuttle-weapon
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Grenade/grenade_cartridge.rsi
-    state: icon
-  discipline: Arsenal
-  tier: 3
-  cost: 15000
-  recipeUnlocks:
-  - GrenadeEMP
-  - PowerCageHigh
-  - ShuttleGunDusterCircuitboard
-  technologyPrerequisites:
-  - BasicShuttleArmament
+#- type: technology
+#  id: AdvancedShuttleWeapon
+#  name: research-technology-advanced-shuttle-weapon
+#  icon:
+#    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Grenade/grenade_cartridge.rsi
+#    state: icon
+#  discipline: Arsenal
+#  tier: 3
+#  cost: 15000
+#  recipeUnlocks:
+#  - GrenadeEMP
+#  - PowerCageHigh
+#  - ShuttleGunDusterCircuitboard
+#  technologyPrerequisites:
+#  - BasicShuttleArmament
