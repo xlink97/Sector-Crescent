@@ -5,12 +5,12 @@
   price: 40000
   category: Medium
   group: Civilian
-  shuttlePath: /Maps/Shuttles/aunas.yml
+  shuttlePath: /Maps/_Crescent/Shuttles/SRM/aunas.yml
 
 - type: gameMap
   id: Aunas
   mapName: 'SRM Aunas'
-  mapPath: /Maps/Shuttles/aunas.yml
+  mapPath: /Maps/_Crescent/Shuttles/SRM/aunas.yml
   minPlayers: 0
   stations:
     Aunas:
