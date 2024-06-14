@@ -162,6 +162,14 @@ entities:
     - type: RadiationGridResistance
     - type: BecomesStation
       id: Aunas
+- proto: ActionToggleInternals
+  entities:
+  - uid: 94
+    components:
+    - type: Transform
+      parent: 71
+    - type: InstantAction
+      container: 71
 - proto: AirAlarm
   entities:
   - uid: 54
@@ -334,6 +342,65 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 516
+- proto: AirTankFilled
+  entities:
+  - uid: 71
+    components:
+    - type: Transform
+      parent: 66
+    - type: GasTank
+      toggleActionEntity: 94
+    - type: Physics
+      canCollide: False
+    - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents:
+          - 94
+    - type: InsideEntityStorage
+  - uid: 566
+    components:
+    - type: Transform
+      parent: 156
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 579
+    components:
+    - type: Transform
+      parent: 568
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 585
+    components:
+    - type: Transform
+      parent: 581
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 592
+    components:
+    - type: Transform
+      parent: 587
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 597
+    components:
+    - type: Transform
+      parent: 593
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 604
+    components:
+    - type: Transform
+      parent: 599
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: APCBasic
   entities:
   - uid: 53
@@ -1715,41 +1782,55 @@ entities:
       parent: 1
 - proto: ClothingOuterHardsuitHunter
   entities:
-  - uid: 565
+  - uid: 69
     components:
     - type: Transform
-      pos: 4.6606045,0.48050165
-      parent: 1
-  - uid: 566
-    components:
-    - type: Transform
-      pos: 4.6606045,0.48050165
-      parent: 1
+      parent: 66
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
   - uid: 567
     components:
     - type: Transform
-      pos: 4.6606045,0.48050165
-      parent: 1
-  - uid: 568
+      parent: 156
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 580
     components:
     - type: Transform
-      pos: 4.6606045,0.48050165
-      parent: 1
-  - uid: 569
+      parent: 568
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 586
     components:
     - type: Transform
-      pos: 4.6606045,0.48050165
-      parent: 1
-  - uid: 570
+      parent: 581
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 589
     components:
     - type: Transform
-      pos: 4.6606045,0.48050165
-      parent: 1
-  - uid: 571
+      parent: 587
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 598
     components:
     - type: Transform
-      pos: 4.6647263,0.5561218
-      parent: 1
+      parent: 593
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 601
+    components:
+    - type: Transform
+      parent: 599
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: ComputerTabletopAlert
   entities:
   - uid: 564
@@ -2213,6 +2294,108 @@ entities:
       parent: 1
     - type: Thruster
       originalPowerLoad: 1500
+- proto: HandHeldMassScanner
+  entities:
+  - uid: 68
+    components:
+    - type: Transform
+      parent: 66
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 390
+    components:
+    - type: Transform
+      parent: 156
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 569
+    components:
+    - type: Transform
+      parent: 568
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 582
+    components:
+    - type: Transform
+      parent: 581
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 588
+    components:
+    - type: Transform
+      parent: 587
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 596
+    components:
+    - type: Transform
+      parent: 593
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 602
+    components:
+    - type: Transform
+      parent: 599
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: JetpackMiniFilled
+  entities:
+  - uid: 67
+    components:
+    - type: Transform
+      parent: 66
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 415
+    components:
+    - type: Transform
+      parent: 156
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 570
+    components:
+    - type: Transform
+      parent: 568
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 583
+    components:
+    - type: Transform
+      parent: 581
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 591
+    components:
+    - type: Transform
+      parent: 587
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 595
+    components:
+    - type: Transform
+      parent: 593
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 603
+    components:
+    - type: Transform
+      parent: 599
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: LockerWeldingSuppliesFilled
   entities:
   - uid: 307
@@ -2655,7 +2838,7 @@ entities:
       pos: 6.5,2.5
       parent: 1
     - type: Battery
-      startingCharge: 197000
+      startingCharge: 196500
     - type: DeviceLinkSink
       invokeCounter: 1
       links:
@@ -2690,7 +2873,7 @@ entities:
       pos: 7.5,2.5
       parent: 1
     - type: Battery
-      startingCharge: 198000
+      startingCharge: 197500
     - type: DeviceLinkSink
       invokeCounter: 1
       links:
@@ -2721,7 +2904,7 @@ entities:
       pos: -6.5,2.5
       parent: 1
     - type: Battery
-      startingCharge: 198000
+      startingCharge: 197500
     - type: DeviceLinkSink
       invokeCounter: 1
       links:
@@ -2752,7 +2935,7 @@ entities:
       pos: -5.5,2.5
       parent: 1
     - type: Battery
-      startingCharge: 197000
+      startingCharge: 196500
     - type: DeviceLinkSink
       invokeCounter: 1
       links:
@@ -2878,6 +3061,15 @@ entities:
       invokeCounter: 4
       links:
       - 282
+  - uid: 605
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 2.5,9.5
+      parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 282
 - proto: ShuttleGunMissileRack
   entities:
   - uid: 122
@@ -2953,7 +3145,7 @@ entities:
         - Pressed: Toggle
         100:
         - Pressed: Toggle
-        invalid:
+        605:
         - Pressed: Toggle
         97:
         - Pressed: Toggle
@@ -3087,43 +3279,246 @@ entities:
     - type: Transform
       pos: -0.5,-3.5
       parent: 1
-- proto: SuitStorageMercenary
+- proto: SuitStorageBase
   entities:
   - uid: 66
     components:
     - type: Transform
-      pos: -0.5,9.5
+      pos: -0.5,7.5
       parent: 1
-  - uid: 67
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14914
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 71
+          - 67
+          - 68
+          - 69
+          - 70
+  - uid: 156
     components:
     - type: Transform
       pos: 1.5,9.5
       parent: 1
-  - uid: 68
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14914
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 390
+          - 415
+          - 565
+          - 566
+          - 567
+  - uid: 568
     components:
     - type: Transform
       pos: 1.5,8.5
       parent: 1
-  - uid: 69
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14914
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 580
+          - 579
+          - 571
+          - 570
+          - 569
+  - uid: 581
     components:
     - type: Transform
       pos: -0.5,8.5
       parent: 1
-  - uid: 70
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14914
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 586
+          - 585
+          - 584
+          - 583
+          - 582
+  - uid: 587
     components:
     - type: Transform
-      pos: -0.5,7.5
+      pos: -0.5,9.5
       parent: 1
-  - uid: 71
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14914
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 588
+          - 589
+          - 590
+          - 591
+          - 592
+  - uid: 593
     components:
     - type: Transform
       pos: 1.5,7.5
       parent: 1
-  - uid: 156
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14914
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 598
+          - 597
+          - 596
+          - 595
+          - 594
+  - uid: 599
     components:
     - type: Transform
       pos: 1.5,5.5
       parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14914
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 604
+          - 602
+          - 601
+          - 600
+          - 603
 - proto: TableReinforced
   entities:
   - uid: 127
@@ -3304,7 +3699,10 @@ entities:
       pos: 3.5,-3.5
       parent: 1
     - type: Thruster
+      enabled: False
       originalPowerLoad: 1500
+    - type: ApcPowerReceiver
+      powerLoad: 1
   - uid: 578
     components:
     - type: Transform
@@ -3845,21 +4243,55 @@ entities:
       parent: 1
 - proto: WeaponGrapplingGun
   entities:
-  - uid: 94
+  - uid: 70
     components:
     - type: Transform
-      pos: 4.8085165,0.16175598
-      parent: 1
-  - uid: 390
+      parent: 66
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 565
     components:
     - type: Transform
-      pos: 4.7772665,0.23988098
-      parent: 1
-  - uid: 415
+      parent: 156
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 571
     components:
     - type: Transform
-      pos: 4.7616415,0.25550598
-      parent: 1
+      parent: 568
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 584
+    components:
+    - type: Transform
+      parent: 581
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 590
+    components:
+    - type: Transform
+      parent: 587
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 594
+    components:
+    - type: Transform
+      parent: 593
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 600
+    components:
+    - type: Transform
+      parent: 599
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: WeaponPistolComplianceImperial
   entities:
   - uid: 542
