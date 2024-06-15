@@ -1,6 +1,6 @@
 - type: gameMap
   id: LPBravo
-  mapName: 'Listening Point Bravo'
+  mapName: 'NCSP Grinning Jackal'
   mapPath: /Maps/_NF/POI/lpbravo.yml
   minPlayers: 0
   stations:
