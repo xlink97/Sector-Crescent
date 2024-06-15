@@ -23,6 +23,8 @@
   - SyndicateCommand
   - SyndicateRingleader
   - SyndicateGorlex
+  - SyndicateRamzi
+  - SyndicateInterdyne
 
 - type: startingGear
   id: RingleaderGear
