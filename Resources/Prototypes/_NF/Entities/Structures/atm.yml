@@ -228,5 +228,3 @@
   - type: ContainerContainer
     containers:
       station-bank-ATM-cashSlot: !type:ContainerSlot {}
-  - type: AccessReader
-    access: [["HeadOfPersonnel"], ["HeadOfSecurity"]]

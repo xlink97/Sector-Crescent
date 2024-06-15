@@ -1,0 +1,19 @@
+
+- type: entity
+  id: NCWLMothershipComputer
+  parent: BaseMothershipComputer
+  name: NCWL shipyard
+  components:
+  - type: ShipyardListing
+    shuttles:
+    - Bogatyr
+
+- type: entity
+  id: JackalMothershipComputer
+  parent: BaseMothershipComputer
+  name: NCSP shipyard
+  components:
+  - type: ShipyardListing
+    shuttles:
+    - Hyena
+    - Reaver
