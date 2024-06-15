@@ -4,7 +4,7 @@
   description: The SRM Aunas is a tripurpose stealth frigate employed by Saint Roumaine's Militia.
   price: 40000
   category: Medium
-  group: Civilian
+  group: None
   shuttlePath: /Maps/_Crescent/Shuttles/SRM/aunas.yml
 
 - type: gameMap
