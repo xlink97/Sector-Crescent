@@ -2,7 +2,7 @@
   id: buffalo
   name: SHI Buffalo
   description: The SHI Buffalo is a cost-effective hauling ship designed for two technicians, one foreman, and an anti-boarding corpsec officer.
-  price: 22000
+  price: 32000
   category: Small
   group: Civilian
   shuttlePath: /Maps/_Crescent/Shuttles/SHI/buffalo.yml
