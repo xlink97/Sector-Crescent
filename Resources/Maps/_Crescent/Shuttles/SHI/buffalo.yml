@@ -1323,6 +1323,11 @@ entities:
     - type: Transform
       pos: 0.5,8.5
       parent: 2
+  - uid: 601
+    components:
+    - type: Transform
+      pos: -1.5,5.5
+      parent: 2
 - proto: Catwalk
   entities:
   - uid: 63
@@ -1931,13 +1936,6 @@ entities:
     - type: DeviceLinkSink
       links:
       - 59
-- proto: CrateTrashCart
-  entities:
-  - uid: 279
-    components:
-    - type: Transform
-      pos: -3.5,-0.5
-      parent: 2
 - proto: FaxMachineShip
   entities:
   - uid: 433
@@ -2300,6 +2298,13 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 411
+- proto: GravityGeneratorMini
+  entities:
+  - uid: 279
+    components:
+    - type: Transform
+      pos: -3.5,-0.5
+      parent: 2
 - proto: Grille
   entities:
   - uid: 45
@@ -2484,8 +2489,8 @@ entities:
         immutable: False
         temperature: 293.14923
         moles:
-        - 1.7459903
-        - 6.568249
+        - 1.8856695
+        - 7.0937095
         - 0
         - 0
         - 0
@@ -2502,12 +2507,12 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 596
           - 595
-          - 594
-          - 593
-          - 592
           - 597
+          - 592
+          - 593
+          - 594
+          - 596
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -3918,6 +3923,12 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -3.5,-5.5
+      parent: 2
+  - uid: 602
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -3.5,-0.5
       parent: 2
 - proto: WindowDirectional
   entities:
