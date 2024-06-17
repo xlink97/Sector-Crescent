@@ -113,11 +113,228 @@ entities:
         version: 2
         nodes:
         - node:
+            color: '#79150096'
+            id: HalfTileOverlayGreyscale
+          decals:
+            152: 1,-6
+            155: 0,1
+            161: -9,-44
+            162: -8,-44
+            163: -7,-44
+            164: -6,-44
+            165: -5,-44
+            166: -4,-44
+            167: 2,-44
+            168: 3,-44
+            169: 4,-44
+            170: 5,-44
+            171: 6,-44
+            172: 7,-44
+            202: -7,-61
+            203: -6,-61
+            204: -5,-61
+            205: -4,-61
+            206: -3,-61
+            207: -2,-61
+            208: -1,-61
+            209: 0,-61
+            210: 1,-61
+            211: 2,-61
+            212: 3,-61
+            213: 4,-61
+            214: 5,-61
+            215: 6,-61
+            216: 7,-61
+            237: 13,-57
+            238: 14,-57
+            239: 15,-57
+            240: 16,-57
+            241: 17,-57
+            242: 18,-57
+        - node:
+            color: '#79150096'
+            id: HalfTileOverlayGreyscale180
+          decals:
+            145: 1,-8
+            156: 0,-1
+            187: 7,-63
+            188: 6,-63
+            189: 5,-63
+            190: 4,-63
+            191: 2,-63
+            192: 3,-63
+            193: 1,-63
+            194: 0,-63
+            195: -1,-63
+            196: -2,-63
+            197: -3,-63
+            198: -4,-63
+            199: -5,-63
+            200: -6,-63
+            201: -7,-63
+            231: 18,-60
+            232: 17,-60
+            233: 15,-60
+            234: 16,-60
+            235: 14,-60
+            236: 13,-60
+        - node:
+            color: '#79150096'
+            id: HalfTileOverlayGreyscale270
+          decals:
+            85: -2,-4
+            86: -2,-5
+            87: -2,-6
+            88: -2,-8
+            89: -2,-7
+            90: -2,-9
+            91: -2,-10
+            92: -2,-11
+            93: -2,-12
+            94: -2,-13
+            95: -2,-14
+            96: -2,-15
+            97: -2,-16
+            98: -2,-17
+            99: -2,-18
+            100: -2,-19
+            101: -2,-20
+            102: -2,-21
+            103: -2,-22
+            104: -2,-24
+            105: -2,-23
+            106: -2,-25
+            107: -2,-27
+            108: -2,-28
+            109: -2,-26
+            110: -2,-33
+            111: -2,-32
+            112: -2,-31
+            113: -2,-30
+            114: -2,-29
+            115: -2,-35
+            116: -2,-34
+            117: -2,-36
+            153: -1,0
+            217: -10,-62
+            218: -10,-61
+            219: -10,-60
+            220: -10,-59
+            221: -10,-58
+            222: -10,-57
+            223: -10,-56
+            224: -10,-55
+            225: -10,-54
+            226: -10,-53
+            227: -10,-52
+            228: -10,-51
+            229: -10,-50
+            230: -10,-49
+            248: 12,-59
+            249: 12,-58
+            252: -2,-52
+            253: -2,-51
+            254: -2,-50
+            255: -2,-49
+            256: -2,-48
+        - node:
+            color: '#79150096'
+            id: HalfTileOverlayGreyscale90
+          decals:
+            118: 0,-37
+            119: 0,-36
+            120: 0,-35
+            121: 0,-34
+            122: 0,-33
+            123: 0,-32
+            124: 0,-31
+            125: 0,-30
+            126: 0,-29
+            127: 0,-28
+            128: 0,-27
+            129: 0,-26
+            130: 0,-25
+            131: 0,-24
+            132: 0,-23
+            133: 0,-22
+            134: 0,-20
+            135: 0,-19
+            136: 0,-18
+            137: 0,-17
+            138: 0,-16
+            139: 0,-10
+            140: 0,-11
+            141: 0,-12
+            142: 0,-14
+            143: 0,-15
+            144: 0,-13
+            148: 0,-9
+            149: 0,-5
+            150: 0,-4
+            151: 0,-3
+            154: 1,0
+            173: 10,-49
+            174: 10,-50
+            175: 10,-51
+            176: 10,-52
+            177: 10,-53
+            178: 10,-54
+            179: 10,-55
+            180: 10,-56
+            181: 10,-57
+            182: 10,-58
+            183: 10,-59
+            184: 10,-60
+            185: 10,-61
+            186: 10,-62
+            243: 19,-58
+            257: 0,-48
+            258: 0,-49
+            259: 0,-50
+            260: 0,-51
+            261: 0,-52
+        - node:
             color: '#FFFFFFFF'
             id: LoadingArea
           decals:
             14: -3,-40
             15: -9,-40
+        - node:
+            color: '#79150096'
+            id: QuarterTileOverlayGreyscale180
+          decals:
+            146: 0,-8
+            251: 18,-59
+        - node:
+            color: '#79150096'
+            id: QuarterTileOverlayGreyscale90
+          decals:
+            147: 0,-6
+            250: 18,-60
+        - node:
+            color: '#79150096'
+            id: ThreeQuarterTileOverlayGreyscale
+          decals:
+            159: -1,1
+            247: 12,-57
+        - node:
+            color: '#79150096'
+            id: ThreeQuarterTileOverlayGreyscale180
+          decals:
+            158: 1,-1
+            244: 19,-59
+        - node:
+            color: '#79150096'
+            id: ThreeQuarterTileOverlayGreyscale270
+          decals:
+            157: -1,-1
+            246: 12,-60
+        - node:
+            color: '#79150096'
+            id: ThreeQuarterTileOverlayGreyscale90
+          decals:
+            160: 1,1
+            245: 19,-57
         - node:
             color: '#DE3A3A96'
             id: TrimWarnSouth
@@ -1188,7 +1405,7 @@ entities:
       pos: 6.5,-8.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -28019.318
+      secondsUntilStateChange: -29168.65
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1717,10 +1934,10 @@ entities:
       bodyType: Static
 - proto: BiomassReclaimer
   entities:
-  - uid: 1394
+  - uid: 920
     components:
     - type: Transform
-      pos: 14.5,-32.5
+      pos: 12.5,-31.5
       parent: 2
 - proto: BlastDoor
   entities:
@@ -9733,14 +9950,6 @@ entities:
           showEnts: False
           occludes: True
           ents: []
-- proto: computerBodyScanner
-  entities:
-  - uid: 920
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 12.5,-31.5
-      parent: 2
 - proto: ComputerCloningConsole
   entities:
   - uid: 1288
@@ -9751,8 +9960,9 @@ entities:
     - type: DeviceLinkSource
       linkedPorts:
         1393:
-        - MedicalScannerSender: CloningPodReceiver
         - CloningPodSender: CloningPodReceiver
+        1392:
+        - MedicalScannerSender: MedicalScannerReceiver
 - proto: ComputerRadar
   entities:
   - uid: 624
@@ -14799,6 +15009,9 @@ entities:
     - type: Transform
       pos: 14.5,-31.5
       parent: 2
+    - type: DeviceLinkSink
+      links:
+      - 1288
 - proto: MedkitCombatFilled
   entities:
   - uid: 1375
@@ -14817,6 +15030,13 @@ entities:
     components:
     - type: Transform
       pos: 14.5,-20.5
+      parent: 2
+- proto: NetworkConfigurator
+  entities:
+  - uid: 1394
+    components:
+    - type: Transform
+      pos: 3.8481998,-36.400124
       parent: 2
 - proto: OreProcessor
   entities:
@@ -19620,7 +19840,7 @@ entities:
       pos: 18.5,-15.5
       parent: 2
     - type: Battery
-      startingCharge: 988000
+      startingCharge: 982000
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -19653,7 +19873,7 @@ entities:
       pos: 20.5,-15.5
       parent: 2
     - type: Battery
-      startingCharge: 988000
+      startingCharge: 982000
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -19686,7 +19906,7 @@ entities:
       pos: -20.5,-51.5
       parent: 2
     - type: Battery
-      startingCharge: 988000
+      startingCharge: 982000
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -19718,7 +19938,7 @@ entities:
       pos: -22.5,-51.5
       parent: 2
     - type: Battery
-      startingCharge: 988000
+      startingCharge: 982000
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -19749,7 +19969,7 @@ entities:
       pos: 24.5,-51.5
       parent: 2
     - type: Battery
-      startingCharge: 988000
+      startingCharge: 982000
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
