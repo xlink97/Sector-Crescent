@@ -2,7 +2,7 @@
   id: Probe
   name: SHI Probe
   description: The SHI Probe is a cost-effective research ship designed for short-term deployment.
-  price: 25000
+  price: 35000
   category: Small
   group: Civilian
   shuttlePath: /Maps/_Crescent/Shuttles/SHI/probe.yml
