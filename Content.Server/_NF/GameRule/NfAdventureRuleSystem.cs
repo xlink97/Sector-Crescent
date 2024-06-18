@@ -83,7 +83,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
 
         for (var i = 0; i < 10 && i < highScore.Count; i++)
         {
-            relayText += $"{highScore.First().Item1} {profitText} {highScore.First().Item2.ToString()} Spesos";
+            relayText += $"{highScore.First().Item1} {profitText} {highScore.First().Item2.ToString()} Credits";
             relayText += '\n';
             highScore.Remove(highScore.First());
         }
@@ -92,7 +92,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
         highScore.Reverse();
         for (var i = 0; i < 10 && i < highScore.Count; i++)
         {
-            relayText += $"{highScore.First().Item1} {lossText} {highScore.First().Item2.ToString()} Spesos";
+            relayText += $"{highScore.First().Item1} {lossText} {highScore.First().Item2.ToString()} Credits";
             relayText += '\n';
             highScore.Remove(highScore.First());
         }
