@@ -132,7 +132,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
         var depotOffset = _random.NextVector2(4500f, 6000f);
         var tinniaOffset = _random.NextVector2(1100f, 2800f);
         var caseysOffset = _random.NextVector2(2250f, 4600f);
-        var tradeOffset = _random.NextVector2(1500f, 2500f);
+        //var tradeOffset = _random.NextVector2(1500f, 2500f);
 
         if (_map.TryLoad(mapId, depotMap, out var depotUids, new MapLoadOptions
             {

@@ -260,3 +260,193 @@
   components:
     - type: Stack
       count: 1
+
+
+#drugmaking stuff
+
+- type: Tag
+  id: DrugComponent
+
+- type: entity
+  parent: OreBase
+  id: GarbageOre
+  name: industrial garbage
+  description: Loosely compacted industrial trash.
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: GarbageOre
+  - type: Sprite
+    state: garbage
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Garbage: 500
+
+- type: entity
+  id: GarbageOre1
+  parent: GarbageOre
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  id: GarbageOre5
+  parent: GarbageOre
+  suffix: Five
+  components:
+    - type: Stack
+      count: 5
+
+- type: entity
+  id: GarbageOre10
+  parent: GarbageOre
+  suffix: Ten
+  components:
+    - type: Stack
+      count: 10
+
+- type: entity
+  id: GarbageOre25
+  parent: GarbageOre
+  suffix: Twenty Five
+  components:
+    - type: Stack
+      count: 25
+
+
+- type: entity
+  parent: OreBase
+  id: RefinedGarbageOre
+  name: compacted industrial trash
+  description: Compacted, cleaned industrial residue.
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - DrugComponent
+  - type: Stack
+    stackType: RefinedGarbageOre
+  - type: Sprite
+    state: refinedgarbage
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RefinedGarbage: 500
+
+- type: entity
+  id: RefinedGarbageOre1
+  parent: RefinedGarbageOre
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: OreBase
+  id: PlasmaIsotope
+  name: plasma-9 isotope canister
+  description: A canister of a volatile chemical precursor.
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - DrugComponent
+  - type: Stack
+    stackType: PlasmaIsotope
+  - type: Sprite
+    state: plasmaisotope
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      PlasmaIsotope: 500
+
+- type: entity
+  id: PlasmaIsotope1
+  parent: PlasmaIsotope
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: OreBase
+  id: MechaniteCanister
+  name: inert mechanite canister
+  description: A canister of a inert medical mechanites.
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - DrugComponent
+  - type: Stack
+    stackType: MechaniteCanister
+  - type: Sprite
+    state: mechanites
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Mechanites: 500
+
+- type: entity
+  id: MechaniteCanister1
+  parent: MechaniteCanister
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: OreBase
+  id: GalineCanister
+  name: pressurized galine-5 canister
+  description: A canister of volatile, pressurized gases, most commonly used in unregulated narcotics.
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - DrugComponent
+  - type: Stack
+    stackType: GalineCanister
+  - type: Sprite
+    state: galine5
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Galine: 500
+
+- type: entity
+  id: GalineCanister1
+  parent: GalineCanister
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1
+
+- type: entity
+  parent: OreBase
+  id: DeactivatedPhoronBottle
+  name: bottle of liquid deactivated phoron
+  description: A glass bottle of deactivated phoron with medicinal uses.
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - DrugComponent
+  - type: Stack
+    stackType: PhoronBottle
+  - type: Sprite
+    state: deactivatedphoron
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      DeactivatedPhoron: 500
+
+- type: entity
+  id: DeactivatedPhoronBottle1
+  parent: DeactivatedPhoronBottle
+  suffix: Single
+  components:
+    - type: Stack
+      count: 1

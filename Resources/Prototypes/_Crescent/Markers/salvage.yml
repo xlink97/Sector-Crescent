@@ -14,6 +14,7 @@
         - TitaniumScrap25
         - SteelScrap25
         - ScrapBluespace
+        - GarbageOre25
 
       rareChance: 0.03
       prototypes:
@@ -27,6 +28,10 @@
         - ScrapPlasma
         - ScrapComponent
         - ScrapUranium
+        - GarbageOre10
+        - GarbageOre5
+        - GarbageOre1
+        - GarbageOre10
 
       chance: 0.5
       offset: 0.2
