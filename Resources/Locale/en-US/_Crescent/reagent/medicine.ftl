@@ -9,3 +9,6 @@ reagent-desc-kaiser = A sophisticated combat drug - boasting the refined effects
 
 reagent-name-kaiser = combat mechanites
 reagent-desc-kaiser = A chemical cocktail of healing mechanites intended to localize around damage in the body and repair it on a sub-molecular level.
+
+reagent-name-bloodeye = blood-eye
+reagent-desc-bloodeye = A chemical cocktail of combat drugs known to invoke violent tendencies within the user. Blood-eye was originally produced by Shinohara Heavy Industries, but later taken off the shelves after narcotic regulations were put into place.

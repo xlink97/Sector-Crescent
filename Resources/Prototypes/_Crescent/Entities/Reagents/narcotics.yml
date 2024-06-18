@@ -135,3 +135,31 @@
           min: 5
       - !type:ModifyBleedAmount
         amount: -0.25
+
+- type: reagent
+  id: Bloodeye
+  name: reagent-name-bloodeye
+  group: Narcotics
+  desc: reagent-desc-bloodeye
+  physicalDesc: reagent-physical-desc-opaque
+  flavor: bloodeye
+  color: "#FF7F7F"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -1
+          types:
+            Poison: -0.5
+            Heat: -0.15
+            Shock: -0.15
+            Cold: -0.15
+            Radiation: -0.15
+      - !type:ResetNarcolepsy
+        conditions:
+        - !type:ReagentThreshold
+          min: 5
+      - !type:ModifyBleedAmount
+        amount: -0.25

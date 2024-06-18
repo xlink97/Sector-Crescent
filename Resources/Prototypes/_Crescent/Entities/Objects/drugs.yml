@@ -95,7 +95,7 @@
   name: mechanite injector gun
   parent: ChemicalMedipen
   id: MechaniteAutoinjector
-  description: A chemical cocktail of healing mechanites intended to localize around damage in the body and repair it on a sub-molecular level.
+  description: A chemical cocktail of healing mechanites intended to localize around damaged parts of the body and repair it on a sub-molecular level.
   components:
   - type: Sprite
     sprite: _Crescent/Objects/Autoinjectors/mechanites.rsi
@@ -129,7 +129,7 @@
   name: blood-eye ampoule
   parent: ChemicalMedipen
   id: BloodeyeAutoinjector
-  description: A chemical cocktail of combat drugs known to invoke violent tendencies within the user. Blood-eye was originally produced by Shinohara Heavy Industries, but later taken off the shelves after narcotic regulations were put into palte.
+  description: A chemical cocktail of combat drugs known to invoke violent tendencies within the user. Blood-eye was originally produced by Shinohara Heavy Industries, but later taken off the shelves after narcotic regulations were put into place.
   components:
   - type: Sprite
     sprite: _Crescent/Objects/Autoinjectors/bloodeye.rsi
@@ -142,17 +142,17 @@
     emptySpriteName: medipen_empty
   - type: Hypospray
     solutionName: pen
-    transferAmount: 40
+    transferAmount: 45
     onlyAffectsMobs: false
     injectOnly: true
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 40
+        maxVol: 45
         reagents:
-        - ReagentId: Kaiser
-          Quantity: 15
-        - ReagentId: Mechanites
+        - ReagentId: Bloodeye
+          Quantity: 20
+        - ReagentId: Crash
           Quantity: 10
         - ReagentId: Stimulants
           Quantity: 15

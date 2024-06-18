@@ -1,0 +1,63 @@
+- type: entity
+  id: CrateSumitomoAmmo
+  parent: CrateSecgear
+  name: sumitomo crate
+  description: Ammunition for the SHI Sumitomo and SHI Kurosawa.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineGrenadeEmpty
+        amount: 3
+      - id: GrenadeEMP
+        amount: 6
+      - id: GrenadeBlast
+        amount: 6
+      - id: GrenadeBaton
+        amount: 6
+      - id: GrenadeFlash
+        amount: 6
+
+- type: entity
+  id: CrateSlugthrowerAmmo
+  parent: CrateSecgear
+  name: slug cartridge crate
+  description: Ammunition the SHI slugthrower.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineLightRifleBoxSlugEMP
+        amount: 4
+      - id: MagazineLightRifleBoxSlug
+        amount: 4
+      - id: MagazineLightRifleBoxSlugInert
+        amount: 4
+      - id: MagazineLightRifleBoxSlugHE
+        amount: 4
+
+- type: entity
+  id: CrateCoolant
+  parent: CrateSecgear
+  name: coolant crate
+  description: Contains coolant for laser turrets.
+  components:
+  - type: StorageFill
+    contents:
+      - id: CoolantCartridge30
+        amount: 6
+
+- type: entity
+  id: CrateArtilleryAmmo
+  parent: CrateSecgear
+  name: type-99 crate
+  description: Ammunition for 120mm artilleries.
+  components:
+  - type: StorageFill
+    contents:
+      - id: CartridgeShellEmp
+        amount: 5
+      - id: CartridgeShellArmorPiercing
+        amount: 10
+      - id: CartridgeShellHighExplosive
+        amount: 10
+      - id: CartridgeShellPractice
+        amount: 5

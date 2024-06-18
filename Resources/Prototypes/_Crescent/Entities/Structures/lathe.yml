@@ -32,3 +32,38 @@
     - SteelScrap30
     - TitaniumScrap
     - TitaniumScrap30
+    - Garbage
+    - Garbage30
+
+- type: entity
+  parent: BaseLathe
+  id: DrugLathe
+  name: interdyne pharmaceutic fablathe
+  description: An automated fablathe with preloaded pharmaceutic patterns. Bears the Interdyne logo.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Structures/drugifier.rsi
+    layers:
+    - state: base_machine
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: buttons_on
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+  - type: Machine
+    board: SheetifierMachineCircuitboard
+  - type: MaterialStorage
+    dropOnDeconstruct: false #should drop ores instead of ingots/sheets
+    ignoreColor: true
+    canEjectStoredMaterials: false
+    whitelist:
+    tags:
+    - DrugComponent
+  - type: Lathe
+    idleState: base_machine
+    runningState: base_machine_processing
+    staticRecipes:
+    - Crash
+    - Exile
+    - Kaiser
+    - Mechanite
+    - Bloodeye
