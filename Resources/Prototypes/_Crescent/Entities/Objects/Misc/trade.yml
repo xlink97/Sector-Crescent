@@ -151,6 +151,17 @@
 
 - type: entity
   parent: BaseItem
+  id: TemporaryDenialSlip
+  name: temporary denial slip
+  description: A printed slip of paper with an aggressive red 'X'. It notifies the reader that they have no valid passport - and are thus not eligible for entry.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Objects/TradeGoods/tempdenial.rsi
+    layers:
+    - state: icon
+
+- type: entity
+  parent: BaseItem
   id: TradeDeedLow
   name: deed of delivery
   description: A printed deed of delivery. Blocky letting informs that this deed is worth five hundred and fifty Union credits to an official chartered station.

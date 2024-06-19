@@ -29,4 +29,7 @@
             BoardSHI: [ 1, 1 ]
             EmployeeSHI: [ 5, 10 ]
             Contractor: [ -1, -1 ]
-            MailCarrier: [ 1, 0 ]
+            MailCarrier: [ 1, 1 ]
+            Bartender: [ 1, 1 ]
+            Antiquarian: [ 1, 1 ]
+

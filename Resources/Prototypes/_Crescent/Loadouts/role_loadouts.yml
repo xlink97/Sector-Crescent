@@ -287,3 +287,15 @@
   groups:
   - ContractorTrinkets
   - CMMBackpacks
+
+#misc
+
+- type: roleLoadout
+  id: JobAntiquarian
+  groups:
+  - ContractorTrinkets
+  - ContractorGlasses
+  - ContractorImplanter
+  - ContractorUtility
+  - ContractorFun
+  - ContractorBackpack

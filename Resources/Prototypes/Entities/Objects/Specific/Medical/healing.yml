@@ -583,7 +583,7 @@
       amount: 5
 
 - type: entity
-  name: space drugs
+  name: neodextraline tablet
   parent: Pill
   id: PillSpaceDrugs
   components:
@@ -594,6 +594,8 @@
         reagents:
         - ReagentId: SpaceDrugs
           Quantity: 15
+  - type: StaticPrice
+    price: 50
 
 - type: entity
   name: pill (tricordrazine 10u)

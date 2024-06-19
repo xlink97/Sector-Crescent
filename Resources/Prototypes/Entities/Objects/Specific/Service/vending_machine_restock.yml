@@ -497,3 +497,19 @@
     - state: green_bit
       shader: unshaded
     - state: refill_medical
+
+- type: entity
+  parent: SecuredVendingMachineRestock
+  id: OnionMachineRestock
+  name: ONION restocker
+  description: Refills the ONION.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - OnionInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_condiment

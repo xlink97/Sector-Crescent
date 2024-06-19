@@ -125,3 +125,9 @@
 - type: accessLevel
   id: MinutemanMarshal
   name: id-card-access-level-cmmmarshal
+
+#misc
+
+- type: accessLevel
+  id: Antiquarian
+  name: id-card-access-level-antiquarian

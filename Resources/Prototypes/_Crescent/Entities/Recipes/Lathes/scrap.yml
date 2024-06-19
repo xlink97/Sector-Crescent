@@ -26,3 +26,18 @@
   completetime: 3
   materials:
     ScrapTitanium: 15000
+
+- type: latheRecipe
+  id: Garbage30
+  result: RefinedGarbageOre
+  applyMaterialDiscount: false
+  completetime: 3
+  materials:
+    Garbage: 15000
+
+- type: latheRecipe
+  id: Garbage
+  result: RefinedGarbageOre1
+  completetime: 3
+  materials:
+    Garbage: 500

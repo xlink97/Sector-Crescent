@@ -228,6 +228,8 @@
         reagents:
         - ReagentId: Nocturine
           Quantity: 30
+  - type: StaticPrice
+    price: 250
 
 - type: entity
   id: EphedrineChemistryBottle
@@ -293,6 +295,8 @@
           reagents:
             - ReagentId: MuteToxin
               Quantity: 30
+    - type: StaticPrice
+      price: 250
 
 - type: entity
   id: LeadChemistryBottle
@@ -319,3 +323,5 @@
           reagents:
             - ReagentId: Toxin
               Quantity: 30
+    - type: StaticPrice
+      price: 250

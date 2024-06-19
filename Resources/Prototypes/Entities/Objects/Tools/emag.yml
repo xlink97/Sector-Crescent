@@ -13,10 +13,12 @@
     sprite: Objects/Tools/emag.rsi
     storedRotation: -90
 
+
 - type: entity
   parent: EmagUnlimited
   id: Emag
   suffix: Limited
   components:
   - type: LimitedCharges
-  - type: AutoRecharge
+  - type: StaticPrice
+    price: 2500

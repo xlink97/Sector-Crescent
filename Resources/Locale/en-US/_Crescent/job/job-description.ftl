@@ -57,3 +57,7 @@ job-description-minuteman = Arrest criminals. Police the lawful areas of the Sys
 job-description-watchmaster = Coordinate your underlings for the Deputy Marshal.
 job-description-deputymarshal = Coordinate the Minutemen in the absence of the Marshal. Whip the militia into shape.
 job-description-marshal = Coordinate the Minutemen. Oversee martial and civil court. Protect the System.
+
+#misc
+
+job-description-antiquarian = Fulfill the system's blackmarketing needs.

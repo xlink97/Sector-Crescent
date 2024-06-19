@@ -9,40 +9,41 @@
   id: Civilian
   description: department-Civilian-description
   color: "#9FED58"
-  weight: -10
+  weight: 5
   roles:
   - Bartender
   - Borg
-  - Botanist
-  - Boxer
-  - Chaplain
-  - KadetNCWL
-  - Chef
-  - Clown
+  - Antiquarian
+ # - Botanist
+ # - Boxer
+ # - Chaplain
+ # - KadetNCWL
+ # - Chef
+ # - Clown
 #  - HeadOfPersonnel
-  - Lawyer
-  - Librarian
-  - Mime
-  - Musician
+ # - Lawyer
+ # - Librarian
+ # - Mime
+ # - Musician
   - Passenger
-  - Reporter
-  - Visitor
-  - Zookeeper
-  - ServiceWorker
-  - Contractor # Frontier
-  - Mercenary # Frontier
-  - Pilot # Frontier
-  - Captain # Frontier
-  - ChiefEngineer # Frontier
-  - AtmosphericTechnician # Frontier
-  - StationEngineer # Frontier
-  - TechnicalAssistant # Frontier
-  - ResearchDirector # Frontier
-  - Scientist # Frontier
-  - ResearchAssistant # Frontier
-  - Quartermaster # Frontier
-  - CargoTechnician # Frontier
-  - SalvageSpecialist # Frontier
+ # - Reporter
+ # - Visitor
+ # - Zookeeper
+ # - ServiceWorker
+ # - Contractor # Frontier
+ # - Mercenary # Frontier
+ # - Pilot # Frontier
+ # - Captain # Frontier
+ # - ChiefEngineer # Frontier
+ # - AtmosphericTechnician # Frontier
+ # - StationEngineer # Frontier
+ # - TechnicalAssistant # Frontier
+ # - ResearchDirector # Frontier
+ # - Scientist # Frontier
+ # - ResearchAssistant # Frontier
+ # - Quartermaster # Frontier
+ # - CargoTechnician # Frontier
+ # - SalvageSpecialist # Frontier
   enabled: false
 
 - type: department
@@ -156,6 +157,7 @@
   - IntelligenceOfficerNCSP
   - ForemanNCSP
   - ShipbreakerNCSP
+  - Antiquarian
   enabled: true
 
 - type: department
