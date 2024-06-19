@@ -490,3 +490,17 @@
     - state: idseniorofficer
   - type: PresetIdCard
     job: MarshalCMM
+
+#misc
+
+- type: entity
+  parent: IDCardStandard
+  id: IDCardAntiquarian
+  name: civilian ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idseniorofficer
+  - type: PresetIdCard
+    job: Antiquarian

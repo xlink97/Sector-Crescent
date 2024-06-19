@@ -562,3 +562,32 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsCMMMarshal ]
+
+#misc
+
+- type: entity
+  parent: AirlockCommand
+  id: AirlockCommandAntiquarian
+  suffix: Antiquarian, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsAntiquarian ]
+
+- type: entity
+  parent: AirlockCommandHorizontal
+  id: AirlockCommandAntiquarianHorizontal
+  suffix: Antiquarian, Horizontal
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsAntiquarian ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureAntiquarian
+  suffix: Antiquarian, Windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsAntiquarian ]

@@ -609,3 +609,19 @@
     borderColor: "#5191e0"
   - type: Icon
     state: cmm
+
+#misc
+
+- type: entity
+  parent: BasePDA
+  id: AntiquarianPDA
+  name: antiquarian's PDA
+  description: Why is it gray?
+  components:
+  - type: Pda
+    id: IDCardAntiquarian
+    state: basic
+  - type: PdaBorderColor
+    borderColor: "#808080"
+  - type: Icon
+    state: basic

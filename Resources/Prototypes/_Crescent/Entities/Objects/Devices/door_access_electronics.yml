@@ -242,3 +242,13 @@
   components:
   - type: AccessReader
     access: [["MinutemanMarshal"]]
+
+#misc
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsAntiquarian
+  suffix: Antiquarian, Locked
+  components:
+  - type: AccessReader
+    access: [["Antiquarian"]]

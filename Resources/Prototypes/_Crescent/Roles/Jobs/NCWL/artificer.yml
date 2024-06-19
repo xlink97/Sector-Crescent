@@ -31,6 +31,7 @@
     ears: ClothingHeadsetNCWL
     belt: ClothingBeltUtilityEngineering
     pocket1: WeaponPistolHKUSP
+    pocket2: NCWLPassportAccepted
     gloves: ClothingHandsGlovesFingerless
   duffelbag: ClothingBackpackDuffelNCWLFilledArtificer
   satchel: ClothingBackpackSatchelNCWLFilledArtificer

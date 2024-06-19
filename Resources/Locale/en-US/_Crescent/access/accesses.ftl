@@ -45,3 +45,7 @@ id-card-access-level-cmm = Minutemen
 id-card-access-level-cmmranking = Minutemen Officer
 id-card-access-level-cmmprison = CMM Penitentiary
 id-card-access-level-cmmmarshal = Colonial Marshal
+
+#misc
+
+id-card-access-level-antiquarian = Antiquarian

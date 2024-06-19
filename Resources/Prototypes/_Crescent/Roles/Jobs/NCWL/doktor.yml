@@ -30,5 +30,6 @@
     ears: ClothingHeadsetNCWL
     belt: ClothingBeltMedicalFilled
     pocket1: WeaponPistolHKUSP
+    pocket2: NCWLPassportAccepted
   duffelbag: ClothingBackpackDuffelNCWLFilledSanitar
   satchel: ClothingBackpackSatchelNCWLFilledSanitar

@@ -2,7 +2,7 @@
   id: OnionInventory
   startingInventory:
     PillSpaceDrugs: 5
-    CrashAutoInjector: 15
+    CrashAutoinjector: 15
     NocturineChemistryBottle: 6
     MuteToxinChemistryBottle: 6
     VestineChemistryVial: 6

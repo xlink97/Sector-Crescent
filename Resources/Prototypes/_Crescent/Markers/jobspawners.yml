@@ -417,6 +417,20 @@
       - state: green
       - state: passenger
 
+#misc
+
+- type: entity
+  id: SpawnPointAntiquarian
+  parent: SpawnPointJobBase
+  name: antiquarian
+  components:
+  - type: SpawnPoint
+    job_id: Antiquarian
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
 #cmm
 
 - type: entity

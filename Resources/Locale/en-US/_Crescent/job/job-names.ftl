@@ -57,3 +57,7 @@ job-name-minuteman = Colonial Minuteman
 job-name-watchmaster = Colonial Watchmaster
 job-name-deputymarshal = Deputy Marshal
 job-name-marshal = Colonial Marshal
+
+#misc
+
+job-name-antiquarian = Antiquarian
