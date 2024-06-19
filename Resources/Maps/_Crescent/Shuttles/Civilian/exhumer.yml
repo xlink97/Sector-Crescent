@@ -1424,6 +1424,18 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+- proto: MiningDrill
+  entities:
+  - uid: 348
+    components:
+    - type: Transform
+      pos: 2.4870267,2.6049912
+      parent: 1
+  - uid: 349
+    components:
+    - type: Transform
+      pos: 2.4721646,2.367132
+      parent: 1
 - proto: OreBag
   entities:
   - uid: 138

@@ -501,6 +501,6 @@
   - type: Sprite
     layers:
     - state: default
-    - state: idseniorofficer
+    - state: idquartermaster
   - type: PresetIdCard
     job: Antiquarian

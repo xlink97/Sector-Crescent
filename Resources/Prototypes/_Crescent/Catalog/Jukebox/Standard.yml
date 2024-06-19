@@ -33,3 +33,27 @@
   name: All Alone
   path:
     path: /Audio/_Crescent/Jukebox/allalone.ogg
+
+- type: jukebox
+  id: FeelGood
+  name: Feel Good
+  path:
+    path: /Audio/_Crescent/Jukebox/feelgood.ogg
+
+- type: jukebox
+  id: Madmen
+  name: Mad Men
+  path:
+    path: /Audio/_Crescent/Jukebox/madmen.ogg
+
+- type: jukebox
+  id: LifeOnMars
+  name: Life on Mars
+  path:
+    path: /Audio/_Crescent/Jukebox/lifeonmars.ogg
+
+- type: jukebox
+  id: Neverhood
+  name: Neverhood
+  path:
+    path: /Audio/_Crescent/Jukebox/neverhood.ogg

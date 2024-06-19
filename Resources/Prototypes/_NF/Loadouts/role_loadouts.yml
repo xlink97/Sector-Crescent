@@ -89,11 +89,8 @@
   id: JobMailCarrier
   groups:
   - ContractorNeck
-  - MailCarrierJumpsuit
   - ContractorGloves
-  - ContractorBackpack
   - MailCarrierOuterClothing
-  - ContractorShoes
   - ContractorFace
   - ContractorBoxSurvival
   - ContractorEncryptionKey

@@ -620,8 +620,8 @@
   components:
   - type: Pda
     id: IDCardAntiquarian
-    state: basic
+    state: pda
   - type: PdaBorderColor
     borderColor: "#808080"
   - type: Icon
-    state: basic
+    state: pda

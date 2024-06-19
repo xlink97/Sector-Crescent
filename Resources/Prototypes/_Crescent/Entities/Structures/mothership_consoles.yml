@@ -8,6 +8,7 @@
     shuttles:
     - Bogatyr
     - Vanguard
+    - Vasinya
 
 - type: entity
   id: JackalMothershipComputer
@@ -18,3 +19,4 @@
     shuttles:
     - Hyena
     - Reaver
+    - Shanty
