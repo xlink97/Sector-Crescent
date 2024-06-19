@@ -351,6 +351,8 @@
   - type: TimerTriggerVisuals
     primingSound:
       path: /Audio/Effects/countdown.ogg
+  - type: StaticPrice
+    price: 325
 
 - type: entity
   name: holy hand grenade

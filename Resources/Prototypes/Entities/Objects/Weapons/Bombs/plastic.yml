@@ -74,6 +74,8 @@
     sprite:
       festive: Objects/Weapons/Bombs/c4gift.rsi
   - type: Contraband #frontier
+  - type: StaticPrice
+    price: 325
 
 - type: entity
   name: seismic charge

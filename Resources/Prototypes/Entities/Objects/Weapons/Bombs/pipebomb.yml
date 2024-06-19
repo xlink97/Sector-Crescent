@@ -31,6 +31,8 @@
   - type: Construction
     graph: PipeBomb
     node: pipebomb
+  - type: StaticPrice
+    price: 200
 
 - type: entity
   parent: BaseItem

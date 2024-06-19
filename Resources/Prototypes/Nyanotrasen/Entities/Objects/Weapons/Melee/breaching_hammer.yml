@@ -36,3 +36,5 @@
     slots:
     - back
     - suitStorage # Frontier - Same as axe
+  - type: StaticPrice
+    price: 500

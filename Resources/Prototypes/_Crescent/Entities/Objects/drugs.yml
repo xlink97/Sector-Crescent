@@ -22,6 +22,8 @@
           Quantity: 15
   - type: Tag
     tags: []
+  - type: StaticPrice
+    price: 300
 
 - type: entity
   name: exile autoinjector

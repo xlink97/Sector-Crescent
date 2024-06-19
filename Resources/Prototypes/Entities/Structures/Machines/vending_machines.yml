@@ -1412,7 +1412,7 @@
     snapCardinals: false
   - type: Rotatable
   - type: WallMount
-    arc: 175
+    arc: 250
   - type: Transform
     noRot: false
 

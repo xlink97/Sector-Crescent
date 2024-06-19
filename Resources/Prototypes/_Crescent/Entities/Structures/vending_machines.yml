@@ -114,3 +114,32 @@
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: MarketModifier
     mod: 1
+
+- type: entity
+  parent: [BaseStructureUnanchorable, VendingMachineWallmount]
+  id: OnionAntiquarian
+  name: ONION wallconsole
+  description: A wall-mounted computer with a delivery chute to order goods from.
+  components:
+  - type: VendingMachine
+    pack: OnionInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: Advertise
+    pack: OnionVendAds
+  - type: SpeakOnUIClosed
+    pack: OnionGoodbyes
+  - type: Speech
+  - type: Sprite
+    sprite: _Crescent/Structures/onion.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: MarketModifier
+    mod: 3

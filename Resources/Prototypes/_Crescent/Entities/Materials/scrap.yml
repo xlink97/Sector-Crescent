@@ -282,6 +282,8 @@
   - type: PhysicalComposition
     materialComposition:
       Garbage: 500
+  - type: StaticPrice
+    price: 250
 
 - type: entity
   id: GarbageOre1
@@ -371,6 +373,16 @@
       count: 1
 
 - type: entity
+  id: PlasmaIsotope5
+  parent: PlasmaIsotope
+  suffix: Five
+  components:
+    - type: Stack
+      count: 5
+    - type: StaticPrice
+      price: 250
+
+- type: entity
   parent: OreBase
   id: MechaniteCanister
   name: inert mechanite canister
@@ -388,6 +400,8 @@
   - type: PhysicalComposition
     materialComposition:
       Mechanites: 500
+  - type: StaticPrice
+    price: 800
 
 - type: entity
   id: MechaniteCanister1
@@ -396,6 +410,14 @@
   components:
     - type: Stack
       count: 1
+
+- type: entity
+  id: MechaniteCanister5
+  parent: MechaniteCanister
+  suffix: Five
+  components:
+    - type: Stack
+      count: 5
 
 - type: entity
   parent: OreBase
@@ -415,6 +437,8 @@
   - type: PhysicalComposition
     materialComposition:
       Galine: 500
+  - type: StaticPrice
+    price: 400
 
 - type: entity
   id: GalineCanister1
@@ -423,6 +447,14 @@
   components:
     - type: Stack
       count: 1
+
+- type: entity
+  id: GalineCanister5
+  parent: GalineCanister
+  suffix: Five
+  components:
+    - type: Stack
+      count: 5
 
 - type: entity
   parent: OreBase
@@ -450,3 +482,13 @@
   components:
     - type: Stack
       count: 1
+
+- type: entity
+  id: DeactivatedPhoronBottle5
+  parent: DeactivatedPhoronBottle
+  suffix: Five
+  components:
+    - type: Stack
+      count: 5
+    - type: StaticPrice
+      price: 325
