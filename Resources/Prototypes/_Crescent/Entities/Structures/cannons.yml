@@ -110,6 +110,59 @@
 ## Missile Pods
 
 - type: entity
+  id: ShuttleGunKurosawa
+  parent: [ShuttleGunBase, ConstructibleMachine]
+  name: NT-3 48mm "Kurosawa" rocket pod
+  description: A small fixedpoint rocketpod with a capacity of two rockets. Must be reloaded by hand.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Objects/ShuttleWeapons/cheapmissile.rsi
+    layers:
+    - state: rocket
+    - state: mag-7
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      ballistic-ammo: !type:Container
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+        - !type:ChangeConstructionNodeBehavior
+          node: machineFrame
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+  - type: Gun
+    projectileSpeed: 80
+    fireRate: 1
+    angleDecay: 45
+    minAngle: 0
+    maxAngle: 15
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+      params:
+        pitch: 0.8
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - Grenade
+    capacity: 2
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: Machine
+    board: ShuttleGunFriendshipCircuitboard
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
+    zeroVisible: false
+
+- type: entity
   id: ShuttleGunMissileRack
   parent: [ShuttleGunBase, ConstructibleMachine]
   name: NT-6 48mm "Sumitomo" missile rack

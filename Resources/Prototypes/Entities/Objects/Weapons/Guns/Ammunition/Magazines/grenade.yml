@@ -12,7 +12,7 @@
     whitelist:
       tags:
         - Grenade
-    capacity: 5
+    capacity: 6
     soundRack:
       path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
       params:
