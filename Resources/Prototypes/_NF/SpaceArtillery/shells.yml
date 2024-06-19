@@ -565,7 +565,7 @@
         Structural: 1000
         #currently explosion deals 156 damage per tile in large AoE
   - type: TimedDespawn
-    lifetime: 34
+    lifetime: 55
     #roughly 1000m range
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/1000_armorpiercing_rail_casing.rsi
@@ -574,9 +574,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    maxIntensity: 10
-    intensitySlope: 10
-    totalIntensity: 500
+    maxIntensity: 15
+    intensitySlope: 15
+    totalIntensity: 550
     maxTileBreak: 50
   - type: PointLight
     radius: 3.5
@@ -586,9 +586,9 @@
 
 - type: entity
   id: CartridgeRailHighExplosive
-  name: 1000 High-Explosive rail
+  name: 320mm subnuclear accelerator cartridge
   parent: BaseItem
-  description: A 1000 caliber rail designed for the Railgun. Is made out of solid plasma infused tungsten rod. Punches through hull like butter.
+  description: A 320mm railgun cartridge produced out of a volatile plasma-cored tungsten shell. 'House Olywir Armaments' has been laser-stamped at the bottom.
   components:
   - type: Tag
     tags:
