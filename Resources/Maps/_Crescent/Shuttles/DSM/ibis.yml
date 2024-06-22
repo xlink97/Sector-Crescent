@@ -993,7 +993,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 2.5,-0.5
       parent: 1
-- proto: ComputerTabletopPowerMonitoring
+- proto: ComputerTabletopIFF
   entities:
   - uid: 168
     components:
@@ -1370,7 +1370,7 @@ entities:
       pos: -6.5,5.5
       parent: 1
     - type: Battery
-      startingCharge: 199000
+      startingCharge: 198500
     - type: DeviceLinkSink
       links:
       - 302
@@ -1408,7 +1408,7 @@ entities:
       pos: 7.5,5.5
       parent: 1
     - type: Battery
-      startingCharge: 199000
+      startingCharge: 198500
     - type: DeviceLinkSink
       links:
       - 302

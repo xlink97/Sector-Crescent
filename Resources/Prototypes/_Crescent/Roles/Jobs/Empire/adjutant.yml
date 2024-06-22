@@ -6,6 +6,9 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 36000
+    - !type:SpeciesRequirement
+      allowedOnly:
+        - Human
   weight: 55
   startingGear: AdjutantGear
   alwaysUseSpawner: true
@@ -18,6 +21,7 @@
   - Maintenance
   - EmpireNoble
   - EmpireAdjutant
+  - EmpireSoldier
   - Service
   - Empire
   - External
