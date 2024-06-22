@@ -62,104 +62,104 @@ entities:
             color: '#DE3A3A96'
             id: ArrowsGreyscale
           decals:
-            40: 3,-2
-            41: 4,-2
+            39: 3,-2
+            40: 4,-2
         - node:
             angle: 3.141592653589793 rad
             color: '#DE3A3A96'
             id: ArrowsGreyscale
           decals:
-            42: 3,-5
-            43: 4,-5
+            41: 3,-5
+            42: 4,-5
         - node:
             color: '#DE3A3A96'
             id: BoxGreyscale
           decals:
-            36: 3,-3
-            37: 3,-4
-            38: 4,-4
-            39: 4,-3
+            35: 3,-3
+            36: 3,-4
+            37: 4,-4
+            38: 4,-3
         - node:
             color: '#DE3A3A96'
             id: BrickTileSteelCornerNe
           decals:
             9: 5,3
-            20: 5,-2
+            19: 5,-2
         - node:
             color: '#DE3A3A96'
             id: BrickTileSteelCornerNw
           decals:
             10: 2,3
-            19: 2,-2
+            18: 2,-2
         - node:
             color: '#DE3A3A96'
             id: BrickTileSteelCornerSe
           decals:
             8: 5,0
-            17: 5,-5
-            25: 4,5
+            16: 5,-5
+            24: 4,5
         - node:
             color: '#DE3A3A96'
             id: BrickTileSteelCornerSw
           decals:
-            18: 2,-5
-            24: 2,5
+            17: 2,-5
+            23: 2,5
         - node:
             color: '#DE3A3A96'
             id: BrickTileSteelLineE
           decals:
             13: 5,1
-            35: 5,-3
+            34: 5,-3
         - node:
             color: '#DE3A3A96'
             id: BrickTileSteelLineN
           decals:
             15: 4,3
-            26: 3,-2
+            25: 3,-2
         - node:
             color: '#DE3A3A96'
             id: BrickTileSteelLineS
           decals:
             14: 3,0
-            23: 4,-5
+            22: 4,-5
         - node:
             color: '#DE3A3A96'
             id: BrickTileSteelLineW
           decals:
             11: 2,2
             12: 2,1
-            21: 2,-4
-            22: 2,-3
+            20: 2,-4
+            21: 2,-3
         - node:
             angle: 3.141592653589793 rad
             color: '#DE3A3A96'
             id: WarnBoxGreyscale
           decals:
-            44: 7,-4
+            43: 7,-4
         - node:
             color: '#DE3A3A96'
             id: WarnCornerGreyscaleSW
           decals:
-            33: 2,0
+            32: 2,0
         - node:
             color: '#DE3A3A96'
             id: WarnLineGreyscaleE
           decals:
-            32: 5,-4
-            34: 5,2
+            31: 5,-4
+            33: 5,2
         - node:
             color: '#DE3A3A96'
             id: WarnLineGreyscaleN
           decals:
-            27: 4,-2
-            28: 3,3
+            26: 4,-2
+            27: 3,3
         - node:
             color: '#DE3A3A96'
             id: WarnLineGreyscaleS
           decals:
-            29: 3,5
-            30: 4,0
-            31: 3,-5
+            28: 3,5
+            29: 4,0
+            30: 3,-5
         - node:
             color: '#FFFFFFFF'
             id: WarnLineN
@@ -381,6 +381,11 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 6.5,2.5
+      parent: 1
+  - uid: 330
+    components:
+    - type: Transform
+      pos: 8.5,-3.5
       parent: 1
 - proto: BlastDoor
   entities:
@@ -1900,7 +1905,7 @@ entities:
       pos: 3.5,6.5
       parent: 1
     - type: Battery
-      startingCharge: 997000
+      startingCharge: 994000
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container

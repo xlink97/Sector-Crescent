@@ -199,7 +199,7 @@ entities:
       pos: -1.5,-7.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -29.346453
+      secondsUntilStateChange: -53.713406
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -610,6 +610,14 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+- proto: ComputerIFF
+  entities:
+  - uid: 198
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 1.5,-3.5
+      parent: 1
 - proto: ComputerTabletopShuttle
   entities:
   - uid: 87
@@ -1167,7 +1175,7 @@ entities:
       pos: 0.5,-1.5
       parent: 1
     - type: Battery
-      startingCharge: 991000
+      startingCharge: 988000
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container

@@ -60,24 +60,24 @@ entities:
             color: '#D381C996'
             id: ArrowsGreyscale
           decals:
-            37: 0,-8
+            29: 0,-8
         - node:
             angle: 3.141592653589793 rad
             color: '#D381C996'
             id: ArrowsGreyscale
           decals:
-            38: 0,-7
+            30: 0,-7
         - node:
             color: '#D381C996'
             id: BoxGreyscale
           decals:
-            30: 0,-4
-            31: 0,-5
-            32: 0,-6
-            33: 0,-11
-            34: 0,-10
-            35: 0,-9
-            36: 0,-9
+            22: 0,-4
+            23: 0,-5
+            24: 0,-6
+            25: 0,-11
+            26: 0,-10
+            27: 0,-9
+            28: 0,-9
         - node:
             color: '#D381C996'
             id: ConcreteTrimCornerNe
@@ -92,98 +92,98 @@ entities:
             color: '#D381C996'
             id: ConcreteTrimCornerSe
           decals:
-            19: 1,-12
+            11: 1,-12
         - node:
             color: '#D381C996'
             id: ConcreteTrimCornerSw
           decals:
-            18: -1,-12
+            10: -1,-12
         - node:
             color: '#D381C996'
             id: ConcreteTrimLineE
           decals:
-            10: 1,-11
-            11: 1,-10
-            16: 1,-5
-            17: 1,-4
+            6: 1,-11
+            7: 1,-10
+            8: 1,-5
+            9: 1,-4
         - node:
             color: '#D381C996'
             id: ConcreteTrimLineW
           decals:
             2: -1,-4
             3: -1,-5
-            8: -1,-10
-            9: -1,-11
+            4: -1,-10
+            5: -1,-11
         - node:
             color: '#D381C996'
             id: WarnCornerGreyscaleNE
           decals:
-            55: 1,1
+            45: 1,1
         - node:
             color: '#D381C996'
             id: WarnCornerGreyscaleNW
           decals:
-            53: -1,1
+            43: -1,1
         - node:
             color: '#D381C996'
             id: WarnCornerGreyscaleSE
           decals:
-            54: 1,0
+            44: 1,0
         - node:
             color: '#D381C996'
             id: WarnCornerGreyscaleSW
           decals:
-            52: -1,0
+            42: -1,0
         - node:
             color: '#D381C996'
             id: WarnCornerSmallGreyscaleSE
           decals:
-            51: 0,0
+            41: 0,0
         - node:
             color: '#D381C996'
             id: WarnCornerSmallGreyscaleSW
           decals:
-            50: 0,0
+            40: 0,0
         - node:
             color: '#D381C996'
             id: WarnEndGreyscaleS
           decals:
-            49: 0,-1
+            39: 0,-1
         - node:
             color: '#D381C996'
             id: WarnLineGreyscaleE
           decals:
-            25: 1,-6
-            26: 1,-7
-            27: 1,-8
-            28: 1,-9
-            39: 3,-3
-            40: 3,-3
-            41: 3,-4
-            42: 3,-4
+            17: 1,-6
+            18: 1,-7
+            19: 1,-8
+            20: 1,-9
+            31: 3,-3
+            32: 3,-3
+            33: 3,-4
+            34: 3,-4
         - node:
             color: '#D381C996'
             id: WarnLineGreyscaleN
           decals:
-            21: 0,-3
-            56: 0,1
+            13: 0,-3
+            46: 0,1
         - node:
             color: '#D381C996'
             id: WarnLineGreyscaleS
           decals:
-            20: 0,-12
+            12: 0,-12
         - node:
             color: '#D381C996'
             id: WarnLineGreyscaleW
           decals:
-            22: -1,-6
-            23: -1,-7
-            24: -1,-8
-            29: -1,-9
-            43: -3,-4
-            44: -3,-4
-            45: -3,-3
-            46: -3,-3
+            14: -1,-6
+            15: -1,-7
+            16: -1,-8
+            21: -1,-9
+            35: -3,-4
+            36: -3,-4
+            37: -3,-3
+            38: -3,-3
     - type: GridAtmosphere
       version: 2
       data:
@@ -961,6 +961,14 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+- proto: ComputerTabletopIFF
+  entities:
+  - uid: 270
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 1.5,0.5
+      parent: 1
 - proto: ComputerTabletopShuttle
   entities:
   - uid: 76
@@ -1320,7 +1328,7 @@ entities:
     - type: MetaData
       name: excavator turrets
     - type: Transform
-      pos: 1.5524888,0.699635
+      pos: -0.578125,0.80018234
       parent: 1
     - type: DeviceLinkSource
       linkedPorts:

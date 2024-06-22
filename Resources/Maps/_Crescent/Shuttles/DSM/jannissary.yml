@@ -475,6 +475,14 @@ entities:
       rot: 3.141592653589793 rad
       pos: 4.5,2.5
       parent: 1
+- proto: ComputerIFF
+  entities:
+  - uid: 67
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 5.5,-1.5
+      parent: 1
 - proto: ComputerShuttle
   entities:
   - uid: 46
@@ -701,12 +709,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 1.5,-1.5
       parent: 1
-  - uid: 77
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 5.5,-1.5
-      parent: 1
 - proto: PortableGeneratorSuperPacmanShuttle
   entities:
   - uid: 65
@@ -838,11 +840,11 @@ entities:
         - Pressed: Toggle
 - proto: SmallGyroscopeSecurity
   entities:
-  - uid: 67
+  - uid: 77
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: 5.5,-1.5
+      pos: 5.5,-2.5
       parent: 1
     - type: Thruster
       originalPowerLoad: 200
@@ -1096,19 +1098,13 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -144.03627
+      secondsUntilStateChange: -191.20256
       state: Opening
   - uid: 79
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 1.5,-1.5
-      parent: 1
-  - uid: 80
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 5.5,-1.5
       parent: 1
 - proto: Wrench
   entities:
