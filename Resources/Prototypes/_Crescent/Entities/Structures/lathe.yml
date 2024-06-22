@@ -29,11 +29,8 @@
     runningState: base_machine_processing
     staticRecipes:
     - SteelScrap
-    - SteelScrap30
     - TitaniumScrap
-    - TitaniumScrap30
     - Garbage
-    - Garbage30
 
 - type: entity
   parent: BaseLathe

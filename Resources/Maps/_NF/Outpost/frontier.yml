@@ -1609,7 +1609,7 @@ entities:
       pos: 9.5,6.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -61796.668
+      secondsUntilStateChange: -61860.156
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2156,7 +2156,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -74981.42
+      secondsUntilStateChange: -75044.91
       state: Opening
   - uid: 155
     components:
@@ -17358,93 +17358,13 @@ entities:
     - type: Transform
       pos: 23.460245,33.674328
       parent: 1
-- proto: CigarCase
+- proto: CigarGoldCase
   entities:
-  - uid: 2368
+  - uid: 1650
     components:
     - type: Transform
-      pos: 0.66179496,79.619965
+      pos: 0.66924435,79.662285
       parent: 1
-    - type: Storage
-      storedItems:
-        2370:
-          position: 0,0
-          _rotation: South
-        2373:
-          position: 1,0
-          _rotation: South
-        2376:
-          position: 2,0
-          _rotation: South
-        2377:
-          position: 3,0
-          _rotation: South
-        2378:
-          position: 0,1
-          _rotation: South
-        2379:
-          position: 1,1
-          _rotation: South
-        2380:
-          position: 2,1
-          _rotation: South
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 2370
-          - 2373
-          - 2376
-          - 2377
-          - 2378
-          - 2379
-          - 2380
-- proto: CigarGold
-  entities:
-  - uid: 2370
-    components:
-    - type: Transform
-      parent: 2368
-    - type: Physics
-      canCollide: False
-  - uid: 2373
-    components:
-    - type: Transform
-      parent: 2368
-    - type: Physics
-      canCollide: False
-  - uid: 2376
-    components:
-    - type: Transform
-      parent: 2368
-    - type: Physics
-      canCollide: False
-  - uid: 2377
-    components:
-    - type: Transform
-      parent: 2368
-    - type: Physics
-      canCollide: False
-  - uid: 2378
-    components:
-    - type: Transform
-      parent: 2368
-    - type: Physics
-      canCollide: False
-  - uid: 2379
-    components:
-    - type: Transform
-      parent: 2368
-    - type: Physics
-      canCollide: False
-  - uid: 2380
-    components:
-    - type: Transform
-      parent: 2368
-    - type: Physics
-      canCollide: False
 - proto: CloningPod
   entities:
   - uid: 1980
@@ -19448,7 +19368,7 @@ entities:
       pos: 2.5,5.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -48449.242
+      secondsUntilStateChange: -48512.73
       state: Closing
   - uid: 446
     components:
@@ -20085,43 +20005,11 @@ entities:
       parent: 1
 - proto: FoodBoxDonut
   entities:
-  - uid: 1650
+  - uid: 1651
     components:
     - type: Transform
-      pos: 5.6469035,5.6369452
+      pos: 5.61922,5.6674743
       parent: 1
-    - type: Storage
-      storedItems:
-        1651:
-          position: 0,0
-          _rotation: South
-        1652:
-          position: 1,0
-          _rotation: South
-        1653:
-          position: 2,0
-          _rotation: South
-        1654:
-          position: 3,0
-          _rotation: South
-        1655:
-          position: 4,0
-          _rotation: South
-        1656:
-          position: 5,0
-          _rotation: South
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 1651
-          - 1652
-          - 1653
-          - 1654
-          - 1655
-          - 1656
 - proto: FoodContainerEgg
   entities:
   - uid: 1639
@@ -20138,54 +20026,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: FoodDonutApple
-  entities:
-  - uid: 1654
-    components:
-    - type: Transform
-      parent: 1650
-    - type: Physics
-      canCollide: False
-- proto: FoodDonutBungo
-  entities:
-  - uid: 1652
-    components:
-    - type: Transform
-      parent: 1650
-    - type: Physics
-      canCollide: False
-- proto: FoodDonutChocolate
-  entities:
-  - uid: 1655
-    components:
-    - type: Transform
-      parent: 1650
-    - type: Physics
-      canCollide: False
-- proto: FoodDonutHomer
-  entities:
-  - uid: 1653
-    components:
-    - type: Transform
-      parent: 1650
-    - type: Physics
-      canCollide: False
-- proto: FoodDonutJellyCaramel
-  entities:
-  - uid: 1656
-    components:
-    - type: Transform
-      parent: 1650
-    - type: Physics
-      canCollide: False
-- proto: FoodDonutJellyChocolate
-  entities:
-  - uid: 1651
-    components:
-    - type: Transform
-      parent: 1650
-    - type: Physics
-      canCollide: False
 - proto: FoodMeat
   entities:
   - uid: 1634
@@ -25046,7 +24886,7 @@ entities:
       pos: -22.5,84.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -48281.7
+      secondsUntilStateChange: -48345.188
       state: Closing
   - uid: 3816
     components:
