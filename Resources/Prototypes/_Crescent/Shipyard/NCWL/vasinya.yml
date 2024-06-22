@@ -5,7 +5,7 @@
   id: Vasinya
   name: NCWL Vasinya
   description: A heavy communard patrol corvette.
-  price: 80000
+  price: 55000
   category: Small
   group: None
   shuttlePath: /Maps/_Crescent/Shuttles/NCWL/vasinya.yml

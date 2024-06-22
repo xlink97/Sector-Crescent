@@ -116,7 +116,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
         var lpbravo = "/Maps/_NF/POI/lpbravo.yml";
         // var northpole = "/Maps/_NF/POI/northpole.yml";
         // var arena = "/Maps/_NF/POI/arena.yml";
-        // var cove = "/Maps/_NF/POI/cove.yml";
+        var cove = "/Maps/_NF/POI/cove.yml";
         // var courthouse = "/Maps/_NF/POI/courthouse.yml";
         var lodge = "/Maps/_NF/POI/lodge.yml";
         var lab = "/Maps/_NF/POI/anomalouslab.yml";
@@ -127,6 +127,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
         var depotColor = new Color(55, 200, 55);
         var civilianColor = new Color(55, 55, 200);
         var lpbravoColor = new Color(200, 55, 55);
+        var coveColor = new Color(203, 195, 227);
         var factionColor = new Color(255, 165, 0);
         var mapId = GameTicker.DefaultMap;
         var depotOffset = _random.NextVector2(4500f, 6000f);
@@ -227,21 +228,21 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
         //    _shuttle.SetIFFColor(depotUid5s[0], civilianColor);
         //}
 
-        //if (_map.TryLoad(mapId, cove, out var depotUid6s, new MapLoadOptions
-        //    {
-        //        Offset = _random.NextVector2(10000f, 15000f)
-        //    }))
-        //{
-        //    if (_prototypeManager.TryIndex<GameMapPrototype>("Cove", out var stationProto))
-        //    {
-        //        _station.InitializeNewStation(stationProto.Stations["Cove"], depotUid6s);
-        //    }
+        if (_map.TryLoad(mapId, cove, out var depotUid6s, new MapLoadOptions
+            {
+                Offset = _random.NextVector2(10000f, 15000f)
+            }))
+        {
+            if (_prototypeManager.TryIndex<GameMapPrototype>("Cove", out var stationProto))
+            {
+                _station.InitializeNewStation(stationProto.Stations["Cove"], depotUid6s);
+            }
 
-        //    var meta = EnsureComp<MetaDataComponent>(depotUid6s[0]);
-        //    _meta.SetEntityName(depotUid6s[0], "Pirate's Cove", meta);
-        //    _shuttle.SetIFFColor(depotUid6s[0], lpbravoColor);
-        //    _shuttle.AddIFFFlag(depotUid6s[0], IFFFlags.HideLabel);
-        //}
+            var meta = EnsureComp<MetaDataComponent>(depotUid6s[0]);
+            _meta.SetEntityName(depotUid6s[0], "DSM Countsman", meta);
+            _shuttle.SetIFFColor(depotUid6s[0], coveColor);
+            _shuttle.AddIFFFlag(depotUid6s[0], IFFFlags.HideLabel);
+        }
 
         if (_map.TryLoad(mapId, lodge, out var lodgeUids, new MapLoadOptions
             {

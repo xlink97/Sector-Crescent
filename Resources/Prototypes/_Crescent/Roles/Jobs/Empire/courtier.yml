@@ -3,6 +3,12 @@
   name: job-name-courtier
   description: job-description-courtier
   playTimeTracker: JobCourtierDSM
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 2500
+    - !type:SpeciesRequirement
+      allowedOnly:
+        - Human
   weight: 25
   startingGear: CourtierGear
   alwaysUseSpawner: true
@@ -25,3 +31,4 @@
   equipment:
     id: CourtierPDA
     ears: ClothingHeadsetEmpire
+    pocket1: ImperialPassportBareLegit
