@@ -20,3 +20,25 @@
     - Hyena
     - Reaver
     - Shanty
+
+- type: entity
+  id: CountsmanMothershipComputer
+  parent: BaseMothershipComputer
+  name: imperial shipyard
+  components:
+  - type: ShipyardListing
+    shuttles:
+    - Nemesis
+    - Ibis
+    - Imp
+    - Imparator
+
+- type: entity
+  id: NemesisMothershipComputer
+  parent: BaseMothershipComputer
+  name: nemesis internal shipyard
+  components:
+  - type: ShipyardListing
+    shuttles:
+    - Imparator
+    - Jannissary

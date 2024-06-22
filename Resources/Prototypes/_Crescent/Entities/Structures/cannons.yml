@@ -394,11 +394,7 @@
   - type: AutoShootGun
   - type: GunSignalControl
     ports:
-      - SpaceArtilleryFire
-      - SpaceArtilleryToggleSafety
       - Toggle
-      - SpaceArtilleryOnSafety
-      - SpaceArtilleryOffSafety
   - type: DeviceLinkSource
     ports:
       - SpaceArtilleryDetectedFiring

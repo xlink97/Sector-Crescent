@@ -519,15 +519,15 @@
   - ContractorClothingNeckCloakMoth
   - ContractorClothingNeckScarfChaplainStole
   - ContractorClothingNeckStoleChaplain
-  - ContractorClothingNeckCloakTrans
-  - ContractorClothingNeckCloakAro
-  - ContractorClothingNeckCloakAce
-  - ContractorClothingNeckCloakBi
-  - ContractorClothingNeckCloakIntersex
-  - ContractorClothingNeckCloakEnby
-  - ContractorClothingNeckCloakPan
-  - ContractorClothingNeckCloakGay
-  - ContractorClothingNeckCloakLesbian
+  #- ContractorClothingNeckCloakTrans
+  #- ContractorClothingNeckCloakAro
+  #- ContractorClothingNeckCloakAce
+  #- ContractorClothingNeckCloakBi
+  #- ContractorClothingNeckCloakIntersex
+  #- ContractorClothingNeckCloakEnby
+  #- ContractorClothingNeckCloakPan
+  #- ContractorClothingNeckCloakGay
+  #- ContractorClothingNeckCloakLesbian
   - ContractorBedsheetRainbow
   - ContractorClothingNeckCloakCapFormal
   - ContractorClothingNeckMantleCap
@@ -632,13 +632,13 @@
   - ContractorSaxophoneInstrument
   - ContractorAcousticGuitarInstrument
   - ContractorCane
-  - ContractorLGBTQHandyFlag
-  - ContractorNTHandyFlag
-  - ContractorBalloonNT
-  - ContractorPonderingOrb
-  - ContractorPlushieRGBee
-  - ContractorDawInstrumentFlatpack
-  - ContractorHoverbikeFlatpack
+  #- ContractorLGBTQHandyFlag
+  #- ContractorNTHandyFlag
+  #- ContractorBalloonNT
+  #- ContractorPonderingOrb
+  #- ContractorPlushieRGBee
+  #- ContractorDawInstrumentFlatpack
+  #- ContractorHoverbikeFlatpack
   - ContractorEmotionalPetCarrier
 
 - type: loadoutGroup
@@ -689,18 +689,18 @@
   - ContractorCrayonBox
   - ContractorSoapNT
   # Frontier - try to mirror the upstream trinkets here, but only if they arent job role restricted in some weird way
-  - PlushieLizard
-  - ClothingNeckLGBTPin
-  - ClothingNeckAromanticPin
-  - ClothingNeckAsexualPin
-  - ClothingNeckBisexualPin
-  - ClothingNeckIntersexPin
-  - ClothingNeckLesbianPin
-  - ClothingNeckNonBinaryPin
-  - ClothingNeckPansexualPin
-  - ClothingNeckTransPin
-  - ClothingNeckAutismPin
-  - ClothingNeckGoldAutismPin
+ # - PlushieLizard
+ # - ClothingNeckLGBTPin
+ # - ClothingNeckAromanticPin
+ # - ClothingNeckAsexualPin
+ # - ClothingNeckBisexualPin
+ # - ClothingNeckIntersexPin
+ # - ClothingNeckLesbianPin
+ # - ClothingNeckNonBinaryPin
+ # - ClothingNeckPansexualPin
+ # - ClothingNeckTransPin
+ # - ClothingNeckAutismPin
+ # - ClothingNeckGoldAutismPin
 
 - type: loadoutGroup
   id: ContractorBoxSurvival

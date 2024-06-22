@@ -33,5 +33,6 @@
     head: ClothingHeadHatImperialBeret
     outerClothing: ClothingOuterCoatImperialAdjutant
     id: AdjutantPDA
+    pocket1: ImperialPassportBareLegit
     ears: ClothingHeadsetEmpire
     gloves: ClothingHandsGlovesImperialAdjutantGloves
