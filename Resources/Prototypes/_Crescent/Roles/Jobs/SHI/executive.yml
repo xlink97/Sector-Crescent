@@ -31,4 +31,5 @@
     neck: ClothingNeckTieRed
     outerClothing: ClothingOuterShinoharaExecSuitjacket
     id: ExecutivePDA
+    pocket1: TradePassport
     ears: ClothingHeadsetShinohara
