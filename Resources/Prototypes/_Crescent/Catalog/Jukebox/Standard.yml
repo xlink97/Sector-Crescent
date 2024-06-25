@@ -57,3 +57,21 @@
   name: Neverhood
   path:
     path: /Audio/_Crescent/Jukebox/neverhood.ogg
+
+- type: jukebox
+  id: Davai
+  name: Davai
+  path:
+    path: /Audio/_Crescent/Jukebox/Davai.ogg
+
+- type: jukebox
+  id: PowerInTheUnion
+  name: Power In The Union
+  path:
+    path: /Audio/_Crescent/Jukebox/PowerInTheUnion.ogg
+
+- type: jukebox
+  id: WhichSideAreYouOn
+  name: Which Side Are You On?
+  path:
+    path: /Audio/_Crescent/Jukebox/WhichSideAreYouOn.ogg
