@@ -1,6 +1,6 @@
 - type: gameMap
   id: Cove
-  mapName: 'Pirate Cove'
+  mapName: 'DSM Countsman'
   mapPath: /Maps/_NF/POI/cove.yml
   minPlayers: 0
   stations:
@@ -8,9 +8,13 @@
       stationProto: StandardFrontierOutpost
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Dochenskaya Outpost'
+          mapNameTemplate: 'DSM Countsman'
         - type: StationJobs
           overflowJobs: []
           availableJobs:
-            PirateCaptain: [ 0, 0 ]
-            PirateFirstMate: [ 0, 0 ]
+            GovernorDSM: [ 1, 1 ]
+            AdjutantDSM: [ 1, 1 ]
+            CourtierDSM: [ 3, 3 ]
+            KnightDSM: [ 3, 3 ]
+            LevymanDSM: [ 5, 5 ]
+            FreeholderDSM: [ 10, 10 ]

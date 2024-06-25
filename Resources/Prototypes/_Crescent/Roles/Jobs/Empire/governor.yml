@@ -5,6 +5,9 @@
   playTimeTracker: JobGovernorDSM
   requirements:
     - !type:WhitelistRequirement
+    - !type:SpeciesRequirement
+      allowedOnly:
+        - Human
   weight: 87
   startingGear: GovernorGear
   alwaysUseSpawner: true
@@ -18,7 +21,7 @@
   - EmpireNoble
   - EmpireAdjutant
   - EmpireGovernor
-  - EmpireSoldiers
+  - EmpireSoldier
   - Service
   - Empire
   - External
@@ -36,3 +39,4 @@
     id: GovernorPDA
     ears: ClothingHeadsetEmpire
     gloves: ClothingHandsGlovesImperialGovernorGloves
+    pocket1: ImperialPassportBareLegit

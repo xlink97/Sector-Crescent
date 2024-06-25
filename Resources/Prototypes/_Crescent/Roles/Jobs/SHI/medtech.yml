@@ -26,5 +26,6 @@
     shoes: ClothingShoesColorWhite
     outerClothing: ClothingOuterShinoharaLabcoat
     id: MedtechPDA
+    pocket1: TradePassport
     eyes: ClothingEyesGlassesChemical
     ears: ClothingHeadsetShinohara

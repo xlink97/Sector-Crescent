@@ -3,6 +3,10 @@
   name: job-name-levyman
   description: job-description-levyman
   playTimeTracker: JobLevymanDSM
+  requirements:
+    - !type:SpeciesRequirement
+      allowedOnly:
+        - Human
   weight: 20
   startingGear: LevymanGear
   alwaysUseSpawner: true
@@ -30,3 +34,4 @@
     head: ClothingHeadHelmetImperialTrooperHelmet
     outerClothing: ClothingOuterArmorImperialTrooperArmor
     gloves: ClothingHandsGlovesImperialLonggloves
+    pocket1: ImperialPassportBareLegit

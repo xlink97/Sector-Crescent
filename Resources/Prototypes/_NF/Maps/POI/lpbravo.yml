@@ -13,13 +13,13 @@
           overflowJobs:
           - Pilot
           availableJobs:
-            RingleaderNCSP: [ -1, -1 ]
-            LieutenantNCSP: [ -1, -1 ]
-            InfanteerNCSP: [ -1, -1 ]
-            TechnicianNCSP: [ -1, -1 ]
-            RipperdocNCSP: [ -1, -1 ]
-            ChemcookNCSP: [ -1, -1 ]
-            IntelligenceOfficerNCSP: [ -1, -1 ]
-            OperativeNCSP: [ -1, -1 ]
-            ForemanNCSP: [ -1, -1 ]
-            ShipbreakerNCSP: [ -1, -1 ]
+            RingleaderNCSP: [ 1, 1 ]
+            LieutenantNCSP: [ 1, 1 ]
+            InfanteerNCSP: [ 10, 15 ]
+            TechnicianNCSP: [ 3, 5 ]
+            RipperdocNCSP: [ 3, 5 ]
+            ChemcookNCSP: [ 1, 3 ]
+            IntelligenceOfficerNCSP: [ 1, 1 ]
+            OperativeNCSP: [ 3, 3 ]
+            ForemanNCSP: [ 1, 1 ]
+            ShipbreakerNCSP: [ 3, 5 ]

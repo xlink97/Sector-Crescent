@@ -2,29 +2,30 @@
 # Discord: @fleshangel
 #
 - type: vessel
-  id: Shanty
-  name: NCSP Shanty
-  description: A salvaged Syndicate cargopod.
-  price: 16000
+  id: Corvax
+  name: NCSP Corvax
+  description: A light missile corvette. Devastating at long range.
+  price: 32000
   category: Small
   group: None
-  shuttlePath: /Maps/_Crescent/Shuttles/NCSP/Shanty.yml
+  shuttlePath: /Maps/_Crescent/Shuttles/NCSP/corvax.yml
 
 - type: gameMap
-  id: Shanty
-  mapName: 'NCSP Shanty'
-  mapPath: /Maps/_Crescent/Shuttles/NCSP/Shanty.yml
+  id: Corvax
+  mapName: 'NCSP Corvax'
+  mapPath: /Maps/_Crescent/Shuttles/NCSP/corvax.yml
   minPlayers: 0
   stations: 
-    Shanty:
+    Corvax:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Shanty {1}'
+          mapNameTemplate: 'Corvax {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
         - type: StationJobs
           overflowJobs: []
           availableJobs:
-            ShipbreakerNCSP: [ 1, 1 ]
+            InfanteerNCSP: [ 1, 1 ]
+            TechnicianNCSP: [ 1, 1 ]

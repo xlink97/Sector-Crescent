@@ -184,7 +184,7 @@
   suffix: Basic, 15kW, Anchored
   components:
     - type: PowerSupplier
-      supplyRate: 15000
+      supplyRate: 250000
 
 - type: entity
   parent: BaseGeneratorWallmount
