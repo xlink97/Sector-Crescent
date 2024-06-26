@@ -213,16 +213,30 @@
       ExileAutoinjector: SpaceCash3500
       KaiserAutoinjector: SpaceCash4500
       BloodeyeAutoinjector: SpaceCash4000
-      MechaniteAutoinjector: SpaceCash2500
+      MechaniteAutoinjector: SpaceCash5000
       RadioJammer: SpaceCash1000
       FreedomImplanter: SpaceCash1000
       StorageImplanter: SpaceCash1000
       RitualDagger: SpaceCash500
       EldritchBlade: SpaceCash1000
       UnholyHalberd: SpaceCash1500
-      NCWLPassportBareLegit: SpaceCash2500
-      ImperialPassportBareLegit: SpaceCash2500
-      TradePassport: SpaceCash1500
+      NCWLPassportBareLegit: SpaceCash5000
+      ImperialPassportBareLegit: SpaceCash3500
+      TradePassport: SpaceCash2500
+      WeaponLightMachineGunConscript: SpaceCash5000
+      WeaponRifleNCWLBatanya: SpaceCash3500
+      WeaponRifleMiller: SpaceCash3500
+      WeaponRifleFAL: SpaceCash4000
+      WeaponRifleKrinkov: SpaceCash1500
+      WeaponRifleHoundMarksman: SpaceCash3500
+      WeaponRifleHunter: SpaceCash2500
+      WeaponRifleMayflower: SpaceCash3500
+      WeaponRevolverSnubnose: SpaceCash1500
+      WeaponPistolHKUSP: SpaceCash1000
+      WeaponPistolT91: SpaceCash1500
+      WeaponPistolHimehabu: SpaceCash1000
+      WeaponPistolComplianceImperial: SpaceCash1500
+      WeaponPistolSmartpistol: SpaceCash2500
   - type: Sprite
     sprite: _Crescent/Structures/onionchute.rsi
     layers:
