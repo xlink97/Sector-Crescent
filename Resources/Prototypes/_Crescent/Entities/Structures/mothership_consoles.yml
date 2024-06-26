@@ -43,3 +43,13 @@
     shuttles:
     - Imparator
     - Jannissary
+    - Raider
+
+- type: entity
+  id: InterdyneMothershipComputer
+  parent: BaseMothershipComputer
+  name: interdyne internal shipyard
+  components:
+  - type: ShipyardListing
+    shuttles:
+    - Jiuzhu
