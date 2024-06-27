@@ -15,11 +15,5 @@
           availableJobs:
             RingleaderNCSP: [ 1, 1 ]
             LieutenantNCSP: [ 1, 1 ]
-            InfanteerNCSP: [ 10, 15 ]
+            InfanteerNCSP: [ 10, 10 ]
             TechnicianNCSP: [ 3, 5 ]
-            RipperdocNCSP: [ 3, 5 ]
-            ChemcookNCSP: [ 1, 3 ]
-            IntelligenceOfficerNCSP: [ 1, 1 ]
-            OperativeNCSP: [ 3, 3 ]
-            ForemanNCSP: [ 1, 1 ]
-            ShipbreakerNCSP: [ 3, 5 ]

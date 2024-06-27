@@ -17,6 +17,9 @@ entities:
   entities:
   - uid: 2
     components:
+    - type: Shuttle
+      angularDamping: 590000
+      linearDamping: 590000
     - type: MetaData
       name: grid
     - type: Transform

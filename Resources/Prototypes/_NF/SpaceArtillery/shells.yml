@@ -21,7 +21,7 @@
     layers:
       - state: base-projectile
   - type: EmpOnTrigger
-    range: 16
+    range: 12
     energyConsumption: 90000
     disableDuration: 30
   - type: SpaceArtilleryProjectile
