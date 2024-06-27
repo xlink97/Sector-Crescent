@@ -116,6 +116,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
         var lpbravo = "/Maps/_NF/POI/lpbravo.yml";
         var hayes = "/Maps/_Crescent/Stations/hayes.yml";
         var lpramzi = "/Maps/_Crescent/Stations/lpramzi.yml";
+        var dochenskaya = "/Maps/_Crescent/Stations/dochenskaya.yml";
         // var northpole = "/Maps/_NF/POI/northpole.yml";
         // var arena = "/Maps/_NF/POI/arena.yml";
         var cove = "/Maps/_NF/POI/cove.yml";
@@ -275,6 +276,21 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
             _meta.SetEntityName(depotUid8s[0], "Listening Post 5", meta);
             _shuttle.SetIFFColor(depotUid8s[0], lpbravoColor);
             _shuttle.AddIFFFlag(depotUid8s[0], IFFFlags.HideLabel);
+        }
+
+        if (_map.TryLoad(mapId, dochenskaya, out var depotUid9s, new MapLoadOptions
+        {
+            Offset = _random.NextVector2(15000f, 13000f)
+        }))
+        {
+            if (_prototypeManager.TryIndex<GameMapPrototype>("Dochenskaya", out var stationProto))
+            {
+                _station.InitializeNewStation(stationProto.Stations["Dochenskaya"], depotUid9s);
+            }
+
+            var meta = EnsureComp<MetaDataComponent>(depotUid9s[0]);
+            _meta.SetEntityName(depotUid9s[0], "Dochenskaya Refueling Port", meta);
+            _shuttle.SetIFFColor(depotUid9s[0], lpbravoColor);
         }
 
         if (_map.TryLoad(mapId, lodge, out var lodgeUids, new MapLoadOptions
