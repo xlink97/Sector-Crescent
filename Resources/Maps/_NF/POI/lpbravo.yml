@@ -9493,8 +9493,8 @@ entities:
         immutable: False
         temperature: 293.14914
         moles:
-        - 1.7459903
-        - 6.568249
+        - 1.8856695
+        - 7.0937095
         - 0
         - 0
         - 0
@@ -9511,10 +9511,12 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 1350
-          - 1351
-          - 1352
           - 1353
+          - 1352
+          - 1351
+          - 1350
+          - 3693
+          - 3694
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -9530,8 +9532,8 @@ entities:
         immutable: False
         temperature: 293.14914
         moles:
-        - 1.7459903
-        - 6.568249
+        - 1.8856695
+        - 7.0937095
         - 0
         - 0
         - 0
@@ -9548,10 +9550,12 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 1355
-          - 1356
-          - 1357
+          - 2322
+          - 1693
           - 1358
+          - 1357
+          - 1356
+          - 1355
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -14589,6 +14593,34 @@ entities:
       parent: 2
     - type: Thruster
       originalPowerLoad: 1500
+- proto: HandheldGPSBasic
+  entities:
+  - uid: 3696
+    components:
+    - type: Transform
+      pos: 9.288852,-28.21066
+      parent: 2
+  - uid: 3697
+    components:
+    - type: Transform
+      pos: 9.42261,-28.21066
+      parent: 2
+  - uid: 3698
+    components:
+    - type: Transform
+      pos: 9.556368,-28.21066
+      parent: 2
+  - uid: 3699
+    components:
+    - type: Transform
+      pos: 9.719851,-28.21066
+      parent: 2
+  - uid: 3713
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 7.4888945,-58.426823
+      parent: 2
 - proto: HandheldHealthAnalyzer
   entities:
   - uid: 1369
@@ -15411,7 +15443,7 @@ entities:
       pos: 13.5,-51.5
       parent: 2
     - type: Battery
-      startingCharge: 199500
+      startingCharge: 199000
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -15441,7 +15473,7 @@ entities:
       pos: -12.5,-51.5
       parent: 2
     - type: Battery
-      startingCharge: 199500
+      startingCharge: 199000
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -15903,7 +15935,7 @@ entities:
       pos: 17.5,-17.5
       parent: 2
     - type: DeadDrop
-      nextDrop: 15217.7751585
+      nextDrop: 2415.816254
 - proto: PosterContrabandInterdyne
   entities:
   - uid: 1235
@@ -17045,13 +17077,88 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: RadioJammer
-  entities:
+  - uid: 1693
+    components:
+    - type: Transform
+      parent: 1354
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
   - uid: 2322
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 1.2033224,-65.47945
+      parent: 1354
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 3693
+    components:
+    - type: Transform
+      parent: 1349
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 3694
+    components:
+    - type: Transform
+      parent: 1349
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 3700
+    components:
+    - type: Transform
+      pos: 9.214542,-28.597181
+      parent: 2
+  - uid: 3701
+    components:
+    - type: Transform
+      pos: 9.318576,-28.597181
+      parent: 2
+  - uid: 3702
+    components:
+    - type: Transform
+      pos: 9.452334,-28.597181
+      parent: 2
+  - uid: 3703
+    components:
+    - type: Transform
+      pos: 9.541506,-28.597181
+      parent: 2
+  - uid: 3704
+    components:
+    - type: Transform
+      pos: 9.660402,-28.597181
+      parent: 2
+  - uid: 3705
+    components:
+    - type: Transform
+      pos: 9.764437,-28.612047
+      parent: 2
+  - uid: 3706
+    components:
+    - type: Transform
+      pos: 9.809023,-28.612047
+      parent: 2
+  - uid: 3709
+    components:
+    - type: Transform
+      pos: 6.8600388,-58.39709
+      parent: 2
+  - uid: 3710
+    components:
+    - type: Transform
+      pos: 6.666833,-58.39709
+      parent: 2
+  - uid: 3711
+    components:
+    - type: Transform
+      pos: 6.310145,-58.411957
+      parent: 2
+  - uid: 3712
+    components:
+    - type: Transform
+      pos: 6.488488,-58.411957
       parent: 2
 - proto: RagItem
   entities:
@@ -17415,11 +17522,6 @@ entities:
     components:
     - type: Transform
       pos: -1.5,-43.5
-      parent: 2
-  - uid: 1693
-    components:
-    - type: Transform
-      pos: 9.5,-28.5
       parent: 2
 - proto: RandomVendingSnacks
   entities:
@@ -19798,6 +19900,21 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -14.5,-56.5
       parent: 2
+  - uid: 3695
+    components:
+    - type: Transform
+      pos: 9.5,-28.5
+      parent: 2
+  - uid: 3707
+    components:
+    - type: Transform
+      pos: 6.5,-58.5
+      parent: 2
+  - uid: 3708
+    components:
+    - type: Transform
+      pos: 7.5,-58.5
+      parent: 2
 - proto: TableReinforcedGlass
   entities:
   - uid: 1277
@@ -20342,7 +20459,7 @@ entities:
       pos: 18.5,-15.5
       parent: 2
     - type: Battery
-      startingCharge: 970000
+      startingCharge: 967000
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -20375,7 +20492,7 @@ entities:
       pos: 20.5,-15.5
       parent: 2
     - type: Battery
-      startingCharge: 970000
+      startingCharge: 967000
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -20408,7 +20525,7 @@ entities:
       pos: -20.5,-51.5
       parent: 2
     - type: Battery
-      startingCharge: 970000
+      startingCharge: 967000
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -20440,7 +20557,7 @@ entities:
       pos: -22.5,-51.5
       parent: 2
     - type: Battery
-      startingCharge: 970000
+      startingCharge: 967000
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -20471,7 +20588,7 @@ entities:
       pos: 24.5,-51.5
       parent: 2
     - type: Battery
-      startingCharge: 970000
+      startingCharge: 967000
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container

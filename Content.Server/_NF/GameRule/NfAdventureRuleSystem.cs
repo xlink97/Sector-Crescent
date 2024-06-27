@@ -115,6 +115,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
         var caseys = "/Maps/_NF/POI/caseyscasino.yml";
         var lpbravo = "/Maps/_NF/POI/lpbravo.yml";
         var hayes = "/Maps/_Crescent/Stations/hayes.yml";
+        var lpramzi = "/Maps/_Crescent/Stations/lpramzi.yml";
         // var northpole = "/Maps/_NF/POI/northpole.yml";
         // var arena = "/Maps/_NF/POI/arena.yml";
         var cove = "/Maps/_NF/POI/cove.yml";
@@ -258,6 +259,22 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
             var meta = EnsureComp<MetaDataComponent>(depotUid7s[0]);
             _meta.SetEntityName(depotUid7s[0], "IPM Hayes Medical Waystation", meta);
             _shuttle.SetIFFColor(depotUid7s[0], lpbravoColor);
+        }
+
+        if (_map.TryLoad(mapId, lpramzi, out var depotUid8s, new MapLoadOptions
+        {
+            Offset = _random.NextVector2(5000f, 22000f)
+        }))
+        {
+            if (_prototypeManager.TryIndex<GameMapPrototype>("lpramzi", out var stationProto))
+            {
+                _station.InitializeNewStation(stationProto.Stations["lpramzi"], depotUid8s);
+            }
+
+            var meta = EnsureComp<MetaDataComponent>(depotUid8s[0]);
+            _meta.SetEntityName(depotUid8s[0], "Listening Post 5", meta);
+            _shuttle.SetIFFColor(depotUid8s[0], lpbravoColor);
+            _shuttle.AddIFFFlag(depotUid8s[0], IFFFlags.HideLabel);
         }
 
         if (_map.TryLoad(mapId, lodge, out var lodgeUids, new MapLoadOptions
