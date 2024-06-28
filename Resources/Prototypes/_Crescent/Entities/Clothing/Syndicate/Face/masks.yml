@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingMaskBase
   id: ClothingMaskSyndicateFacemask
-  name: hired gun's facemask
-  description: A close-fitting combat facemask for Syndicate operators.
+  name: combat facemask
+  description: A close-fitting combat facemask for combat operators.
   components:
   - type: Sprite
     sprite: _Crescent/Clothing/Syndicate/Face/facemask.rsi

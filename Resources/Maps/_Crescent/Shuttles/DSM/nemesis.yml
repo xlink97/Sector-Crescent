@@ -972,7 +972,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -1836.2291
+      secondsUntilStateChange: -1905.3575
       state: Opening
   - uid: 403
     components:
@@ -1046,19 +1046,20 @@ entities:
     - type: InsideEntityStorage
 - proto: AmeController
   entities:
-  - uid: 783
+  - uid: 1650
     components:
     - type: Transform
-      pos: 4.5,-30.5
+      pos: 3.5,-30.5
       parent: 1
     - type: AmeController
+      injectionAmount: 4
       injecting: True
     - type: ContainerContainer
       containers:
         fuelSlot: !type:ContainerSlot
           showEnts: False
           occludes: True
-          ent: 784
+          ent: 1651
 - proto: AmeJar
   entities:
   - uid: 169
@@ -1081,33 +1082,46 @@ entities:
     - type: Transform
       pos: 3.659566,-28.364965
       parent: 1
-  - uid: 784
-    components:
-    - type: Transform
-      parent: 783
-    - type: Physics
-      canCollide: False
   - uid: 1648
     components:
     - type: Transform
       pos: 3.1542568,-28.364965
       parent: 1
+  - uid: 1651
+    components:
+    - type: Transform
+      parent: 1650
+    - type: Physics
+      canCollide: False
 - proto: AmeShielding
   entities:
   - uid: 170
     components:
     - type: Transform
-      pos: 5.5,-30.5
+      pos: 4.5,-30.5
       parent: 1
   - uid: 452
     components:
     - type: Transform
-      pos: 5.5,-29.5
+      pos: 5.5,-30.5
       parent: 1
   - uid: 453
     components:
     - type: Transform
+      pos: 5.5,-29.5
+      parent: 1
+    - type: PointLight
+      radius: 2
+      enabled: True
+  - uid: 556
+    components:
+    - type: Transform
       pos: 5.5,-28.5
+      parent: 1
+  - uid: 784
+    components:
+    - type: Transform
+      pos: 4.5,-29.5
       parent: 1
   - uid: 1187
     components:
@@ -1141,6 +1155,11 @@ entities:
     components:
     - type: Transform
       pos: 7.5,-28.5
+      parent: 1
+  - uid: 1649
+    components:
+    - type: Transform
+      pos: 4.5,-28.5
       parent: 1
 - proto: APCBasic
   entities:
@@ -8433,8 +8452,8 @@ entities:
         immutable: False
         temperature: 293.14923
         moles:
-        - 1.7459903
-        - 6.568249
+        - 1.8856695
+        - 7.0937095
         - 0
         - 0
         - 0
@@ -8451,12 +8470,12 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 820
-          - 819
-          - 818
-          - 821
-          - 822
           - 823
+          - 822
+          - 821
+          - 818
+          - 819
+          - 820
 - proto: SuitStorageWallmount
   entities:
   - uid: 533
@@ -8536,10 +8555,10 @@ entities:
       canCollide: False
 - proto: SurveillanceCameraRouterGeneral
   entities:
-  - uid: 556
+  - uid: 783
     components:
     - type: Transform
-      pos: 4.5,-28.5
+      pos: -4.5,-30.5
       parent: 1
 - proto: SyndicatePersonalAI
   entities:
@@ -8979,7 +8998,7 @@ entities:
       pos: 6.5,14.5
       parent: 1
     - type: Battery
-      startingCharge: 988000
+      startingCharge: 985000
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -9009,7 +9028,7 @@ entities:
       pos: 2.5,14.5
       parent: 1
     - type: Battery
-      startingCharge: 988000
+      startingCharge: 985000
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
@@ -9039,7 +9058,7 @@ entities:
       pos: 4.5,11.5
       parent: 1
     - type: Battery
-      startingCharge: 988000
+      startingCharge: 985000
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container

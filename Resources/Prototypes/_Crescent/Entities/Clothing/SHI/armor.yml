@@ -120,7 +120,7 @@
 - type: entity
   parent: ClothingOuterBaseLarge
   id: ClothingOuterArmorShinoharaArmorHighsec
-  name: highsec armored suit
+  name: highsec ballistic hauberk
   description: A kevlar-intervowen durathread armorsuit padded with ballistic gel. Painted in Shinohara colors.
   components:
   - type: Sprite

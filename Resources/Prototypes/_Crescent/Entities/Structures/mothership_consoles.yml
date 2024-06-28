@@ -71,3 +71,15 @@
   - type: ShipyardListing
     shuttles:
     - Velator
+
+- type: entity
+  id: TatsumotoMothershipComputer
+  parent: BaseMothershipComputer
+  name: shinohara internal shipyard
+  components:
+  - type: ShipyardListing
+    shuttles:
+    - Probe
+    - Buffalo
+    - Gazpachov
+    - Musinyane

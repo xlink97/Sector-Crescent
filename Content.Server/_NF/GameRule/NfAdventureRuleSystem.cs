@@ -116,6 +116,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
         var lpbravo = "/Maps/_NF/POI/lpbravo.yml";
         var hayes = "/Maps/_Crescent/Stations/hayes.yml";
         var lpramzi = "/Maps/_Crescent/Stations/lpramzi.yml";
+        var tatsumoto = "/Maps/_Crescent/Stations/tatsumoto.yml";
         var dochenskaya = "/Maps/_Crescent/Stations/dochenskaya.yml";
         // var northpole = "/Maps/_NF/POI/northpole.yml";
         // var arena = "/Maps/_NF/POI/arena.yml";
@@ -131,6 +132,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
         var civilianColor = new Color(55, 55, 200);
         var lpbravoColor = new Color(200, 55, 55);
         var coveColor = new Color(203, 195, 227);
+        var tatsumotoColor = new Color(128, 128, 128);
         var factionColor = new Color(255, 165, 0);
         var mapId = GameTicker.DefaultMap;
         var depotOffset = _random.NextVector2(4500f, 6000f);
@@ -291,6 +293,21 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
             var meta = EnsureComp<MetaDataComponent>(depotUid9s[0]);
             _meta.SetEntityName(depotUid9s[0], "Dochenskaya Refueling Port", meta);
             _shuttle.SetIFFColor(depotUid9s[0], lpbravoColor);
+        }
+
+        if (_map.TryLoad(mapId, tatsumoto, out var depotUid10s, new MapLoadOptions
+        {
+            Offset = _random.NextVector2(5000f, 7500f)
+        }))
+        {
+            if (_prototypeManager.TryIndex<GameMapPrototype>("Tatsumoto", out var stationProto))
+            {
+                _station.InitializeNewStation(stationProto.Stations["Tatsumoto"], depotUid10s);
+            }
+
+            var meta = EnsureComp<MetaDataComponent>(depotUid10s[0]);
+            _meta.SetEntityName(depotUid10s[0], "Tatsumoto Trading Outpost", meta);
+            _shuttle.SetIFFColor(depotUid10s[0], tatsumotoColor);
         }
 
         if (_map.TryLoad(mapId, lodge, out var lodgeUids, new MapLoadOptions

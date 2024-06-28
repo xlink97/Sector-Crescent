@@ -12,6 +12,19 @@
   - type: StaticPrice
     price: 75
 
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetSyndicateBasicInterdyne
+  name: traumasec officer's ballistic helmet
+  description: A kevlar-plated nanoweave infantry helmet. Standard issue for TraumaSec.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/Syndicate/Head/traumahelmet.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/Syndicate/Head/traumahelmet.rsi
+  - type: StaticPrice
+    price: 75
+
 ## hardsuit helmets
 
 - type: entity

@@ -13,6 +13,19 @@
 
 - type: entity
   parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSyndicateInterdyne
+  name: interdyne agent's fatigues
+  description: An Interdyne officer's uniform.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/Syndicate/Uniform/interdyne.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/Syndicate/Uniform/interdyne.rsi
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  parent: ClothingUniformBase
   id: ClothingUniformJumpsuitSyndicateSaws
   name: shipbreaker's jumpsuit
   description: A battle-worn jumpsuit-overalls repaired lovingly over many years. All work-ready synthdenim and durathread. The insignia of the SAWs are stitched on the breast.

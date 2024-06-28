@@ -63,3 +63,14 @@
     sprite: _Crescent/Clothing/SHI/Uniform/traumasec.rsi
   - type: Clothing
     sprite: _Crescent/Clothing/SHI/Uniform/traumasec.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitShinoharaHighsec
+  name: highsec officer's turtleneck
+  description: A traumasec officer's corporate uniform in Shinohara MedTech colors.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/SHI/Uniform/securityturtleneck.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/SHI/Uniform/securityturtleneck.rsi

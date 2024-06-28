@@ -165,6 +165,33 @@
 
 - type: entity
   parent: ClothingOuterBaseLarge
+  id: ClothingOuterArmorSyndicateArmorvestInterdyne
+  name: traumasec agent's ballistic vest
+  description: A bulky kevlar-padded ballistic vest, touched with the colors of the Interdyne TraumaSec team.
+  components:
+  - type: Sprite
+    sprite: _Crescent/Clothing/Syndicate/OuterClothing/traumasecvest.rsi
+  - type: Clothing
+    sprite: _Crescent/Clothing/Syndicate/OuterClothing/traumasecvest.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.80
+        Slash: 0.75
+        Piercing: 0.65
+        Heat: 0.80
+        Caustic: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: ExplosionResistance
+    damageCoefficient: 0.90
+  - type: GroupExamine
+  - type: StaticPrice
+    price: 125
+
+- type: entity
+  parent: ClothingOuterBaseLarge
   id: ClothingOuterArmorSyndicateRingmaster
   name: ringmaster's armored coat
   description: A heavy synthetic fabric overcoat with structured shoulders. Sleek durathread panels line the vitals under the lining, offering meager padding.
