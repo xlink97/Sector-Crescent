@@ -13,6 +13,41 @@
   supervisors: job-supervisors-highcomm 
   canBeAntag: false
   access:
+  - EmergencyShuttleRepealAll
+  - Captain
+  - HeadOfPersonnel
+  - ChiefEngineer
+  - ChiefMedicalOfficer
+  - HeadOfSecurity
+  - ResearchDirector
+  - Frontier # Frontier
+  - Command
+  - Cryogenics
+  - Security
+  - Detective
+  - Armory
+  - Brig
+  - Lawyer
+  - Engineering
+  - Mail # Frontier
+  - Medical
+  - Mercenary # Frontier
+  - Quartermaster
+  - Salvage
+  - Cargo
+  - Research
+  - Service
+  - StationTrafficController # Frontier
+  - Maintenance
+  - External
+  - Janitor
+  - Theatre
+  - Bar
+  - Chemistry
+  - Kitchen
+  - Chapel
+  - Hydroponics
+  - Atmospherics
   - Command
   - Maintenance
   - NCWLGeneral
@@ -22,7 +57,6 @@
   - NCWLArmory
   - NCWLCommand
   - External
-  - Mercenary # Frontier
   - Captain # Frontier
 
 - type: startingGear

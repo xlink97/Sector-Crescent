@@ -24,7 +24,7 @@
 - type: startingGear
   id: HighsecGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitShinoharaSecurity
+    jumpsuit: ClothingUniformJumpsuitShinoharaHighsec
     shoes: ClothingShoesBootsCombat
     belt: WeaponLaserSvalinn
     head: ClothingHeadHatShinoharaHelmet

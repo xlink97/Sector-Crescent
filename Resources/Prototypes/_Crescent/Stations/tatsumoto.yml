@@ -1,0 +1,20 @@
+- type: gameMap
+  id: Tatsumoto
+  mapName: 'Tatsumoto Trading Outpost'
+  mapPath: /Maps/_Crescent/Stations/tatsumoto.yml
+  minPlayers: 0
+  stations:
+    Tatsumoto:
+      stationProto: StandardFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Tatsumoto Trading Outpost'
+        - type: StationJobs
+          overflowJobs: []
+          availableJobs:
+            ExecutiveSHI: [ 1, 1 ]
+            HighsecSHI: [ 4, 4 ]
+            BoardSHI: [ 2, 2 ]
+            CorpsecSHI: [ 4, 4 ]
+            EmployeeSHI: [ 5, 5 ]
+            MedtechSHI: [ 2, 2 ]

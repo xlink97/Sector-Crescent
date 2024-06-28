@@ -195,7 +195,7 @@
 - type: entity
   parent: BasePDA
   id: ChemcookPDA
-  name: chemcook's PDA
+  name: traumasec's PDA
   description: Red for Syndicate. Has the Interdyne Pharmaceutics logo stamped at the back.
   components:
   - type: Pda

@@ -23,8 +23,12 @@
 - type: startingGear
   id: ChemcookGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSyndicateEnviro
+    jumpsuit: ClothingUniformJumpsuitSyndicateInterdyne
+    gloves: ClothingHandsGlovesFingerless
+    mask: ClothingMaskSyndicateFacemask
     shoes: ClothingShoesBootsCombat
-    head: ClothingHeadHatSyndicateDoctor
+    outerClothing: ClothingOuterArmorSyndicateArmorvestInterdyne
+    belt: ClothingBeltSyndicateWebbingInterdyne
+    head: ClothingHeadHelmetSyndicateBasicInterdyne
     id: ChemcookPDA
     ears: ClothingHeadsetNCSP

@@ -11,7 +11,7 @@
   - type: ContainerFill
     containers:
       key_slots:
-      - EncryptionKeyCommon
+      - EncryptionKeyTraffic
   - type: Headset
   - type: EncryptionKeyHolder
     keySlots: 5 # Frontier 4<5
@@ -45,7 +45,7 @@
     containers:
       key_slots:
       - EncryptionKeyCargo
-      - EncryptionKeyCommon
+      - EncryptionKeyTraffic
   - type: Sprite
     sprite: Clothing/Ears/Headsets/cargo.rsi
   - type: Clothing

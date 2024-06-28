@@ -144,6 +144,15 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 0.5,-0.5
       parent: 1
+- proto: AirTankFilled
+  entities:
+  - uid: 80
+    components:
+    - type: Transform
+      parent: 83
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: APCBasic
   entities:
   - uid: 63
@@ -475,6 +484,33 @@ entities:
       rot: 3.141592653589793 rad
       pos: 4.5,2.5
       parent: 1
+- proto: ClothingHeadHelmetImperialEVA
+  entities:
+  - uid: 166
+    components:
+    - type: Transform
+      parent: 83
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: ClothingMaskImperialCombatGasmask
+  entities:
+  - uid: 164
+    components:
+    - type: Transform
+      parent: 83
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: ClothingOuterCoatImperialSoftsuit
+  entities:
+  - uid: 165
+    components:
+    - type: Transform
+      parent: 83
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: ComputerIFF
   entities:
   - uid: 67
@@ -879,6 +915,34 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 6.5,-0.5
       parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14923
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 80
+          - 164
+          - 165
+          - 166
     - type: Physics
       canCollide: False
 - proto: TableReinforced
@@ -1098,7 +1162,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -191.20256
+      secondsUntilStateChange: -225.81918
       state: Opening
   - uid: 79
     components:
