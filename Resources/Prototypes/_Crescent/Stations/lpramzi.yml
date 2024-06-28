@@ -13,5 +13,4 @@
           overflowJobs: []
           availableJobs:
             IntelligenceOfficerNCSP: [ 1, 1 ]
-            Borg: [ 1, 1 ]
             OperativeNCSP: [ 3, 3 ]

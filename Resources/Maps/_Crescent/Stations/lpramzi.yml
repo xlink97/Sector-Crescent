@@ -658,7 +658,7 @@ entities:
       pos: 1.5,-2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -4438.2
+      secondsUntilStateChange: -4457.6113
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -5270,16 +5270,25 @@ entities:
     - type: Transform
       pos: 3.5,-17.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 408
   - uid: 217
     components:
     - type: Transform
       pos: 2.5,-17.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 408
   - uid: 256
     components:
     - type: Transform
       pos: 4.5,-17.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 408
 - proto: SignalButton
   entities:
   - uid: 408
@@ -5288,6 +5297,14 @@ entities:
       rot: 3.141592653589793 rad
       pos: 1.5,-17.5
       parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        217:
+        - Pressed: Toggle
+        216:
+        - Pressed: Toggle
+        256:
+        - Pressed: Toggle
 - proto: SignCargoDock
   entities:
   - uid: 452

@@ -186,8 +186,8 @@ entities:
     - type: Broadphase
     - type: Physics
       bodyStatus: InAir
-      angularDamping: 0.05
-      linearDamping: 0.05
+      angularDamping: 590000
+      linearDamping: 590000
       fixedRotation: False
       bodyType: Dynamic
     - type: Fixtures
@@ -2198,7 +2198,7 @@ entities:
       pos: 9.5,6.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -71232.55
+      secondsUntilStateChange: -71254.58
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2743,7 +2743,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -84417.3
+      secondsUntilStateChange: -84439.33
       state: Opening
   - uid: 155
     components:
@@ -14395,6 +14395,46 @@ entities:
     - type: Transform
       pos: -13.5,66.5
       parent: 1
+  - uid: 6888
+    components:
+    - type: Transform
+      pos: 1.5,77.5
+      parent: 1
+  - uid: 6889
+    components:
+    - type: Transform
+      pos: -0.5,76.5
+      parent: 1
+  - uid: 6890
+    components:
+    - type: Transform
+      pos: 0.5,76.5
+      parent: 1
+  - uid: 6891
+    components:
+    - type: Transform
+      pos: 1.5,76.5
+      parent: 1
+  - uid: 6892
+    components:
+    - type: Transform
+      pos: 1.5,78.5
+      parent: 1
+  - uid: 6893
+    components:
+    - type: Transform
+      pos: 1.5,79.5
+      parent: 1
+  - uid: 6894
+    components:
+    - type: Transform
+      pos: 1.5,80.5
+      parent: 1
+  - uid: 6895
+    components:
+    - type: Transform
+      pos: 1.5,81.5
+      parent: 1
 - proto: CableApcStack10
   entities:
   - uid: 6211
@@ -20432,7 +20472,7 @@ entities:
       pos: 2.5,5.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -57885.13
+      secondsUntilStateChange: -57907.16
       state: Closing
   - uid: 446
     components:
@@ -25961,7 +26001,7 @@ entities:
       pos: -22.5,84.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -57717.586
+      secondsUntilStateChange: -57739.617
       state: Closing
   - uid: 3816
     components:

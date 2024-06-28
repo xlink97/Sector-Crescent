@@ -17,7 +17,6 @@
  # - Botanist
  # - Boxer
  # - Chaplain
- # - KadetNCWL
  # - Chef
  # - Clown
 #  - HeadOfPersonnel
@@ -93,7 +92,6 @@
 #  - SecurityGuard # Frontier
   - DetectiveNF # Frontier
   - Cadet # Frontier
-  - KadetNCWL
   - Deputy # Frontier
   - Bailiff # Frontier
   - Sheriff # Frontier

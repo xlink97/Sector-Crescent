@@ -80,6 +80,6 @@
   - type: ShipyardListing
     shuttles:
     - Probe
-    - Buffalo
-    - Gazpachov
+    - buffalo
+    - gazpachov
     - Musinyane
