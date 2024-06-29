@@ -658,7 +658,7 @@ entities:
       pos: 1.5,-2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -5290.915
+      secondsUntilStateChange: -5313.0264
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -5735,6 +5735,13 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -6.5,-6.5
+      parent: 1
+- proto: VendingMachineClothing
+  entities:
+  - uid: 794
+    components:
+    - type: Transform
+      pos: -2.5,-7.5
       parent: 1
 - proto: VendingMachineYouTool
   entities:

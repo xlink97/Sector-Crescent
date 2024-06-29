@@ -302,7 +302,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -2429.5325
+      secondsUntilStateChange: -2442.5486
       state: Opening
   - uid: 166
     components:
@@ -1743,6 +1743,13 @@ entities:
     components:
     - type: Transform
       pos: -2.5,3.5
+      parent: 2
+- proto: GravityGeneratorMini
+  entities:
+  - uid: 487
+    components:
+    - type: Transform
+      pos: 6.5,4.5
       parent: 2
 - proto: Grille
   entities:
