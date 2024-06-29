@@ -45,6 +45,8 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: StaticPrice
+    price: 2500
 
 
 - type: entity
@@ -92,6 +94,8 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: StaticPrice
+    price: 3500
 
 - type: entity
   name: Homeguard FAL Mk. II 6.8mm
@@ -138,6 +142,8 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: StaticPrice
+    price: 3000
 
 
 - type: entity
@@ -185,6 +191,8 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: StaticPrice
+    price: 800
 
 
 - type: entity
@@ -235,6 +243,8 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: StaticPrice
+    price: 1000
 
 - type: entity
   name: IRM Hunter 7.62x51mm
@@ -284,6 +294,8 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: StaticPrice
+    price: 2000
 
 - type: entity
   name: SHI Mayflower 7.62x39mm
@@ -330,3 +342,5 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: StaticPrice
+    price: 1500

@@ -29,6 +29,8 @@
     sprintModifier: 0.9
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitRamzi
+  - type: StaticPrice
+    price: 1000
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -59,6 +61,8 @@
     sprintModifier: 0.9
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndicateBattlegroup
+  - type: StaticPrice
+    price: 1250
 
 
 #regular shit. if you put hardsuit below here i'm going to explode your cock
@@ -87,6 +91,8 @@
   - type: ExplosionResistance
     damageCoefficient: 0.90
   - type: GroupExamine
+  - type: StaticPrice
+    price: 250
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -111,6 +117,8 @@
   - type: ExplosionResistance
     damageCoefficient: 0.90
   - type: GroupExamine
+  - type: StaticPrice
+    price: 100
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -135,6 +143,8 @@
   - type: ExplosionResistance
     damageCoefficient: 0.90
   - type: GroupExamine
+  - type: StaticPrice
+    price: 100
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -161,7 +171,7 @@
     damageCoefficient: 0.90
   - type: GroupExamine
   - type: StaticPrice
-    price: 125
+    price: 250
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -188,7 +198,7 @@
     damageCoefficient: 0.90
   - type: GroupExamine
   - type: StaticPrice
-    price: 125
+    price: 250
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -214,6 +224,8 @@
   - type: ExplosionResistance
     damageCoefficient: 0.90
   - type: GroupExamine
+  - type: StaticPrice
+    price: 350
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -239,3 +251,5 @@
   - type: ExplosionResistance
     damageCoefficient: 0.90
   - type: GroupExamine
+  - type: StaticPrice
+    price: 450

@@ -1,5 +1,5 @@
 - type: entity
-  name: BaseWeaponLightMachineGun
+  name: BaseWeaponLightMachineGunConscript
   parent: BaseItem
   id: BaseWeaponLightMachineGunConscript
   description: A rooty tooty point and shooty.
@@ -53,7 +53,7 @@
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice
-    price: 500
+    price: 5500
   - type: UseDelay
     delay: 1
 

@@ -22,6 +22,8 @@
   - type: ExplosionResistance
     damageCoefficient: 0.90
   - type: GroupExamine
+  - type: StaticPrice
+    price: 1000
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -47,6 +49,8 @@
   - type: ExplosionResistance
     damageCoefficient: 0.90
   - type: GroupExamine
+  - type: StaticPrice
+    price: 800
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -72,6 +76,8 @@
   - type: ExplosionResistance
     damageCoefficient: 0.90
   - type: GroupExamine
+  - type: StaticPrice
+    price: 900
 
 ## hardsuits
 
@@ -104,6 +110,8 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitNCWLInfantry
+  - type: StaticPrice
+    price: 2000
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -134,6 +142,8 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitNCWLJuggernaut
+  - type: StaticPrice
+    price: 5000
 
 ##softsuits
 
@@ -150,3 +160,5 @@
   - type: Tag
     tags:
     - SuitEVA
+  - type: StaticPrice
+    price: 1000

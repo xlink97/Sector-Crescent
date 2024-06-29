@@ -5,7 +5,7 @@
   unit: materials-unit-piece
   icon: { sprite: /Textures/Objects/Misc/monkeycube.rsi, state: cube }
   color: "#8A9A5B"
-  price: 0.1
+  price: 0.3
 
 - type: material
   id: Cardboard
@@ -98,7 +98,7 @@
   unit: materials-unit-web
   icon: { sprite: Objects/Materials/silk.rsi, state: icon }
   color: "#eeeeee" #eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-  price: 0 # Maybe better for it to be priceless, knowing how greedy cargo is.
+  price: 0.15 # Maybe better for it to be priceless, knowing how greedy cargo is.
 
 - type: material
   id: Bones
@@ -106,7 +106,7 @@
   unit: materials-unit-piece
   icon: { sprite: Objects/Materials/materials.rsi, state: bones }
   color: "#896f5e"
-  price: 0
+  price: 0.1
 
 - type: material
   id: Coal
@@ -115,7 +115,7 @@
   unit: materials-unit-piece
   icon: { sprite: Objects/Materials/ore.rsi, state: coal }
   color: "#404040"
-  price: 0
+  price: 0.1
 
 - type: material
   id: Gunpowder

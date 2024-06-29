@@ -20,6 +20,8 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: StaticPrice
+    price: 600
 
 - type: entity
   name: H&K MP5 9x19mm
@@ -27,6 +29,8 @@
   id: WeaponSubMachineGunMP5
   description: A light Terran submachine gun often seen with various security forces around the Sector.
   components:
+  - type: StaticPrice
+    price: 800
   - type: Sprite
     sprite: _Crescent/Objects/Weapons/mp5.rsi
     layers:
@@ -119,6 +123,8 @@
   id: WeaponSubMachineGunSabre
   description: A light Shinohara submachine gun, manufactured for use by corporate security.
   components:
+  - type: StaticPrice
+    price: 1250
   - type: Sprite
     sprite: _Crescent/Objects/Weapons/sabre.rsi
     layers:

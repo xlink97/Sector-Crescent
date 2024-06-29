@@ -19,6 +19,7 @@
   access:
   - Command
   - Empire
+  - EmpireNoble
   - Maintenance
   - Service
   - EmpireSoldier
