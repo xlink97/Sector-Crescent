@@ -130,7 +130,7 @@ public sealed partial class BankSystem
 
         if (!_access.IsAllowed(player, uid))
         {
-            _log.Info($"{player} tried to access stationo bank account");
+            _log.Info($"{player} tried to access station bank account");
             ConsolePopup(args.Actor, Loc.GetString("station-bank-unauthorized"));
             PlayDenySound(uid, component);
             _uiSystem.SetUiState(uid, args.UiKey,

@@ -15,6 +15,14 @@
     Steel: 190
 
 - type: latheRecipe
+  id: BaseMagazinePistolSubMachineGun
+  result: BaseMagazinePistolSubMachineGun
+  category: Ammo
+  completetime: 5
+  materials:
+    Steel: 190
+
+- type: latheRecipe
   id: SpeedLoaderRifleHeavyPractice
   result: SpeedLoaderRifleHeavyPractice
   category: Ammo

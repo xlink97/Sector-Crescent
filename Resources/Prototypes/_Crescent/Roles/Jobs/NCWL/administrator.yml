@@ -21,7 +21,6 @@
   - HeadOfSecurity
   - ResearchDirector
   - Frontier # Frontier
-  - Command
   - Cryogenics
   - Security
   - Detective
@@ -35,11 +34,9 @@
   - Salvage
   - Cargo
   - Research
-  - Service
   - StationTrafficController # Frontier
   - Maintenance
   - External
-  - Janitor
   - Theatre
   - Bar
   - Chemistry

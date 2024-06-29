@@ -658,7 +658,7 @@ entities:
       pos: 1.5,-2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -4457.6113
+      secondsUntilStateChange: -5290.915
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -3235,6 +3235,9 @@ entities:
     - type: Transform
       pos: 1.5,-18.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 405
     - type: ContainerContainer
       containers:
         machine_board: !type:Container
@@ -3586,6 +3589,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 1.5,-19.5
       parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        406:
+        - OrderSender: OrderReceiver
     - type: ContainerContainer
       containers:
         board: !type:Container
@@ -3657,23 +3664,13 @@ entities:
       rot: 3.141592653589793 rad
       pos: 9.5,-5.5
       parent: 1
-- proto: ComputerTabletopStationAdminBankATM
+- proto: ComputerTabletopRadar
   entities:
-  - uid: 794
+  - uid: 713
     components:
     - type: Transform
       pos: -0.5,-13.5
       parent: 1
-    - type: ContainerContainer
-      containers:
-        station-bank-ATM-cashSlot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        board: !type:Container
-          showEnts: False
-          occludes: True
-          ents: []
 - proto: ComputerTabletopSurveillanceCameraMonitor
   entities:
   - uid: 39

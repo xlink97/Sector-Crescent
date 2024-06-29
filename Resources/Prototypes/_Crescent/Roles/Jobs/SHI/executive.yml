@@ -13,15 +13,45 @@
   supervisors: job-supervisors-shi
   canBeAntag: false
   access:
+  - EmergencyShuttleRepealAll
+  - Captain
+  - HeadOfPersonnel
+  - ChiefEngineer
+  - ChiefMedicalOfficer
+  - HeadOfSecurity
+  - ResearchDirector
+  - Frontier # Frontier
+  - Cryogenics
+  - Security
+  - Detective
+  - Armory
+  - Brig
+  - Lawyer
+  - Engineering
+  - Mail # Frontier
+  - Medical
+  - Quartermaster
+  - Salvage
+  - Cargo
+  - Research
+  - StationTrafficController # Frontier
+  - Maintenance
+  - External
+  - Theatre
+  - Bar
+  - Chemistry
+  - Kitchen
+  - Chapel
+  - Hydroponics
+  - Atmospherics
   - Command
   - Maintenance
+  - Service
+  - External
   - Shinohara
   - ShinoharaOfficer
   - ShinoharaExecutive
-  - Service
-  - External
-  - Mercenary # Frontier
-  - Captain # Frontier
+  - ShinoharaSecurity
 
 - type: startingGear
   id: ExecutiveGear

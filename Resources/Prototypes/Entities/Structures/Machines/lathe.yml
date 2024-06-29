@@ -874,6 +874,7 @@
       idleState: icon
       runningState: icon
       staticRecipes:
+        - BaseMagazinePistolSubMachineGun
         - BoxLethalshot
         - BoxShotgunFlare
         - BoxShotgunSlug

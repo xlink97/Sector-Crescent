@@ -251,7 +251,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
 
         if (_map.TryLoad(mapId, hayes, out var depotUid7s, new MapLoadOptions
         {
-            Offset = _random.NextVector2(20000f, 15000f)
+            Offset = _random.NextVector2(4000f, 5500f)
         }))
         {
             if (_prototypeManager.TryIndex<GameMapPrototype>("Hayes", out var stationProto))
@@ -266,7 +266,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
 
         if (_map.TryLoad(mapId, lpramzi, out var depotUid8s, new MapLoadOptions
         {
-            Offset = _random.NextVector2(5000f, 22000f)
+            Offset = _random.NextVector2(9000f, 10000f)
         }))
         {
             if (_prototypeManager.TryIndex<GameMapPrototype>("lpramzi", out var stationProto))
@@ -282,7 +282,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
 
         if (_map.TryLoad(mapId, dochenskaya, out var depotUid9s, new MapLoadOptions
         {
-            Offset = _random.NextVector2(15000f, 13000f)
+            Offset = _random.NextVector2(7000f, 6000f)
         }))
         {
             if (_prototypeManager.TryIndex<GameMapPrototype>("Dochenskaya", out var stationProto))
@@ -297,7 +297,7 @@ public sealed class NfAdventureRuleSystem : GameRuleSystem<AdventureRuleComponen
 
         if (_map.TryLoad(mapId, tatsumoto, out var depotUid10s, new MapLoadOptions
         {
-            Offset = _random.NextVector2(5000f, 7500f)
+            Offset = _random.NextVector2(3000f, 2500f)
         }))
         {
             if (_prototypeManager.TryIndex<GameMapPrototype>("Tatsumoto", out var stationProto))

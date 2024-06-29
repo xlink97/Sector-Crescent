@@ -19,6 +19,8 @@
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
+  - type: StaticPrice
+    price: 750
 
 - type: entity
   name: NCWL T-91
@@ -63,6 +65,8 @@
         whitelist:
           tags:
             - CartridgeMagnum
+  - type: StaticPrice
+    price: 1250
 
 - type: entity
   name: SHI Himehabu 9x19mm
@@ -85,6 +89,8 @@
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/t91.ogg
+  - type: StaticPrice
+    price: 900
 
 - type: entity
   name: IRM T-82 Compliance
@@ -107,6 +113,8 @@
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
+  - type: StaticPrice
+    price: 2000
 
 - type: entity
   name: SHI Shinobi 9x19mm
@@ -152,6 +160,8 @@
         whitelist:
           tags:
             - CartridgePistol
+  - type: StaticPrice
+    price: 3500
 
 #single use pistols
 
