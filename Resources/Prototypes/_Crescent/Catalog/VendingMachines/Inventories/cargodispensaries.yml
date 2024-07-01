@@ -4,6 +4,7 @@
     TradeGoodSugar: 9999
     TradeGoodFlour: 9999
     TradeGoodAlcohol: 9999
+    JugBoriaticFuel: 500
 
 - type: vendingMachineInventory
   id: GrinningJackalDispensary
@@ -18,6 +19,7 @@
     TradeGoodScrap: 9999
     TradeGoodAmmo: 9999
     TradeGoodRice: 9999
+
 
 - type: vendingMachineInventory
   id: InterdyneDispensary

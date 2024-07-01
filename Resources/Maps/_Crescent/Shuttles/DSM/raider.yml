@@ -790,7 +790,7 @@ entities:
     - type: Transform
       pos: 5.5,1.5
       parent: 1
-- proto: PortableGeneratorSuperPacmanShuttle
+- proto: FusionCoreHerculesShuttle
   entities:
   - uid: 100
     components:

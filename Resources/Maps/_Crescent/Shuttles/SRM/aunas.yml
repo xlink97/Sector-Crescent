@@ -2479,7 +2479,7 @@ entities:
       parent: 112
     - type: Physics
       canCollide: False
-- proto: PortableGeneratorSuperPacmanShuttle
+- proto: FusionCoreHerculesShuttle
   entities:
   - uid: 303
     components:

@@ -132,7 +132,7 @@
     Runs off solid plasma sheets and is rated for up to 25 kW.
   parent: FusionCoreSwitchableBase
   id: FusionCoreHercules
-  suffix: Plasma, 15 kW
+  suffix: BoriaticFuel, 15 kW
   components:
     - type: Sprite
       layers:
@@ -153,22 +153,20 @@
             False: { visible: false }
     - type: FuelGenerator
       minTargetPower: 1000
-      maxTargetPower: 25000
-      targetPower: 15000
-      optimalPower: 15000
-      # 45 minutes at max output
-      optimalBurnRate: 0.0075
-      # a decent curve
+      maxTargetPower: 50000
+      targetPower: 20000
+      optimalPower: 20000
+      optimalBurnRate: 0.045
       fuelEfficiencyConstant: 0.95
     - type: Explosive
       explosionType: Default
-      totalIntensity: 2000 # ~15 tile radius.
+      totalIntensity: 2000
       intensitySlope: 5
       maxIntensity: 150     
     - type: ChemicalFuelGeneratorAdapter
       solution: tank
       reagents:
-        WeldingFuel: 1
+        BoriaticFuel: 1
     - type: SolutionContainerManager
       solutions:
         tank:
@@ -181,7 +179,6 @@
       scaling: Exponential
     - type: GeneratorExhaustGas
       gasType: CarbonDioxide
-      # 0.5 moles of gas for every sheet of plasma.
       moleRatio: 0.5
     - type: PowerMonitoringDevice
       group: Generator
@@ -192,161 +189,3 @@
       state: portgen0
     - type: MaterialStorageMagnetPickup # Frontier
       range: 0.30
-
-- type: entity
-  name: Fusion core Mk3 -Atlas
-  description: |-
-    An advanced generator for powering departments.
-    Runs off uranium sheets and is rated for up to 50 kW.
-  parent: FusionCoreSwitchableBase
-  id: FusionCoreAtlas
-  suffix: Uranium, 30 kW
-  components:
-    - type: Sprite
-      layers:
-        - state: portgen1
-          map: [ "enum.GeneratorVisualLayers.Body" ]
-        - state: portgen_on_unlit
-          map: [ "enum.GeneratorVisualLayers.Unlit" ]
-          shader: unshaded
-          visible: false
-    - type: GenericVisualizer
-      visuals:
-        enum.GeneratorVisuals.Running:
-          enum.GeneratorVisualLayers.Body:
-            True: { state: portgen1on }
-            False: { state: portgen1 }
-          enum.GeneratorVisualLayers.Unlit:
-            True: { visible: true }
-            False: { visible: false }
-    - type: Explosive
-      explosionType: Default
-      totalIntensity: 4000 # ~15 tile radius.
-      intensitySlope: 5
-      maxIntensity: 150
-    - type: FuelGenerator
-      minTargetPower: 5000
-      maxTargetPower: 50000
-      targetPower: 30000
-      optimalPower: 30000
-      # 45 minutes at full power
-      optimalBurnRate: 0.075
-      # still decent power curve
-      fuelEfficiencyConstant: 0.9
-    - type: ChemicalFuelGeneratorAdapter
-      solution: tank
-      reagents:
-        WeldingFuel: 1
-    - type: SolutionContainerManager
-      solutions:
-        tank:
-          maxVol: 2000 # Frontier - 50<100
-    - type: RefillableSolution
-      solution: tank
-      maxRefill: 100
-    - type: PowerMonitoringDevice
-      group: Generator
-      loadNodes:
-        - output_hv
-        - output_mv
-      sprite: Structures/Power/Generation/portable_generator.rsi
-      state: portgen1
-    - type: MaterialStorageMagnetPickup # Frontier
-      range: 0.30
-
-- type: entity
-  name: Fusion core Mk1 -Ikarus
-  description: |-
-    A small generator capable of powering individual rooms, in case of emergencies.
-    Runs off welding fuel and is rated for up to 15 kW.
-    Rated ages 3 and up.
-  parent: FusionCoreBase
-  id: FusionCoreIkarus
-  suffix: Welding Fuel, 5 kW
-  components:
-    - type: AmbientSound
-      range: 4
-      volume: -8
-
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape:
-            !type:PhysShapeAabb
-            bounds: "-0.30,-0.30,0.30,0.30"
-          density: 80
-          mask:
-            - MachineMask
-          layer:
-            - MachineLayer
-
-    - type: Sprite
-      layers:
-        - state: portgen3
-          map: [ "enum.GeneratorVisualLayers.Body" ]
-        - state: portgen3on_unlit
-          map: [ "enum.GeneratorVisualLayers.Unlit" ]
-          shader: unshaded
-          visible: false
-    - type: GenericVisualizer
-      visuals:
-        enum.GeneratorVisuals.Running:
-          enum.GeneratorVisualLayers.Body:
-            True: { state: portgen3on }
-            False: { state: portgen3 }
-          enum.GeneratorVisualLayers.Unlit:
-            True: { visible: true }
-            False: { visible: false }
-    - type: FuelGenerator
-      targetPower: 4000 # Frontier - 2000<4000
-      minTargetPower: 1000
-      optimalPower: 5000
-      maxTargetPower: 15000
-      # 7.5 minutes at full tank.
-      optimalBurnRate: 0.075
-      # Shallow curve
-      fuelEfficiencyConstant: 1
-    - type: ChemicalFuelGeneratorAdapter
-      solution: tank
-      reagents:
-        WeldingFuel: 1
-    - type: SolutionContainerManager
-      solutions:
-        tank:
-          maxVol: 500
-    - type: RefillableSolution
-      solution: tank
-      maxRefill: 100
-    - type: NodeContainer
-      examinable: true
-      nodes:
-        output:
-          !type:CableDeviceNode
-          nodeGroupID: Apc
-    - type: PowerMonitoringDevice
-      group: Generator
-      loadNode: output
-      sprite: Structures/Power/Generation/portable_generator.rsi
-      state: portgen3
-    - type: PowerSupplier
-      # No ramping needed on this bugger.
-      voltage: Apc
-      supplyRampTolerance: 2000
-    - type: GeneratorExhaustGas
-      gasType: CarbonDioxide
-      # Full tank is 25 moles of gas
-      moleRatio: 0.5
-    - type: Destructible
-      thresholds:
-        - trigger:
-            !type:DamageTrigger
-            damage: 200
-          behaviors:
-            - !type:DoActsBehavior
-            - !type:ExplodeBehavior
-              acts: [ "Destruction" ]
-    - type: Explosive
-      explosionType: Default
-      totalIntensity: 1000 # ~15 tile radius.
-      intensitySlope: 5
-      maxIntensity: 150

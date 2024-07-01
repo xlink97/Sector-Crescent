@@ -893,7 +893,7 @@ entities:
     - type: Transform
       pos: 1.5,1.5
       parent: 1
-- proto: PortableGeneratorSuperPacmanShuttle
+- proto: FusionCoreHerculesShuttle
   entities:
   - uid: 96
     components:

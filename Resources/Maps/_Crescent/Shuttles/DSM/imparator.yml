@@ -849,7 +849,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: PortableGeneratorSuperPacmanShuttle
+- proto: FusionCoreHerculesShuttle
   entities:
   - uid: 77
     components:

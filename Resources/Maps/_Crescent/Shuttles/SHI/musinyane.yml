@@ -2595,7 +2595,7 @@ entities:
     - type: Transform
       pos: 4.505418,13.699835
       parent: 1
-- proto: PortableGeneratorSuperPacmanShuttle
+- proto: FusionCoreHerculesShuttle
   entities:
   - uid: 179
     components:
