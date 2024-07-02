@@ -234,6 +234,24 @@
   - type: InteractionOutline
   - type: Physics
     bodyType: Static
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 450
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+            sound:
+              collection: MetalGlassBreak
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              SheetSteel1:
+                min: 2
+                max: 4
   - type: Fixtures
     fixtures:
       fix1:
@@ -638,3 +656,15 @@
   - type: BatterySelfRecharger
   - type: RadiationBlocker
     resistance: 8
+
+#FIGHTER VERSIONS OF STUFF. EXPERIMENTAL
+
+- type: entity
+  parent: SHISlugthrowerTurret
+  id: SHISlugthrowerTurretNCSP
+  suffix: NCSP Slugthrower
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCSPFighter
