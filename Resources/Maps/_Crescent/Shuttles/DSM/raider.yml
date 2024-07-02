@@ -790,7 +790,7 @@ entities:
     - type: Transform
       pos: 5.5,1.5
       parent: 1
-- proto: FusionCoreHerculesShuttle
+- proto: BoriaticGeneratorHerculesShuttle
   entities:
   - uid: 100
     components:

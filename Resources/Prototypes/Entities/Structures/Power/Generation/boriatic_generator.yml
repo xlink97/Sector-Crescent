@@ -5,7 +5,7 @@
 
 - type: entity
   abstract: true
-  id: FusionCoreBase
+  id: BoriaticGeneratorBase
   parent: [ BaseMachine, ConstructibleMachine, StructureWheeled]
   components:
     # Basic properties
@@ -72,7 +72,8 @@
             - !type:ChangeConstructionNodeBehavior
               node: machineFrame
             - !type:DoActsBehavior
-            - !type:ExplodeBehavior
+            - !type:SolutionExplosionBehavior
+              solution: tank
               acts: ["Destruction"]
     - type: GuideHelp
       guides: [ PortableGenerator, Power ]
@@ -101,8 +102,8 @@
 
 - type: entity
   abstract: true
-  parent: FusionCoreBase
-  id: FusionCoreSwitchableBase
+  parent: BoriaticGeneratorBase
+  id: BoriaticGeneratorSwitchableBase
   components:
   - type: PowerSwitchable
     examineText: power-switchable-generator-examine
@@ -126,13 +127,13 @@
         enabled: false
 
 - type: entity
-  name: Fusion core Mk2 -Hercules
+  name: Boriatic Generator -Hercules
   description: |-
-    A flexible backup generator for powering a variety of equipment.
-    Runs off solid plasma sheets and is rated for up to 25 kW.
-  parent: FusionCoreSwitchableBase
-  id: FusionCoreHercules
-  suffix: BoriaticFuel, 15 kW
+    A loud, foulsmelling, toxic generator.
+    Runs off corrosive Boriatic fuel and is rated for up to 50 kW.
+  parent: BoriaticGeneratorSwitchableBase
+  id: BoriaticGeneratorHercules
+  suffix: BoriaticFuel, 20 kW
   components:
     - type: Sprite
       layers:
@@ -160,6 +161,7 @@
       fuelEfficiencyConstant: 0.95
     - type: Explosive
       explosionType: Default
+      totalIntensity: 2000 # ~15 tile radius.
       totalIntensity: 2000
       intensitySlope: 5
       maxIntensity: 150     
@@ -170,7 +172,7 @@
     - type: SolutionContainerManager
       solutions:
         tank:
-          maxVol: 1000 
+          maxVol: 1500 
     - type: RefillableSolution
       solution: tank
       maxRefill: 100
@@ -179,7 +181,7 @@
       scaling: Exponential
     - type: GeneratorExhaustGas
       gasType: CarbonDioxide
-      moleRatio: 0.5
+      moleRatio: 1
     - type: PowerMonitoringDevice
       group: Generator
       loadNodes:

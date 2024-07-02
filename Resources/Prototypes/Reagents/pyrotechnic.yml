@@ -188,7 +188,9 @@
       - !type:HealthChange
         damage:
           types:
-            Poison: 10
+            Heat: 5
+            Poison: 5
+            Caustic: 2 # Boriatic fuel is even more corrosive
       - !type:FlammableReaction
         multiplier: 0.4
 

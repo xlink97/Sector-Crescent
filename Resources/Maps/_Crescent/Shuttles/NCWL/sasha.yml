@@ -3944,7 +3944,7 @@ entities:
     - type: Transform
       pos: 1.5,2.5
       parent: 2
-- proto: FusionCoreHerculesShuttle
+- proto: BoriaticGeneratorHerculesShuttle
   entities:
   - uid: 267
     components:

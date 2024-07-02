@@ -889,7 +889,7 @@ entities:
     - type: Transform
       pos: -0.5,3.5
       parent: 1
-- proto: FusionCoreHerculesShuttle
+- proto: BoriaticGeneratorHerculesShuttle
   entities:
   - uid: 95
     components:

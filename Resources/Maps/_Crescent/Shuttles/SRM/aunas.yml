@@ -2479,7 +2479,7 @@ entities:
       parent: 112
     - type: Physics
       canCollide: False
-- proto: FusionCoreHerculesShuttle
+- proto: BoriaticGeneratorHerculesShuttle
   entities:
   - uid: 303
     components:

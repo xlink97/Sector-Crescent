@@ -50,8 +50,8 @@
 
 
 - type: entity
-  parent: FusionCoreHercules
-  id: FusionCoreHerculesShuttle
+  parent: BoriaticGeneratorHercules
+  id: BoriaticGeneratorHerculesShuttle
   suffix: BoriaticFuel, 15 kW, Ship
   components:
     - type: FuelGenerator
