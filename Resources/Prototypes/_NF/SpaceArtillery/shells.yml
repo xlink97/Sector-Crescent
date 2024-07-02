@@ -717,3 +717,54 @@
     count: 30
 
 
+#pdt
+
+- type: entity
+  id: PDTBullet
+  name: shell
+  parent: BaseBulletTrigger
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 30
+        #currently explosion deals roughly 60 damage
+  - type: TimedDespawn
+    lifetime: 50
+    #roughly 600m range
+  - type: Sprite
+    sprite: _NF/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
+    layers:
+      - state: base-projectile
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 2
+    intensitySlope: 1
+    totalIntensity: 5
+    maxTileBreak: 2
+  - type: PointLight
+    radius: 3.5
+    color: orange
+    energy: 0.5
+
+- type: entity
+  id: PDTBulletCase
+  name: pdt shell
+  parent: BaseItem
+  description: Ammunition for turrets.
+  components:
+  - type: Item
+    size: Normal
+  - type: CartridgeAmmo
+    proto: PDTBullet
+    deleteOnSpawn: false
+  - type: Sprite
+    sprite: _NF/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: SpaceGarbage

@@ -1,0 +1,25 @@
+- type: npcFaction
+  id: NCWLFighter
+  hostile:
+    - NCSPFighter
+    - SRMFighter
+
+- type: npcFaction
+  id: SRMFighter
+  hostile:
+    - NCSPFighter
+    - NCWLFighter
+    - CMMFighter
+
+- type: npcFaction
+  id: NCSPFighter
+  hostile:
+    - NCWLFighter
+    - SRMFighter
+    - CMMFighter
+
+- type: npcFaction
+  id: CMMFighter
+  hostile:
+    - NCSPFighter
+    - SRMFighter

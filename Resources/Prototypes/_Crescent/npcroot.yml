@@ -1,0 +1,33 @@
+
+# Tries to shoot a target in LOS in range.
+- type: htnCompound
+  id: PDTTurretCompound
+  branches:
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: NearbyGunTargets
+        
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+            - !type:TargetInRangePrecondition
+              targetKey: Target
+              # TODO: Non-scuffed
+              rangeKey: PDTRange
+            - !type:TargetInLOSPrecondition
+              targetKey: Target
+              rangeKey: PDTRange
+          operator: !type:GunOperator
+            targetKey: Target
+            requireLOS: false
+          services:
+            - !type:UtilityService
+              id: RangedService
+              proto: NearbyGunTargets
+              key: Target
+
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleSpinCompound
