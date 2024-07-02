@@ -162,9 +162,8 @@
     - type: Explosive
       explosionType: Default
       totalIntensity: 2000 # ~15 tile radius.
-      totalIntensity: 2000
       intensitySlope: 5
-      maxIntensity: 150     
+      maxIntensity: 150 
     - type: ChemicalFuelGeneratorAdapter
       solution: tank
       reagents:
