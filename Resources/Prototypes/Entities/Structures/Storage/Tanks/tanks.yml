@@ -35,6 +35,7 @@
     explosionType: Default
     totalIntensity: 120 # ~ 5 tile radius
 
+
 - type: entity
   id: WeldingFuelTankFull
   parent: WeldingFuelTank
@@ -45,6 +46,19 @@
       tank:
         reagents:
         - ReagentId: WeldingFuel
+          Quantity: 1500
+
+
+- type: entity
+  id: BoriaticFuelTankFull
+  parent: WeldingFuelTank
+  suffix: Full
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: BoriaticFuel
           Quantity: 1500
 
 - type: entity

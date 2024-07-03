@@ -839,7 +839,7 @@ entities:
     - type: Transform
       pos: 5.360843,5.533509
       parent: 1
-- proto: PortableGeneratorPacmanShuttle
+- proto: BoriaticGeneratorHerculesShuttle
   entities:
   - uid: 38
     components:
