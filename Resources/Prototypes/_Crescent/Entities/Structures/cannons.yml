@@ -363,6 +363,16 @@
     mode: SnapgridCenter
   components:
   - type: Clickable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+        - !type:ChangeConstructionNodeBehavior
+          node: machineFrame
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
   - type: InteractionOutline
   - type: Physics
     bodyType: Static
@@ -461,6 +471,16 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+        - !type:ChangeConstructionNodeBehavior
+          node: machineFrame
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
   - type: Clickable
   - type: InteractionOutline
   - type: Physics
@@ -554,6 +574,16 @@
   components:
   - type: Clickable
   - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1550
+      behaviors:
+        - !type:ChangeConstructionNodeBehavior
+          node: machineFrame
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
   - type: Physics
     bodyType: Static
   - type: Tag
@@ -657,14 +687,168 @@
   - type: RadiationBlocker
     resistance: 8
 
-#FIGHTER VERSIONS OF STUFF. EXPERIMENTAL
+#Faction-tagged slugs
 
 - type: entity
   parent: SHISlugthrowerTurret
   id: SHISlugthrowerTurretNCSP
-  suffix: NCSP Slugthrower
+  suffix: NCSP
   components:
     - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
     - type: NpcFactionMember
       factions:
         - NCSPFighter
+
+- type: entity
+  parent: SHISlugthrowerTurret
+  id: SHISlugthrowerTurretNCWL
+  suffix: NCWL
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCWLFighter
+
+- type: entity
+  parent: SHISlugthrowerTurret
+  id: SHISlugthrowerTurretCMM
+  suffix: CMM
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - CMMFighter
+
+- type: entity
+  parent: SHISlugthrowerTurret
+  id: SHISlugthrowerTurretSRM
+  suffix: SRM
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - SRMFighter
+
+# Faction-tagged missiles
+
+- type: entity
+  parent: ShuttleGunMissileRack
+  id: ShuttleGunMissileRackNCSP
+  suffix: NCSP
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCSPFighter
+
+- type: entity
+  parent: ShuttleGunMissileRack
+  id: ShuttleGunMissileRackNCWL
+  suffix: NCWL
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCWLFighter
+
+- type: entity
+  parent: ShuttleGunMissileRack
+  id: ShuttleGunMissileRackCMM
+  suffix: CMM
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - CMMFighter
+
+- type: entity
+  parent: ShuttleGunMissileRack
+  id: ShuttleGunMissileRackSRM
+  suffix: SRM
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - SRMFighter
+
+- type: entity
+  parent: ShuttleGunKurosawa
+  id: ShuttleGunKurosawaSRM
+  suffix: SRM
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - SRMFighter
+
+- type: entity
+  parent: ShuttleGunKurosawa
+  id: ShuttleGunKurosawaCMM
+  suffix: CMM
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - CMMFighter
+
+- type: entity
+  parent: ShuttleGunKurosawa
+  id: ShuttleGunKurosawaNCWL
+  suffix: NCWL
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCWLFighter
+
+- type: entity
+  parent: ShuttleGunKurosawa
+  id: ShuttleGunKurosawaNCSP
+  suffix: NCSP
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCSPFighter
+
+#120mm faction-flagged
+
+- type: entity
+  parent: Type99Artillery
+  id: Type99ArtilleryNCWL
+  suffix: NCWL
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCWLFighter
+
+- type: entity
+  parent: Type99Artillery
+  id: Type99ArtilleryNCSP
+  suffix: NCSP
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCSPFighter
+
+- type: entity
+  parent: Type99Artillery
+  id: Type99ArtilleryCMM
+  suffix: CMM
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - CMMFighter
+
+- type: entity
+  parent: Type99Artillery
+  id: Type99ArtillerySRM
+  suffix: SRM
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - SRMFighter

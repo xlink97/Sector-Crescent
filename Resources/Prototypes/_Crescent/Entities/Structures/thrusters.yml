@@ -1,0 +1,81 @@
+#faction-flagged thrusters
+
+- type: entity
+  id: ThrusterNCSPFighter
+  parent: Thruster
+  suffix: NCSP, Fighter
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCSPFighter
+
+- type: entity
+  id: ThrusterCMMFighter
+  parent: Thruster
+  suffix: CMM, Fighter
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - CMMFighter
+
+- type: entity
+  id: ThrusterNCWLFighter
+  parent: Thruster
+  suffix: NCWL, Fighter
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCWLFighter
+
+- type: entity
+  id: ThrusterSRMFighter
+  parent: Thruster
+  suffix: SRM, Fighter
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - SRMFighter
+
+- type: entity
+  id: ThrusterNCSPWarship
+  parent: Thruster
+  suffix: NCSP, Warship
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCSPWarship
+
+- type: entity
+  id: ThrusterNCWLWarship
+  parent: Thruster
+  suffix: NCWL, Warship
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCWLWarship
+
+- type: entity
+  id: ThrusterCMMWarship
+  parent: Thruster
+  suffix: CMM, Warship
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - CMMWarship
+
+- type: entity
+  id: ThrusterSRMWarship
+  parent: Thruster
+  suffix: SRM, Warship
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - SRMWarship

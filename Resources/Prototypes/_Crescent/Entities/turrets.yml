@@ -43,13 +43,13 @@
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 600
+            damage: 800
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 300
+            damage: 500
           # TODO: Construction graph
           behaviors:
             - !type:DoActsBehavior
@@ -63,7 +63,7 @@
                   min: 3
                   max: 5
     - type: Gun
-      fireRate: 6
+      fireRate: 7
       selectedMode: FullAuto
       availableModes:
         - FullAuto
@@ -71,7 +71,7 @@
     # TODO: Power ammo provider?
     - type: BallisticAmmoProvider
       proto: PDTBulletCase
-      capacity: 15000
+      capacity: 25000
     - type: HTN
       rootTask:
         task: TurretCompound #npcroot
@@ -79,9 +79,9 @@
         RotateSpeed: !type:Single
           3.141
         RangedRange: !type:Single
-          40
+          65
         VisionRadius: !type:Single
-          40
+          65
     
         SoundTargetInLOS: !type:SoundPathSpecifier
           path: /Audio/Effects/double_beep.ogg
@@ -97,9 +97,40 @@
 
 - type: entity
   parent: BaseWeaponTurretPDT
+  name: NCWL 40mm 'Gran Sudaruska' point defense turret
   id: WeaponTurretPDTNCWL
   suffix: NCWL PDT
   components:
     - type: NpcFactionMember
       factions:
         - NCWLFighter
+
+- type: entity
+  parent: BaseWeaponTurretPDT
+  name: NCSP 40mm 'Anklebiter' point defense turret
+  id: WeaponTurretPDTNCSP
+  suffix: NCSP PDT
+  components:
+    - type: NpcFactionMember
+      factions:
+        - NCSPFighter
+
+- type: entity
+  parent: BaseWeaponTurretPDT
+  name: SRM 40mm 'Acolyte' point defense turret
+  id: WeaponTurretPDTSRM
+  suffix: SRM PDT
+  components:
+    - type: NpcFactionMember
+      factions:
+        - SRMFighter
+
+- type: entity
+  parent: BaseWeaponTurretPDT
+  name: CMM 40mm 'Justiciar' point defense turret
+  id: WeaponTurretPDTCMM
+  suffix: CMM PDT
+  components:
+    - type: NpcFactionMember
+      factions:
+        - CMMFighter
