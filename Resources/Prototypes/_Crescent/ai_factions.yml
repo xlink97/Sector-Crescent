@@ -23,3 +23,31 @@
   hostile:
     - NCSPFighter
     - SRMFighter
+
+#
+
+- type: npcFaction
+  id: NCWLWarship
+  hostile:
+    - NCSPWarship
+    - SRMWarship
+
+- type: npcFaction
+  id: SRMWarship
+  hostile:
+    - NCSPWarship
+    - NCWLWarship
+    - CMMWarship
+
+- type: npcFaction
+  id: NCSPWarship
+  hostile:
+    - NCSPWarship
+    - SRMWarship
+    - CMMWarship
+
+- type: npcFaction
+  id: CMMWarship
+  hostile:
+    - NCSPWarship
+    - SRMWarship

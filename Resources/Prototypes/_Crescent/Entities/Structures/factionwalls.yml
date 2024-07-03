@@ -1,0 +1,128 @@
+#faction-flagged walls to guide autoturret targeting
+
+
+#plastitanium
+
+- type: entity
+  parent: WallPlastitanium
+  id: WallPlastitaniumSRM
+  suffix: SRM Warship
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - SRMWarship
+
+- type: entity
+  parent: WallPlastitanium
+  id: WallPlastitaniumCMM
+  suffix: CMM Warship
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - CMMWarship
+
+- type: entity
+  parent: WallPlastitanium
+  id: WallPlastitaniumNCWL
+  suffix: NCWL Warship
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCWLWarship
+
+- type: entity
+  parent: WallPlastitanium
+  id: WallPlastitaniumNCSP
+  suffix: NCSP Warship
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCSPWarship
+
+#reinforced
+
+- type: entity
+  parent: WallReinforced
+  id: WallReinforcedNCSP
+  suffix: NCSP Warship
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCSPWarship
+
+- type: entity
+  parent: WallReinforced
+  id: WallReinforcedNCWL
+  suffix: NCWL Warship
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCWLWarship
+
+- type: entity
+  parent: WallReinforced
+  id: WallReinforcedSRM
+  suffix: SRM Warship
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - SRMWarship
+
+- type: entity
+  parent: WallReinforced
+  id: WallReinforcedCMM
+  suffix: CMM Warship
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - CMMWarship
+
+#shuttlewalls
+
+- type: entity
+  parent: WallShuttle
+  id: WallShuttleCMM
+  suffix: CMM Warship
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - CMMWarship
+
+- type: entity
+  parent: WallShuttle
+  id: WallShuttleSRM
+  suffix: SRM Warship
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - SRMWarship
+
+- type: entity
+  parent: WallShuttle
+  id: WallShuttleNCWL
+  suffix: NCWL Warship
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCWLWarship
+
+- type: entity
+  parent: WallShuttle
+  id: WallShuttleNCSP
+  suffix: NCSP Warship
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCSPWarship
