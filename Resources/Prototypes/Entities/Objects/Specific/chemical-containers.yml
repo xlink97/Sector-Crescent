@@ -445,3 +445,21 @@
           reagents:
             - ReagentId: WeldingFuel
               Quantity: 200
+
+- type: entity
+  parent: Jug
+  name: jug (Boriatic Fuel)
+  id: JugBoriaticFuel
+#  noSpawn: true # Frontier
+  components:
+    - type: Label
+      currentLabel: reagent-name-BoriaticFuel
+    - type: SolutionContainerManager
+      solutions:
+        beaker:
+          reagents:
+            - ReagentId: BoriaticFuel
+              Quantity: 200
+    - type: StaticPrice
+      price: 250
+            

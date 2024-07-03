@@ -2503,7 +2503,7 @@ entities:
     - type: Transform
       pos: 0.5,15.5
       parent: 2
-- proto: PortableGeneratorSuperPacmanShuttle
+- proto: BoriaticGeneratorHerculesShuttle
   entities:
   - uid: 441
     components:

@@ -1156,7 +1156,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: PortableGeneratorSuperPacmanShuttle
+- proto: BoriaticGeneratorHerculesShuttle
   entities:
   - uid: 152
     components:
