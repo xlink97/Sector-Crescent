@@ -3983,6 +3983,26 @@ entities:
     - type: Transform
       pos: 1.5,2.5
       parent: 2
+- proto: BoriaticGeneratorHerculesShuttle
+  entities:
+  - uid: 267
+    components:
+    - type: Transform
+      pos: -0.5,-14.5
+      parent: 2
+    - type: FuelGenerator
+      on: False
+    - type: Physics
+      bodyType: Static
+  - uid: 268
+    components:
+    - type: Transform
+      pos: 1.5,-14.5
+      parent: 2
+    - type: FuelGenerator
+      on: False
+    - type: Physics
+      bodyType: Static
 - proto: PottedPlantRandom
   entities:
   - uid: 352
