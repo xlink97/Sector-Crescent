@@ -3,7 +3,10 @@
 - type: htnCompound
   id: PDTTurretCompound
   branches:
-    - tasks:
+    - preconditions:
+        - !type:PoweredPrecondition
+        - !type:SignalControlPrecondition
+      tasks:
         - !type:HTNPrimitiveTask
           operator: !type:UtilityOperator
             proto: NearbyGunTargets
