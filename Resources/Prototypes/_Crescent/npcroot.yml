@@ -13,6 +13,8 @@
 
         - !type:HTNPrimitiveTask
           preconditions:
+            - !type:PoweredPrecondition
+            - !type:SignalControlPrecondition
             - !type:KeyExistsPrecondition
               key: Target
             - !type:TargetInRangePrecondition
