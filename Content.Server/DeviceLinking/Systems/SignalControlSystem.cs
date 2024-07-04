@@ -16,6 +16,7 @@ namespace Content.Server.DeviceLinking.Systems
         private void OnInit(EntityUid uid, SignalControlComponent control, ref MapInitEvent args)
         {
             _signalSystem.EnsureSinkPorts(uid, control.TogglePort, control.OnPort, control.OffPort);
+            control.IsOn = control.IsOnByDefault;
         }
 
         private void OnSignalReceived(EntityUid uid, SignalControlComponent control, ref SignalReceivedEvent args)

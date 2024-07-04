@@ -19,6 +19,9 @@ namespace Content.Server.DeviceLinking.Components
         [DataField]
         public ProtoId<SinkPortPrototype> OffPort = "Off";
 
+        [DataField("isOnByDefault")]
+        public bool IsOnByDefault = false;
+
         [ViewVariables(VVAccess.ReadWrite)]
         public bool IsOn = false;
     }
