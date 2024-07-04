@@ -22,7 +22,7 @@
       containers:
         ballistic-ammo: !type:Container
     - type: Sprite
-      sprite: Objects/Weapons/Guns/Turrets/turrets.rsi
+      sprite: _Crescent/Objects/Autoturrets/lightautoturret.rsi
       drawdepth: Mobs
       layers:
         - state: syndie_lethal
