@@ -74,7 +74,7 @@
       capacity: 25000
     - type: HTN
       rootTask:
-        task: TurretCompound #npcroot
+        task: PDTTurretCompound #npcroot
       blackboard:
         RotateSpeed: !type:Single
           3.141
@@ -82,9 +82,19 @@
           65
         VisionRadius: !type:Single
           65
-    
         SoundTargetInLOS: !type:SoundPathSpecifier
           path: /Audio/Effects/double_beep.ogg
+    - type: SignalControl
+    - type: DeviceNetwork
+      deviceNetId: Wireless
+      receiveFrequencyId: BasicDevice
+    - type: WirelessNetworkConnection
+      range: 700
+    - type: DeviceLinkSink
+      ports:
+        - Toggle
+        - On
+        - Off
     - type: MouseRotator
       angleTolerance: 5
       rotationSpeed: 180
