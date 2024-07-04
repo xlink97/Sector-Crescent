@@ -3,11 +3,14 @@
 - type: htnCompound
   id: PDTTurretCompound
   branches:
-    - tasks:
+    - preconditions:
+        - !type:PoweredPrecondition
+        - !type:SignalControlPrecondition
+      tasks:
         - !type:HTNPrimitiveTask
           operator: !type:UtilityOperator
             proto: NearbyGunTargets
-        
+
         - !type:HTNPrimitiveTask
           preconditions:
             - !type:KeyExistsPrecondition
@@ -28,6 +31,8 @@
               proto: NearbyGunTargets
               key: Target
 
-    - tasks:
+    - preconditions:
+        - !type:PoweredPrecondition
+      tasks:
         - !type:HTNCompoundTask
           task: IdleSpinCompound
