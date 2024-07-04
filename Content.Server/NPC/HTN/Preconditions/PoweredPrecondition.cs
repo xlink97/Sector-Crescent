@@ -20,9 +20,11 @@ namespace Content.Server.NPC.HTN.Preconditions
                 {
                     return apcPowerReceiver.Powered;
                 }
+
+                return PoweredIfNoPowerReceiver;
             }
 
-            return PoweredIfNoPowerReceiver;
+            return false;
         }
     }
 }

@@ -20,9 +20,11 @@ namespace Content.Server.NPC.HTN.Preconditions
                 {
                     return control.IsOn;
                 }
+
+                return IsOnIfNoSignalControl;
             }
 
-            return IsOnIfNoSignalControl;
+            return false;
         }
     }
 }
