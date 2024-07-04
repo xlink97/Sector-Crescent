@@ -21,6 +21,9 @@
 - type: Tag
   id: SlugthrowerCartridgeBox
 
+- type: Tag
+  id: VulcanCartridgeBox
+
 - type: entity
   id: MagazineLightRifleBoxSlug
   name: ".50 cal uranium-tip slughthrower box"
@@ -99,4 +102,71 @@
   - type: Item
   - type: Sprite
     sprite: _Crescent/Ammunition/conscript_ammo_box.rsi
+    state: base
+
+#vulcan bullets
+
+- type: entity
+  id: BulletMachineGunVulcan
+  name: 20mm vulcan bullet
+  parent: BaseBulletTrigger
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 55
+        Piercing: 25
+  - type: PointLight
+    radius: 3.5
+    color: orange
+    energy: 0.5
+  - type: TimedDespawn
+    lifetime: 20
+  - type: Sprite
+    sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
+    layers:
+      - state: base-projectile
+  - type: SpaceArtilleryProjectile
+
+- type: entity
+  id: CartridgeVulcanStandard
+  name: 20mm surplus casing
+  parent: BaseItem
+  description: Ammunition for turrets.
+  components:
+  - type: Item
+    size: Normal
+  - type: CartridgeAmmo
+    proto: BulletMachineGunVulcan
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: SpaceGarbage
+
+#vulcan
+
+- type: entity
+  id: MagazineVulcan
+  name: "20mm vulcan ammunition box"
+  parent: BaseMagazineLightRifle
+  components:
+  - type: Tag
+    tags:
+      - VulcanCartridgeBox
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - VulcanCartridgeBox
+    proto: CartridgeVulcanStandard
+    capacity: 1000
+  - type: Item
+  - type: Sprite
+    sprite: _Crescent/Ammunition/vulcan.rsi
     state: base

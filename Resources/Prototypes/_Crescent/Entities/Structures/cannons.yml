@@ -687,6 +687,138 @@
   - type: RadiationBlocker
     resistance: 8
 
+#vulcan
+
+- type: entity
+  id: NTVulcanTurret
+  name: NT 20mm "Vulcan" machineturret
+  parent: ConstructibleMachine
+  description: An antiquated NanoTrasen model, commonly fitted on mid-tech fighters.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 450
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+            sound:
+              collection: MetalGlassBreak
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              SheetSteel1:
+                min: 2
+                max: 4
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.01,-0.01,0.01,0.01"
+        density: 600
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    sprite: _Crescent/Objects/ShuttleWeapons/vulcan.rsi
+    layers:
+    - state: space_artillery
+  - type: Anchorable
+  - type: Pullable
+  - type: Rotatable
+    rotateWhilePulling: false
+    rotateWhileAnchored: true
+    increment: 90
+  - type: Battery
+    maxCharge: 200000
+    startingCharge: 200000
+  - type: ExaminableBattery
+  - type: Appearance
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: AutoShootGun
+  - type: GunSignalControl
+  - type: WirelessNetworkConnection
+    range: 700
+  - type: DeviceLinkSink
+    ports:
+      - Toggle
+      - SpaceArtilleryFire
+      - SpaceArtilleryToggleSafety
+      - SpaceArtilleryOnSafety
+      - SpaceArtilleryOffSafety
+  - type: DeviceLinkSource
+    ports:
+      - SpaceArtilleryDetectedFiring
+      - SpaceArtilleryDetectedMalfunction
+      - SpaceArtilleryDetectedSafetyChange
+  - type: ChamberMagazineAmmoProvider
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineVulcan
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - VulcanCartridgeBox
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeVulcanStandard
+        priority: 1
+        whitelist:
+          tags:
+            - VulcanCartridgeBox
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: Gun
+    fireRate: 9
+    projectileSpeed: 100
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/50cal.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: SpaceArtillery
+    isArmed: true
+    powerChargeRate: 1500
+    powerUsePassive: 500
+    isPowerRequiredForMount: false
+    isPowerRequiredToFire: false
+    isPowerRequiredForSignal: true
+  - type: BatterySelfRecharger
+  - type: Actions
+  - type: CombatMode
+    IsInCombatMode: true
+  - type: Tag
+    tags:
+    - Wall
+  - type: Airtight
+  - type: Occluder
+    boundingBox: "-0.1,-0.5,0.5,0.5"
+  - type: RadiationBlocker
+    resistance: 8
+  - type: ApcPowerReceiver
+    powerLoad: 3000
+  - type: ExtensionCableReceiver
+
 #Faction-tagged slugs
 
 - type: entity
