@@ -984,3 +984,45 @@
     - type: NpcFactionMember
       factions:
         - SRMFighter
+
+#vulcan
+
+- type: entity
+  parent: NTVulcanTurret
+  id: NTVulcanTurretSRM
+  suffix: SRM
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - SRMFighter
+
+- type: entity
+  parent: NTVulcanTurret
+  id: NTVulcanTurretNCWL
+  suffix: NCWL
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCWLFighter
+
+- type: entity
+  parent: NTVulcanTurret
+  id: NTVulcanTurretCMM
+  suffix: CMM
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - CMMFighter
+
+- type: entity
+  parent: NTVulcanTurret
+  id: NTVulcanTurretNCSP
+  suffix: NCSP
+  components:
+    - type: MobState # fleshangel: they wont be counted as valid targets by the AI otherwise
+    - type: NpcFactionMember
+      factions:
+        - NCSPFighter

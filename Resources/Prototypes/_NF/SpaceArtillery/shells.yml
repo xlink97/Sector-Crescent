@@ -728,7 +728,7 @@
   - type: Projectile
     damage:
       types:
-        Structural: 35
+        Structural: 75
         #currently explosion deals roughly 60 damage
   - type: TimedDespawn
     lifetime: 55
@@ -741,9 +741,9 @@
   - type: Explosive
     explosionType: Default
     maxIntensity: 3
-    intensitySlope: 4
-    totalIntensity: 6
-    maxTileBreak: 2
+    intensitySlope: 3
+    totalIntensity: 3
+    maxTileBreak: 3
   - type: PointLight
     radius: 3.5
     color: orange
