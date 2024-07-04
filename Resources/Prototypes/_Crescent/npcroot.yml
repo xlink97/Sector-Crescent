@@ -25,6 +25,9 @@
               targetKey: Target
               rangeKey: PDTRange
           operator: !type:GunOperator
+            preconditions:
+              - !type:PoweredPrecondition
+              - !type:SignalControlPrecondition
             targetKey: Target
             requireLOS: false
           services:
