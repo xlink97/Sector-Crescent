@@ -96,6 +96,8 @@
         - Toggle
         - On
         - Off
+    - type: ApcPowerReceiver
+      powerLoad: 6000
     - type: MouseRotator
       angleTolerance: 5
       rotationSpeed: 180
