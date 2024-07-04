@@ -9,6 +9,9 @@ namespace Content.Server.NPC.HTN.Preconditions
     {
         [Dependency] private readonly IEntityManager _entManager = default!;
 
+        [DataField("isOnIfNoSignalControl")]
+        public bool IsOnIfNoSignalControl = false;
+
         public override bool IsMet(NPCBlackboard blackboard)
         {
             if (blackboard.TryGetValue<EntityUid>(NPCBlackboard.Owner, out var owner, _entManager))
@@ -17,6 +20,8 @@ namespace Content.Server.NPC.HTN.Preconditions
                 {
                     return control.IsOn;
                 }
+
+                return IsOnIfNoSignalControl;
             }
 
             return false;
