@@ -351,7 +351,33 @@ public sealed class HTNSystem : EntitySystem
                 component.CheckServices = false;
             }
 
-            status = currentOperator.Update(blackboard, frameTime);
+            if (currentOperator.Preconditions != null)
+            {
+                bool valid = true;
+                foreach (var precondition in currentOperator.Preconditions)
+                {
+                    if (precondition.IsMet(blackboard))
+                    {
+                        continue;
+                    }
+
+                    valid = false;
+                    break;
+                }
+
+                if (valid)
+                {
+                    status = currentOperator.Update(blackboard, frameTime);
+                }
+                else
+                {
+                    status = HTNOperatorStatus.Failed;
+                }
+            }
+            else
+            {
+                status = currentOperator.Update(blackboard, frameTime);
+            }
 
             switch (status)
             {

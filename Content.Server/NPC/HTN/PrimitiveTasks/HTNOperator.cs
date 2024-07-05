@@ -1,6 +1,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using JetBrains.Annotations;
+using Content.Server.NPC.HTN.Preconditions;
 
 namespace Content.Server.NPC.HTN.PrimitiveTasks;
 
@@ -11,11 +12,24 @@ namespace Content.Server.NPC.HTN.PrimitiveTasks;
 public abstract partial class HTNOperator
 {
     /// <summary>
+    /// What needs to be true for this operator to run or keep running.
+    /// </summary>
+    [DataField("preconditions")] public List<HTNPrecondition>? Preconditions = null;
+
+    /// <summary>
     /// Called once whenever prototypes reload. Typically used to inject dependencies.
     /// </summary>
     public virtual void Initialize(IEntitySystemManager sysManager)
     {
         IoCManager.InjectDependencies(this);
+
+        if (Preconditions != null)
+        {
+            foreach (var precondition in Preconditions)
+            {
+                precondition.Initialize(sysManager);
+            }
+        }
     }
 
     /// <summary>
